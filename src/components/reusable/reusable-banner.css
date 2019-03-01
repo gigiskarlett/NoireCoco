@@ -1,0 +1,10 @@
+.banner {
+    background-color: #F5C6D7;
+    height: 80px;
+}
+
+@media (min-width: 650px) {
+    .banner {
+        height: 120px;
+    }
+}
