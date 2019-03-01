@@ -1,0 +1,40 @@
+.about-us-banner {
+    background-color: #F1EAEA;
+    text-align: center;
+}
+.landing-banner {
+    background-color: #F5C6D7;
+    height: 300px;
+}
+.catchy-phrase {
+    padding: 12px;
+    font-size: 15px;
+    font-family: 'Shadows Into Light Two', cursive;
+}
+
+.shop-by-style {
+    background-color: #F4F4F4;
+    height: 400px;
+}
+
+
+
+@media (min-width: 650px) {
+    .about-us-banner {
+        height: 100px;
+        text-align: center;
+    }
+    .landing-banner {
+        height: 300px;
+    }
+    .catchy-phrase {
+        padding: 10px;
+        font-size: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .shop-by-style {
+        height: 700px;
+    }
+}
