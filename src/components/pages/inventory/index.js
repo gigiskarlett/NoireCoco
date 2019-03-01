@@ -1,9 +1,9 @@
 import React from "react";
 
 import "./index.css";
-import { NavBar } from "../reusable/navBar";
-import { ReusableBanner } from "../reusable/reusable-banner";
-import { Footer } from "../reusable/footer";
+import { NavBar } from "../../reusable/navBar";
+import { ReusableBanner } from "../../reusable/reusable-banner";
+import { Footer } from "../../reusable/footer";
 
 export class Inventory extends React.Component {
   render() {
