@@ -11,7 +11,13 @@ export function AboutUs(props) {
     <React.Fragment>
       <NavBar />
       <ReusableBanner />
-      <section className="picture" />
+      <section className="pictureContainer">
+        <img
+          className="img"
+          src="https://i.ibb.co/qJcqx7b/imageedit-37-3130109529.png"
+          alt="girl in water with sharks"
+        />
+      </section>
       <section className="about-us-section">
         <p className="about-us-paragraph">
           Noire Coco was created by a beach lover who’s always on the search for
@@ -24,9 +30,9 @@ export function AboutUs(props) {
           women who finds herself always on a quest when trying to find
           swimwear.
         </p>
-        <Button/>
-        <div className="empty-space"></div>
-        <Footer/>
+        <Button />
+        <div className="empty-space" />
+        <Footer />
       </section>
     </React.Fragment>
   );
