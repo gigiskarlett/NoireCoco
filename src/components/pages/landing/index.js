@@ -1,10 +1,10 @@
 import React from "react";
 
-import { NavBar } from "../elements/navBar";
-import { InstagramBanner } from "../elements/instagram-banner";
-import { Footer } from "../elements/footer";
+import { NavBar } from "../../reusable/navBar"
+import { InstagramBanner } from "../../reusable/instagram-banner";
+import { Footer } from "../../footer";
 import "./index.css";
-import { EmailCapture } from "../elements/email-capture";
+import { EmailCapture } from "../../reusable/email-capture";
 
 export default class LandingPage extends React.Component {
   render() {
