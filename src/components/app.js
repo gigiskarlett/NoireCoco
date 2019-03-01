@@ -1,14 +1,14 @@
 import React from "react";
 import { connect } from "react-redux";
 import { Route, withRouter } from "react-router-dom";
-import HeaderBar from "./reusable/header-bar";
 
-import LandingPage from "./pages/landing";
-import RegistrationPage from "./pages/registration";
-import CreateListingPage from "./pages/create-listing-page";
-import Dashboard from "./pages/dashboard";
+import LandingPage from "../../src/components/pages/landing"
+import {AboutUs} from "../../src/components/pages/about-us";
+import {ViewAllSwimwear} from "../../src/components/pages/view-all-swimwear";
+import {ViewOneSwimwear} from "../../src/components/pages/view-one-product";
 
 import { refreshAuthToken } from "../actions/auth";
+
 
 export class App extends React.Component {
   componentDidUpdate(prevProps) {
@@ -43,15 +43,10 @@ export class App extends React.Component {
   render() {
     return (
       <div className="app">
-        <HeaderBar />
         <Route exact path="/" component={LandingPage} />
-        <Route exact path="/signup" component={RegistrationPage} />
-        <Route exact path="/dashboard" component={Dashboard} />
-        <Route exact path="/create" component={CreateListingPage} />
-
-        {/* <Route exact path="/" component={LandingPage} /> */}
-        {/* <Route exact path="/dashboard" component={Dashboard} /> */}
-        {/* <Route exact path="/register" component={RegistrationPage} /> */}
+        <Route exact path="collection/all-swimwear" component={ViewAllSwimwear} />
+        <Route exact path="/about-us" component={AboutUs} />
+        <Route exact path="collection/all-swimwear/:product" component={ViewOneSwimwear} />
       </div>
     );
   }
