@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+}
+
+.container, .email-box-container {
+    display: flex;
+}
+
+.container {
+    justify-content: center;
+}
+
+.email-box-container {
+    margin-top: 20px;
+    flex-flow: column;
+}
+
+.email-address-input {
+    font-family: 'Shadows Into Light Two', cursive;
+    width: 150px;
+    height: 30px;
+    font-size: 12px;
+    border: 1px solid black;
+    background-color: white;
+    padding: 10px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+.join-button {
+    font-family: 'Shadows Into Light Two', cursive;
+    height: 30px;
+    width: 35px;
+    padding-bottom: 1px;
+    border: 1px solid black;
+    color: #F40C89;
+    border-left: none;
+    font-size: 12px;
+    background-color: white;
+}
+
+.form-container {
+    margin-top: 15px;
+}
+
+.call-to-action {
+    font-family: 'Shadows Into Light Two', cursive;
+    text-align: center;
+    font-size: 15px;
+    margin: auto;
+}
+
+@media (min-width: 650px) {
+    .container, .email-box-container {
+        display: flex;
+    }
+    .email-box-container {
+        flex-direction: row;
+        ;
+    }
+    .container {
+        padding: 20px;
+    }
+    .email-address-input {
+        width: 350px;
+        height: 49px;
+        font-size: 19px;
+    }
+    form {
+        margin-top: 0px;
+    }
+    .join-button {
+        height: 49px;
+        padding-bottom: 1px;
+        width: 60px;
+        font-size: 19px;
+    }
+    .form-container {
+        margin-top: 15px;
+    }
+    .call-to-action {
+        font-size: 30px;
+        margin: 10px;
+    }
+}
