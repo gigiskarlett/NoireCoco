@@ -12,7 +12,14 @@ export class Inventory extends React.Component {
         <NavBar />
         <ReusableBanner />
         <div className="add-button-container">
-        <button className="add-button"><img className="plus-icon" src="https://i.ibb.co/wYrwDgM/icons8-plus-math-60.png" alt="plus-icon"/>ADD NEW</button>
+          <button className="add-button">
+            <img
+              className="plus-icon"
+              src="https://i.ibb.co/wYrwDgM/icons8-plus-math-60.png"
+              alt="plus-icon"
+            />
+            ADD NEW
+          </button>
         </div>
         <section className="list-of-products">
           <section className="product">
@@ -34,7 +41,12 @@ export class Inventory extends React.Component {
               <h4>PRICE</h4>
               <p className="inventory-list">$30.00</p>
             </section>
-            <p>delete</p>
+            <input
+              type="image"
+              src="https://i.ibb.co/jRXb1ng/icons8-delete-60-1.png"
+              className="delete-icon"
+              alt="delete icon"
+            />
           </section>
           <section className="product">
             <section className="name">
@@ -55,10 +67,15 @@ export class Inventory extends React.Component {
               <h4>PRICE</h4>
               <p className="inventory-list">$30.00</p>
             </section>
-            <p>delete</p>
+            <input
+              type="image"
+              src="https://i.ibb.co/jRXb1ng/icons8-delete-60-1.png"
+              className="delete-icon"
+              alt="delete icon"
+            />
           </section>
         </section>
-        <div className="empty-space"></div>
+        <div className="empty-space" />
         <Footer />
       </React.Fragment>
     );
