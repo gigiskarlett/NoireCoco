@@ -1,11 +1,14 @@
 *{
     box-sizing: border-box;
 }
-h3 {
+button {
     color: #F40C89;
     position: absolute;
-    right: 20px;
+    right: 10px;
     font-weight: bold;
+    border: none;
+    background: none;
+    top: 90px;
 }
 
 p, h3 {
@@ -18,6 +21,10 @@ h4 {
 
 p{
     font-size: 15px;
+}
+
+.plus-icon{
+    height: 15px;
 }
 
 .list-of-products {
@@ -46,7 +53,7 @@ p{
 }
 
 @media (min-width: 650px) {
-    h3 {
+    button {
         color: #F40C89;
         position: absolute;
         top: 130px;
