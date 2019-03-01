@@ -1,0 +1,21 @@
+.footer {
+    background-color: black;
+    height: 50px;
+    font-size: 12px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-text {
+    color: white;
+}
+
+@media (min-width: 650px) {
+    .footer {
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
