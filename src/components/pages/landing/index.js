@@ -2,7 +2,7 @@ import React from "react";
 
 import { NavBar } from "../../reusable/navBar"
 import { InstagramBanner } from "../../reusable/instagram-banner";
-import { Footer } from "../../footer";
+import { Footer } from "../../reusable/footer";
 import "./index.css";
 import { EmailCapture } from "../../reusable/email-capture";
 
