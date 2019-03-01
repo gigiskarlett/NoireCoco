@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+}
+
+.nav-links {
+    float: right;
+    padding-top: 10px;
+}
+
+.link {
+    color: #F40C89;
+    padding: 12px;
+    text-decoration: none;
+}
+
+nav {
+    height: 40px;
+    width: auto;
+}
+
+.logo {
+    height: 38px;
+    padding-left: 5px;
+}
+
+
+@media (min-width: 650px) {
+    .nav-links {
+        float: right;
+        margin-top: 10px;
+    }
+
+    .link {
+        padding: 30px;
+        text-decoration: none;
+    }
+    
+    nav {
+        height: 50px;
+        width: auto;
+    }
+
+    .logo {
+        height: 49px;
+        margin: 1px 0 0 20px;
+    }
+}
