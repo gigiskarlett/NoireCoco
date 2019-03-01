@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+}
+
+.filter-icon {
+    height: 25px;
+}
+
+span, .filter-instructions, .sortBy, a, .dropbtn {
+    font-family: 'Rufina', serif;
+}
+
+.downward-arrow {
+    height: 15px;
+    padding-left: 5px;
+}
+
+span {
+    color: #7C7C7C;
+    font-size: 10px;
+}
+
+.dropbtn {
+    color: black;
+    font-size: 11px;
+    border: 1px solid black;
+    display: flex;
+    background-color: white;
+    align-items: center;
+    padding: 4px
+}
+
+.drop-down, .sortBy {
+    padding-left: 5px;
+}
+
+.drop-down {
+    position: relative;
+}
+
+.filter-instructions {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 130px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    font-size: 11px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.drop-down:hover .dropdown-content {
+    display: block;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+}
+
+.item-count-container {
+    display: flex;
+}
+
+.container {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sortBy {
+    font-size: 12px;
+}
+
+@media (min-width: 650px) {
+    .downward-arrow {
+        height: 20px;
+        padding-left: 5px;
+    }
+    .filter-icon {
+        height: 50px;
+    }
+    .container {
+        padding: 13px;
+    }
+    .filter-instructions {
+        font-size: 15px;
+    }
+    .dropbtn {
+        font-size: 14px;
+        padding: 5px;
+    }
+    .right {
+        margin-right: 5px;
+    }
+    .dropdown-content a {
+        padding: 12px 16px;
+        font-size: 13px;
+    }
+    span {
+        font-size: 12px;
+    }
+    .drop-down, .sortBy {
+        padding-left: 10px;
+    }
+    .sortBy {
+        font-size: 15px;
+    }
+}
