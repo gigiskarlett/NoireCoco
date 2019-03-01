@@ -6,8 +6,10 @@ import LandingPage from "../../src/components/pages/landing"
 import {AboutUs} from "../../src/components/pages/about-us";
 import {ViewAllSwimwear} from "../../src/components/pages/view-all-swimwear";
 import {ViewOneSwimwear} from "../../src/components/pages/view-one-product";
+import {Inventory} from "../../src/components/pages/inventory";
 
 import { refreshAuthToken } from "../actions/auth";
+
 
 
 export class App extends React.Component {
@@ -44,9 +46,10 @@ export class App extends React.Component {
     return (
       <div className="app">
         <Route exact path="/" component={LandingPage} />
-        <Route exact path="collection/all-swimwear" component={ViewAllSwimwear} />
+        <Route exact path="/collection/all-swimwear" component={ViewAllSwimwear} />
         <Route exact path="/about-us" component={AboutUs} />
-        <Route exact path="collection/all-swimwear/:product" component={ViewOneSwimwear} />
+        <Route exact path="/collection/all-swimwear/:product" component={ViewOneSwimwear} />
+        <Route exact path="/admin/inventory" component={Inventory} />
       </div>
     );
   }
