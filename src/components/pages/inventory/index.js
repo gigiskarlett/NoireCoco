@@ -11,7 +11,9 @@ export class Inventory extends React.Component {
       <React.Fragment>
         <NavBar />
         <ReusableBanner />
-        <h3>ADD NEW</h3>
+        <div className="add-button-container">
+        <button className="add-button"><img className="plus-icon" src="https://i.ibb.co/wYrwDgM/icons8-plus-math-60.png" alt="plus-icon"/>ADD NEW</button>
+        </div>
         <section className="list-of-products">
           <section className="product">
             <section className="name">
@@ -56,7 +58,7 @@ export class Inventory extends React.Component {
             <p>delete</p>
           </section>
         </section>
-        <div className="empty-space" />
+        <div className="empty-space"></div>
         <Footer />
       </React.Fragment>
     );
