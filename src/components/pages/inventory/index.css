@@ -1,7 +1,12 @@
 *{
     box-sizing: border-box;
 }
-button {
+
+.delete-icon {
+    height: 20px;
+}
+
+.add-button {
     color: #F40C89;
     position: absolute;
     right: 10px;
@@ -53,11 +58,15 @@ p{
 }
 
 @media (min-width: 650px) {
-    button {
+    .add-button {
         color: #F40C89;
         position: absolute;
         top: 130px;
         right: 20px;
+    }
+
+    .delete-icon {
+        height: 20px;
     }
 
     .empty-space{
