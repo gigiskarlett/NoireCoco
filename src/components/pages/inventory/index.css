@@ -3,8 +3,20 @@
 }
 
 .add-button{
+    color: #F40C89;
+    position: absolute;
+    right: 10px;
+    font-weight: bold;
+    border: none;
+    background: none;
+    top: 90px;
     font-size: 13px;
 }
+
+.plus-icon {
+    height: 15px;
+}
+
 .empty-space {
     margin-bottom: 60px;
 }
@@ -16,5 +28,9 @@
 
     .add-button{
         font-size: 15px;
+        color: #F40C89;
+        position: absolute;
+        top: 130px;
+        right: 20px;
     }
 }
