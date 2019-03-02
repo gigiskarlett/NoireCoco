@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+
+.hero {
+    height: 500px;
+    display: flex;
+    order: 2;
+    margin-left: 15px;
+}
+
+.hero img {
+    height: 100%
+}
+
+.thumbnail {
+    cursor: pointer;
+    height: 100%;
+    margin-bottom: 10px;
+}
+
+.image-container {
+    display: flex;
+}
+
+a.thumbnail:hover {
+    box-shadow: 5px 5px 5px rgb(255, 182, 249);
+}
+
+.thumbnail img {
+    max-height: 100%;
+}
+
+.left-thumbnails {
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    height: 245px;
+}
+
