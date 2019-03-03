@@ -2,6 +2,7 @@ import React from "react";
 
 import "./navBar.css";
 
+//Renders navigation bar component
 export function NavBar(props) {
   return (
     <nav>
