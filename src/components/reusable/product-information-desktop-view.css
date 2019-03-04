@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
+.product-name, .price, .colour-heading, .colour, .details, .product-details, .details-heading{
+    text-align: center;
+}
+
+.product-name, .colour-heading, .details-heading{
+    font-family: 'Rufina', serif;
+}
+.product-information{
+    padding: 10px;
+}
+
+.price, .details {
+    font-family: 'Sintony', serif;
+}
+
+
+/* heart icon */
+.heart{
+    height: 30px
+}
+
+
+.price, .product-details{
+    margin: 20px;
+}
+
+
+.colour, .details{
+    padding: 5px;
+}
+
+.product-details{
+    width: 350px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.details{
+    font-size: 15px;
+}
