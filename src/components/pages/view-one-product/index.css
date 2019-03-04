@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+
+.desktop-view {
+    display: none;
+}
+
+.product-container-mobile-view{
+    margin-bottom: 80px;
+}
+
+@media (min-width: 650px) {
+    .mobile-view {
+        display: none;
+    }
+    .product-container-desktop-view {
+        margin: 20px 0 100px 0;
+        display: flex;
+        padding: 70px;
+    }
+    .desktop-view {
+        display: unset;
+    }
+}
