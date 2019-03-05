@@ -1,7 +1,6 @@
 .footer {
     background-color: black;
     height: 50px;
-    font-size: 12px;
     align-items: center;
     display: flex;
     justify-content: center;
@@ -9,6 +8,8 @@
 
 .footer-text {
     color: white;
+    font-size: 12px;
+    font-family: 'Rufina', serif;
 }
 
 @media (min-width: 650px) {
