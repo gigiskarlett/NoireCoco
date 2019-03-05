@@ -2,11 +2,11 @@
     box-sizing: border-box;
 }
 
-.container, .email-box-container {
+.main-container, .email-box-container {
     display: flex;
 }
 
-.container {
+.main-container {
     justify-content: center;
 }
 
@@ -60,7 +60,7 @@ form {
         flex-direction: row;
         ;
     }
-    .container {
+    .main-container {
         padding: 20px;
     }
     .email-address-input {
