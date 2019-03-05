@@ -32,7 +32,7 @@
     height: 20px;
 }
 
-.button {
+.product-button {
     border-top: 1px solid #F96DB9;
     border-left: none;
     border-right: none;
@@ -68,7 +68,7 @@
     .heart {
         height: 25px;
     }
-    .button {
+    .product-button {
         margin-top: 3px;
         width: 100px;
         font-size: 12px;
