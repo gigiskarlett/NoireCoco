@@ -6,6 +6,7 @@ import { ReusableBanner } from "../../reusable/reusable-banner";
 import { Button } from "../../reusable/reusable-button";
 import { Footer } from "../../reusable/footer";
 
+//Renders about us page page 
 export function AboutUs(props) {
   return (
     <React.Fragment>
@@ -15,7 +16,7 @@ export function AboutUs(props) {
         <img
           className="img"
           src="https://i.ibb.co/qJcqx7b/imageedit-37-3130109529.png"
-          alt="girl in water with sharks"
+          alt="girl in water with sharks in the Bahamas"
         />
       </section>
       <section className="about-us-section">
@@ -30,10 +31,14 @@ export function AboutUs(props) {
           women who finds herself always on a quest when trying to find
           swimwear.
         </p>
-        <Button />
-        <div className="empty-space" />
-        <Footer />
-      </section>
+        <hr color="#FF70BD" />
+        <div className="empty-div"></div>
+       <Button/>
+       <div className="empty-space"></div>
+       <Footer/>
+     </section>
     </React.Fragment>
   );
 }
+
+//add prop to button to say "shop all swimwear"
