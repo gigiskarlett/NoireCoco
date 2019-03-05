@@ -19,6 +19,7 @@ export function AboutUs(props) {
           alt="girl in water with sharks in the Bahamas"
         />
       </section>
+      <hr color="#FF70BD" />
       <section className="about-us-section">
         <p className="about-us-paragraph">
           Noire Coco was created by a beach lover who’s always on the search for
@@ -31,7 +32,7 @@ export function AboutUs(props) {
           women who finds herself always on a quest when trying to find
           swimwear.
         </p>
-        <hr color="#FF70BD" />
+         <hr color="#FF70BD" />
         <div className="empty-div"></div>
        <Button/>
        <div className="empty-space"></div>
