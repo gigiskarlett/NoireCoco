@@ -59,6 +59,13 @@ export function InventoryModal(props) {
                 required
               />
             </label>
+            <label for="product-style">
+            Style
+            <select className="product-style" id="product-style" required>
+            <option value="one-piece">One piece</option>
+            <option value="two-piece-bikini">Two piece bikini</option>
+          </select>
+            </label>
             <button type="submit" className="submit-button">
               ADD Product
             </button>
@@ -71,3 +78,5 @@ export function InventoryModal(props) {
     </React.Fragment>
   );
 }
+
+//change to class
