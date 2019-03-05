@@ -16,6 +16,7 @@ fieldset {
 .inventory-input, label {
     display: block;
     font-family: 'Sintony', serif;
+    display: grid;
 }
 
 .inventory-input {
@@ -82,6 +83,12 @@ legend {
     text-align: center;
 }
 
+.product-style{
+    margin-bottom: 15px;
+    border: 1px solid gainsboro;
+    margin-top: 5px;
+}
+
 @media (min-width: 650px) {
     label {
         font-size: 15px;
@@ -107,4 +114,5 @@ legend {
     legend {
         padding: 10px;
     }
+
 }
