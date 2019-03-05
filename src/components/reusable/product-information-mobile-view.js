@@ -24,6 +24,7 @@ export class ProductInformationMobileView extends React.Component {
         <p className="colour">WHITE</p>
         <div className="product-details">
           <h3 className="details-heading">DETAILS</h3>
+          <hr color="#FF70BD" width="80%" />
           <p className="details">
             Fabric: 80% chinlon,20% spandex Design: Falbala design Tie at back
             About Cup Style: Padding bra Garment Care: Hand Wash and Hang Dry.
@@ -35,3 +36,5 @@ export class ProductInformationMobileView extends React.Component {
     );
   }
 }
+
+//pass state+props from db item
