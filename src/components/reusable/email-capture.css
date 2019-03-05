@@ -1,12 +1,8 @@
-* {
-    box-sizing: border-box;
-}
-
-.main-container, .email-box-container {
+.email-container, .email-box-container {
     display: flex;
 }
 
-.main-container {
+.email-container {
     justify-content: center;
 }
 
@@ -25,7 +21,7 @@
     padding: 10px;
 }
 
-form {
+.email-capture {
     margin-bottom: 20px;
 }
 
@@ -53,14 +49,13 @@ form {
 }
 
 @media (min-width: 650px) {
-    .container, .email-box-container {
+    .email-container, .email-box-container {
         display: flex;
     }
     .email-box-container {
         flex-direction: row;
-        ;
     }
-    .main-container {
+    .email-container {
         padding: 20px;
     }
     .email-address-input {
@@ -68,7 +63,7 @@ form {
         height: 49px;
         font-size: 19px;
     }
-    form {
+    .email-capture {
         margin-top: 0px;
     }
     .join-button {
