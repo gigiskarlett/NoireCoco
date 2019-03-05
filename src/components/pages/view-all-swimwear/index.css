@@ -1,0 +1,17 @@
+.pink-banner{
+    background-color: #F5C6D7;
+    display: flex;
+    justify-content: center;
+}
+
+.swimwear-products{
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+@media (min-width: 650px) {
+    .swimwear-products{
+        margin-top: 0;
+        margin-bottom: 100px;
+    }
+}
