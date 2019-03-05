@@ -5,7 +5,7 @@ import "./email-capture.css";
 //Renders email capture to subscribe for updates
 export function EmailCapture() {
   return (
-    <div className="main-container">
+    <div className="email-container">
       <div className="email-box-container">
         <p className="call-to-action">Lets keep in touch</p>
         <section>
