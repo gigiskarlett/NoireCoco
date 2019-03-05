@@ -1,7 +1,25 @@
-import React from 'react';
+import React from "react";
 
-import './index.css'
+import { NavBar } from "../../reusable/navBar";
+import { EmailCapture } from "../../reusable/email-capture";
+import { Filter } from "../../reusable/filter";
+import { Product } from "../../reusable/product";
+import { Footer } from "../../reusable/footer";
 
-export function ViewAllSwimwear(props) {
-    return <div><p>Test1</p></div>
+import "./index.css";
+
+export function ViewAllSwimwear() {
+  return (
+    <React.Fragment>
+      <NavBar />
+      <div className="pink-banner">
+        <EmailCapture />
+      </div>
+      <Filter />
+      <section className="swimwear-products">
+        <Product />
+      </section>
+      <Footer />
+    </React.Fragment>
+  );
 }
