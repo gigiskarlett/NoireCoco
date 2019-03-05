@@ -19,7 +19,7 @@ export class ProductInformationDesktopView extends React.Component {
         <h4 className="price">$40.00</h4>
         <h3 className="colour-heading">COLOUR</h3>
         <p className="colour">WHITE</p>
-        <div className="product-details">
+        <div className="desktop-product-details">
           <h3 className="details-heading">DETAILS</h3>
           <hr color="#FF70BD" />
           <p className="details">
