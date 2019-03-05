@@ -1,0 +1,110 @@
+.inventory-modal {
+    background-color: #FCE9F0;
+    border-radius: 2px;
+}
+
+legend {
+    font-family: 'Sintony', serif;
+    font-weight: bolder;
+}
+
+fieldset {
+    text-align: center;
+    border: none;
+}
+
+.inventory-input, label {
+    display: block;
+    font-family: 'Sintony', serif;
+}
+
+.inventory-input {
+    padding: 2px;
+    height: 15px;
+    width: 230px;
+}
+
+.modal-container {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+    /* position: fixed; */
+    /* left: 10%;
+    top: 30%; */
+    padding: 10px;
+}
+
+.inventory-modal {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.cancel-button {
+    border: none;
+    background-color: #FCE9F0;
+    color: red;
+    font-weight: bold;
+}
+
+.submit-button {
+    display: block;
+    background-color: rgb(252, 31, 178);
+    height: 25px;
+    border-radius: 2px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+    border: none;
+    padding: 0 20px;
+    margin: 0 auto;
+    font-weight: bold;
+}
+
+input, textarea {
+    background-color: white;
+    border: 1px solid gainsboro;
+    margin-top: 3px;
+    border-radius: 3px;
+    margin-bottom: 8px;
+    padding: 0;
+}
+
+label {
+    font-weight: bolder;
+    font-size: 12px;
+    text-align: left;
+}
+
+legend {
+    padding: 5px;
+    text-align: center;
+}
+
+@media (min-width: 650px) {
+    label {
+        font-size: 15px;
+    }
+    .inventory-modal {
+        width: 350px;
+        padding: 10px;
+    }
+    .inventory-input {
+        height: 15px;
+        width: 320px;
+    }
+    .modal-container {
+        width: 30%;
+    }
+    .inventory-input {
+        height: 20px;
+    }
+    input, textarea {
+        border-radius: 3px;
+        margin-bottom: 10px;
+    }
+    legend {
+        padding: 10px;
+    }
+}
