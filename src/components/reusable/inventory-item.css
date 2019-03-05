@@ -6,12 +6,12 @@
     height: 20px;
 }
 
-p {
+.inventory-list{
     font-family: 'Sintony', serif;
     font-size: 15px;
 }
 
-h4 {
+.field-header{
     font-family: 'Rufina', serif;
 }
 
@@ -52,7 +52,7 @@ h4 {
     .inventory-list {
         margin: 5px 0 10px 0;
     }
-    p {
-        font-size: 13px;
+    .inventory-list {
+        font-size: 15px;
     }
 }
