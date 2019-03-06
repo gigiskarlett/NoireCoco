@@ -16,3 +16,18 @@ export const getAllProducts = products => dispatch => {
     });
 };
 
+export const postProduct = product => dispatch => {
+  return fetch(`${API_BASE_URL}/api/products/`, {
+    method: "POST",
+    headers: {
+      "content-type": "application/json"
+    },
+    body: JSON.stringify(product)
+  })
+    .then(res => normalizeResponseErrors(res))
+    .then(res => res.json())
+    .catch(err => {
+      console.error(err);
+      res.status(500).json({ error: "something went terribly wrong" });
+    });
+};
