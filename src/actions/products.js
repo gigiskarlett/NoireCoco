@@ -2,9 +2,9 @@ import { API_BASE_URL } from "../config";
 import { normalizeResponseErrors } from "./utils";
 
 export const FETCH_PRODUCTS_SUCCESS = "FETCH_PRODUCTS_SUCCESS";
-export const fetchProductsSuccess = data => ({
+export const fetchProductsSuccess = products => ({
   type: FETCH_PRODUCTS_SUCCESS,
-  data
+  products
 });
 
 export const FETCH_PRODUCTS_ERROR = "FETCH_PRODUCTS_ERROR";
