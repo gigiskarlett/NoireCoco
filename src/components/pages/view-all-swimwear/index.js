@@ -4,7 +4,7 @@ import { connect } from "react-redux";
 import { NavBar } from "../../reusable/navBar";
 import { EmailCapture } from "../../reusable/email-capture";
 import { Filter } from "../../reusable/filter";
-import { Product } from "../../reusable/product";
+import Product from "../../reusable/product";
 import { Footer } from "../../reusable/footer";
 import { getAllProducts } from "../../../actions/products";
 
