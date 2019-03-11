@@ -1,10 +1,10 @@
 import React from "react";
 
 import { NavBar } from "../../reusable/navBar";
-import { ReusableBanner } from "../../reusable/reusable-banner";
+import { ReusableBanner } from "../../reusable/banner";
 import { ProductInformationDesktopView } from "../../reusable/product-information-desktop-view";
 import { ProductInformationMobileView } from "../../reusable/product-information-mobile-view";
-import { ProductImagesDesktopView } from "../../reusable/product-images-desktop-view";
+import { ProductImagesDesktopView } from "./product-images-desktop-view";
 import { Footer } from "../../reusable/footer";
 import "./index.css";
 
