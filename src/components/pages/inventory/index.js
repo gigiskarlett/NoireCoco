@@ -2,9 +2,9 @@ import React from "react";
 
 import "./index.css";
 import { NavBar } from "../../reusable/navBar";
-import { ReusableBanner } from "../../reusable/reusable-banner";
+import { ReusableBanner } from "../../reusable/banner";
 import { Footer } from "../../reusable/footer";
-import { InventoryItem } from "../../reusable/inventory-item";
+import { InventoryItem } from "./item";
 
 export function Inventory(props) {
   return (
