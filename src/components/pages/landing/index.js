@@ -6,6 +6,7 @@ import { Footer } from "../../reusable/footer";
 import "./index.css";
 import { EmailCapture } from "../../reusable/email-capture";
 
+//Renders landing page
 export default class LandingPage extends React.Component {
   render() {
     return (
@@ -30,3 +31,5 @@ export default class LandingPage extends React.Component {
     );
   }
 }
+
+//header with pics, pics that act as link to two pieces and one piece
