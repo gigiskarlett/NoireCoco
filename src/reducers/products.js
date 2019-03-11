@@ -12,7 +12,7 @@ export default function reducer(state = initialState, action) {
     console.log(action)
     if (action.type === FETCH_PRODUCTS_SUCCESS) {
         return Object.assign({}, state, {
-            products: action.data,
+            products: state.products.concat(action.products),
             error: null
         });
     } else if (action.type === FETCH_PRODUCTS_ERROR) {
