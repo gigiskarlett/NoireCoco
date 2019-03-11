@@ -2,15 +2,13 @@ import React from "react";
 import { connect } from "react-redux";
 import { Route, withRouter } from "react-router-dom";
 
-import LandingPage from "../../src/components/pages/landing"
-import {AboutUs} from "../../src/components/pages/about-us";
+import LandingPage from "../../src/components/pages/landing";
+import { AboutUs } from "../../src/components/pages/about-us";
 import ViewAllSwimwear from "../../src/components/pages/view-all-swimwear";
-import {ShowOneProduct} from "../../src/components/pages/view-one-product";
-import {Inventory} from "../../src/components/pages/inventory";
+import { ShowOneProduct } from "../../src/components/pages/view-one-product";
+import { Inventory } from "../../src/components/pages/inventory";
 
 import { refreshAuthToken } from "../actions/auth";
-
-
 
 export class App extends React.Component {
   componentDidUpdate(prevProps) {
@@ -46,10 +44,10 @@ export class App extends React.Component {
     return (
       <div className="app">
         <Route exact path="/" component={LandingPage} />
-        <Route exact path="/collection/all-swimwear" component={ViewAllSwimwear} />
-        <Route exact path="/about-us" component={AboutUs} />
-        <Route exact path="/collection/all-swimwear/:product" component={ShowOneProduct} />
-        <Route exact path="/admin/inventory" component={Inventory} />
+        <Route exact path="/shop" component={ViewAllSwimwear} />
+        <Route exact path="/about" component={AboutUs} />
+        <Route exact path="/shop/:product" component={ShowOneProduct} />
+        <Route exact path="/admin/" component={Inventory} />
       </div>
     );
   }
