@@ -22,7 +22,7 @@ export const getAllProducts = products => dispatch => {
   })
     .then(res => normalizeResponseErrors(res))
     .then(res => res.json())
-    .then(data => dispatch(fetchProductsSuccess(data)))
+    .then(products => dispatch(fetchProductsSuccess(products)))
     .catch(err => {
       console.log("Whoops! Try this again.");
       dispatch(fetchProductsError(err));
