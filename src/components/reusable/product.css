@@ -14,16 +14,17 @@
     height: 150px;
 }
 
-.product-name, .short-description {
+.product-name, .short-description, .product-price {
     text-align: center;
 }
 
-.short-description {
+.short-description, .product-price {
     font-size: 12px;
     line-height: normal;
+}
+.product-price{
     margin-bottom: 5px;
 }
-
 .product-name {
     font-size: 14px;
 }
