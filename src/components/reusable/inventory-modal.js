@@ -62,8 +62,8 @@ export function InventoryModal(props) {
             <label for="product-style">
             Style
             <select className="product-style" id="product-style" required>
-            <option value="one-piece">One piece</option>
-            <option value="two-piece-bikini">Two piece bikini</option>
+            <option value="one-piece bikini">One piece</option>
+            <option value="two-piece bikini">Two piece bikini</option>
           </select>
             </label>
             <button type="submit" className="submit-button">
