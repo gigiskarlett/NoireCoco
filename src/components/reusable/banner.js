@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './reusable-banner.css';
+import './banner.css';
 
 export function ReusableBanner(props) {
     return (

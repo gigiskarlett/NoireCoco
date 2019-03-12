@@ -1,7 +1,7 @@
 import React from "react";
 
-import { Button } from "../reusable/reusable-button";
-import {ProductImagesMobileView} from "../reusable/product-images-mobile-view";
+import { Button } from "../../reusable/button";
+import {ProductImagesMobileView} from "./product-images-mobile-view";
 
 import "./product-information-mobile-view.css";
 

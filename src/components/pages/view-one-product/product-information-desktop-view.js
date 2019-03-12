@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Button } from "./reusable-button";
+import { Button } from "../../reusable/button";
 import "./product-information-desktop-view.css";
 
 //Renders information about product

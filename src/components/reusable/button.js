@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './reusable-button.css';
+import './button.css';
 
 export function Button(props) {
     return (
