@@ -82,6 +82,7 @@ export const postProduct = item => dispatch => {
   })
     .then(res => normalizeResponseErrors(res))
     .then(res => res.json())
+    .then(item => dispatch(postProductsSuccess(item)))
     .catch(err => {
       let message;
       if (err.code === 422) {
@@ -128,4 +129,5 @@ export const postProduct = item => dispatch => {
 //     .catch(err => {
 //       console.error(err);
 //     });
-// };
+}
+// 
