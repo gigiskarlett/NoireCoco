@@ -1,6 +1,7 @@
 import React from "react";
 
 import { connect } from "react-redux";
+import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 import { NavBar } from "../../reusable/navBar";
 import { ReusableBanner } from "../../reusable/banner";
 import { Footer } from "../../reusable/footer";
@@ -19,14 +20,14 @@ class Inventory extends React.Component {
         <NavBar />
         <ReusableBanner />
         <div className="add-button-container">
-          <button className="add-button">
-            <img
-              className="plus-icon"
-              src="https://i.ibb.co/wYrwDgM/icons8-plus-math-60.png"
-              alt="plus-icon"
-            />
-            ADD NEW
-          </button>
+        <button className="add-button">
+        <img
+          className="plus-icon"
+          src="https://i.ibb.co/wYrwDgM/icons8-plus-math-60.png"
+          alt="plus-icon"
+        />
+        <Link to="/">ADD NEW</Link>
+      </button>
         </div>
         <InventoryItem />
         <div className="empty-space" />
@@ -35,5 +36,9 @@ class Inventory extends React.Component {
     );
   }
 }
+
+// Inventory.defaultProps ={
+//   heading: INVENTORY
+// } add inventory to banner
 
 export default connect()(Inventory);
