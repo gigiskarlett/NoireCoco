@@ -63,7 +63,7 @@ export class Product extends React.Component {
       );
     });
 
-    return <ul>{products}</ul>;
+    return <ul className="listing-products">{products}</ul>;
   }
 }
 const mapStateToProps = state => ({
