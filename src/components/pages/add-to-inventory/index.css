@@ -34,9 +34,11 @@ fieldset {
 
 .cancel-button {
     border: none;
+    text-decoration: none;
     background-color: #FCE9F0;
     color: red;
-    font-weight: bold;
+    font-weight: bolder;
+    font-family: 'Sintony', serif;
 }
 
 .submit-button {
@@ -95,5 +97,9 @@ legend {
     }
     legend {
         padding: 10px;
+    }
+
+    .cancel-button {
+        font-size: 13px;
     }
 }
