@@ -4,7 +4,7 @@ import { connect } from "react-redux";
 import { NavBar } from "../../reusable/navBar";
 import { ReusableBanner } from "../../reusable/banner";
 import { Footer } from "../../reusable/footer";
-import { InventoryItem } from "./item";
+import InventoryItem from "./item";
 import { getAllProducts } from "../../../actions/products";
 
 import "./index.css";
