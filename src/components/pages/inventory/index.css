@@ -2,15 +2,20 @@
     box-sizing: border-box;
 }
 
-.add-button{
+.link-to-add-new {
     color: #F40C89;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13px;
+    font-family: 'Sintony', serif;
+}
+
+.add-button {
     position: absolute;
     right: 10px;
-    font-weight: bold;
     border: none;
     background: none;
     top: 90px;
-    font-size: 13px;
 }
 
 .plus-icon {
@@ -25,12 +30,13 @@
     .empty-space {
         margin-top: 150px;
     }
-
-    .add-button{
-        font-size: 15px;
-        color: #F40C89;
+    .add-button {
         position: absolute;
         top: 130px;
         right: 20px;
+    }
+
+    .link-to-add-new {
+        font-size: 15px;
     }
 }
