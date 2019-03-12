@@ -5,9 +5,36 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import { NavBar } from "../../reusable/navBar";
 import { ReusableBanner } from "../../reusable/banner";
 import { Footer } from "../../reusable/footer";
+import { PostProduct } from "../../../actions/products";
 import "./index.css";
 
 class NewInventoryEntry extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { value: "coconut" };
+
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+
+    const [name, setName] = useState("");
+    const [imageUrl, setImageUrl] = useState("");
+    const [secondImage, setSecondImage] = useState("");
+    const [thirdImage, setThirdImage] = useState("");
+    const [details, setDetails] = useState("");
+    const [shortDescription, setShortDescription] = useState("");
+    const [price, setPrice] = useState("");
+    const [style, setStyle] = useState("");
+    const [url, setUrl] = useState("");
+  }
+
+  handleSubmit(e) {
+    e.preventDefault();
+    this.props.dispatch(PostProduct());
+  }
+
+  handleChange(event) {
+    this.setState({ value: event.target.value });
+  }
   render() {
     return (
       <React.Fragment>
@@ -19,6 +46,10 @@ class NewInventoryEntry extends React.Component {
             <label for="name">
               NAME
               <input
+                value={name}
+                onChange={e => setName(e.target.value)}
+                aria-label={name}
+                aria-required="true"
                 className="inventory-input "
                 type="text"
                 name="product-name"
@@ -29,6 +60,10 @@ class NewInventoryEntry extends React.Component {
             <label for="url">
               URL
               <input
+                value={url}
+                onChange={e => setUrl(e.target.value)}
+                aria-label={url}
+                aria-required="true"
                 className="inventory-input "
                 type="text"
                 name="product-image-url"
@@ -39,6 +74,9 @@ class NewInventoryEntry extends React.Component {
             <label for="imageUrl">
               IMAGE URL
               <input
+                value={imageUrl}
+                onChange={e => setImageUrl(e.target.value)}
+                aria-label={image - url}
                 className="inventory-input "
                 type="text"
                 name="product-image-url"
@@ -49,7 +87,10 @@ class NewInventoryEntry extends React.Component {
             <label for="secondImage">
               SECOND IMAGE URL
               <input
-                className="inventory-input "
+                value={secondImage}
+                onChange={e => setSecondImage(e.target.value)}
+                aria-label={second - image}
+                className="inventory-input"
                 type="text"
                 name="product-image-url"
                 id="secondImage"
@@ -59,6 +100,9 @@ class NewInventoryEntry extends React.Component {
             <label for="thirdImage">
               THIRD IMAGE URL
               <input
+                value={thirdImage}
+                onChange={e => setThirdImage(e.target.value)}
+                aria-label={third-image}
                 className="inventory-input "
                 type="text"
                 name="product-image-url"
@@ -69,6 +113,9 @@ class NewInventoryEntry extends React.Component {
             <label for="shortDescription">
               SHORT DESCRIPTION
               <textarea
+                value={shortDescription}
+                onChange={e => setShortDescription(e.target.value)}
+                aria-label={description}
                 className="inventory-input"
                 name="short-description"
                 id="shortDescription"
@@ -79,6 +126,9 @@ class NewInventoryEntry extends React.Component {
             <label for="details">
               DETAILS
               <textarea
+                value={details}
+                onChange={e => setDetails(e.target.value)}
+                aria-label={details}
                 className="inventory-input"
                 name="product-details"
                 rows="4"
@@ -89,6 +139,9 @@ class NewInventoryEntry extends React.Component {
             <label for="price">
               PRICE
               <input
+                value={price}
+                onChange={e => setPrice(e.target.value)}
+                aria-label={price}
                 className="inventory-input"
                 type="text"
                 name="product-price"
@@ -98,8 +151,14 @@ class NewInventoryEntry extends React.Component {
             </label>
             <label for="style">
               STYLE
-              <select className="product-style" id="style" required>
-                <option value="one-piece bikini">One piece</option>
+              <select
+                value={this.state.value}
+                onChange={this.handleChange}
+                className="product-style"
+                id="style"
+                required
+              >
+                <option value="one-piece bikini">One piece bikini</option>
                 <option value="two-piece bikini">Two piece bikini</option>
               </select>
             </label>
@@ -118,3 +177,5 @@ class NewInventoryEntry extends React.Component {
     );
   }
 }
+
+export default connect()(NewInventoryEntry);
