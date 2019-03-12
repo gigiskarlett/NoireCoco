@@ -23,7 +23,7 @@ export default function reducer(state = initialState, action) {
   }
   else if (action.type === POST_PRODUCTS_SUCCESS) {
     return Object.assign({}, state, {
-      items: action.items,
+      item: action.item,
       error: null
     });
   }
