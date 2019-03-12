@@ -12,16 +12,18 @@ export function NavBar(props) {
         alt="Noire Coco logo"
       />
       <ul className="nav-links">
-        <Link href="/shop" className="link" aria-label="Shop">
+        <a href="#" className="link" aria-label="Shop">
           Shop
-        </Link>
-        <Link href="/new" className="link" aria-label="New">
+        </a>
+        <a href="#" className="link" aria-label="New">
           New
-        </Link>
-        <Link href="/about" className="link" aria-label="About">
+        </a>
+        <a href="#" className="link" aria-label="About">
           About
-        </Link>
+        </a>
       </ul>
     </nav>
   );
 }
+
+//change from a to Link
