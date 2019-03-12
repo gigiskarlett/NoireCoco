@@ -2,6 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import { Route, withRouter } from "react-router-dom";
 
+import NewInventoryEntry from "../components/pages/add-to-inventory"
 import LandingPage from "../../src/components/pages/landing";
 import { AboutUs } from "../../src/components/pages/about-us";
 import ViewAllSwimwear from "../../src/components/pages/view-all-swimwear";
@@ -47,7 +48,8 @@ export class App extends React.Component {
         <Route exact path="/shop" component={ViewAllSwimwear} />
         <Route exact path="/about" component={AboutUs} />
         <Route exact path="/shop/:product" component={ShowOneProduct} />
-        <Route exact path="/admin/" component={Inventory} />
+        <Route exact path="/admin" component={Inventory} />
+        <Route exact path="/admin/new-entry" component = {NewInventoryEntry}/>
       </div>
     );
   }
