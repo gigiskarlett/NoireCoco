@@ -7,7 +7,12 @@
     flex-direction: column;
 }
 
-.inventory-form, .inventory-input{
+textarea {
+    resize: vertical;
+    overflow: scroll;
+}
+
+.inventory-form, .inventory-input {
     width: 100%;
 }
 
@@ -98,7 +103,6 @@ legend {
     legend {
         padding: 10px;
     }
-
     .cancel-button {
         font-size: 13px;
     }
