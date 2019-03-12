@@ -1,7 +1,7 @@
 import React from "react";
 
 import { connect } from "react-redux";
-import "./inventory-item.css";
+import "./item.css";
 
 //Renders items in the database
 class InventoryItem extends React.Component {
@@ -24,23 +24,23 @@ class InventoryItem extends React.Component {
             </section>
             <section className="second-image-url">
             <h4 className="field-header">SECOND IMAGE URL</h4>
-            <p className="inventory-list">{product.secondImageUrl}</p>
+            <p className="inventory-list">{product.secondImage}</p>
           </section>
           <section className="third-image-url">
           <h4 className="field-header">THIRD IMAGE URL</h4>
-          <p className="inventory-list">{product.thirdImageUrl}</p>
+          <p className="inventory-list">{product.thirdImage}</p>
         </section>
             <section className="item-short-description">
             <h4 className="field-header">SHORT DESCRIPTION</h4>
             <p className="inventory-list">{product.shortDescription}</p>
           </section>
-            <section className="details">
+            <section className="item-details">
               <h4 className="field-header">DETAILS</h4>
               <p className="inventory-list">
                 {product.details}
               </p>
             </section>
-            <section className="price">
+            <section className="item-price">
               <h4 className="field-header">PRICE</h4>
               <p className="inventory-list">{product.price}</p>
             </section>
@@ -59,7 +59,7 @@ class InventoryItem extends React.Component {
       );
     });
 
-    return <ul>{products}</ul>
+    return <ul className="inventory-items">{products}</ul>
   }
 }
 
