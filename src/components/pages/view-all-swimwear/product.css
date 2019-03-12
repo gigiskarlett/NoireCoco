@@ -10,6 +10,10 @@
     align-items: center;
 }
 
+.listing-products {
+    list-style-type: none;
+}
+
 .product-image {
     height: 150px;
 }
@@ -72,5 +76,9 @@
     .product-button {
         margin-top: 3px;
         font-size: 12px;
+    }
+
+    .listing-products{
+        display: -webkit-box;
     }
 }
