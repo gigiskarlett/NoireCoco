@@ -9,7 +9,7 @@ import { getAllProducts } from "../../../actions/products";
 
 import "./index.css";
 
-export class Inventory extends React.Component {
+class Inventory extends React.Component {
   componentDidMount() {
     this.props.dispatch(getAllProducts());
   }
