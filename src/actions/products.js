@@ -8,10 +8,10 @@ export const fetchProductsSuccess = products => ({
   products
 });
 
-export const POST_PRODUCTS_SUCCESS = "POST_PRODUCTS_SUCCESS";
-export const postProductsSuccess = products => ({
-  type: POST_PRODUCTS_SUCCESS,
-  products
+export const FETCH_PRODUCTS_ERROR = "FETCH_PRODUCTS_ERROR";
+export const fetchProductsError = error => ({
+  type: FETCH_PRODUCTS_ERROR,
+  error
 });
 
 export const getAllProducts = products => dispatch => {
@@ -49,11 +49,12 @@ export const getAllProducts = products => dispatch => {
 
 //Fetch Post Api call
 
-export const FETCH_PRODUCTS_ERROR = "FETCH_PRODUCTS_ERROR";
-export const fetchProductsError = error => ({
-  type: FETCH_PRODUCTS_ERROR,
-  error
+export const POST_PRODUCTS_SUCCESS = "POST_PRODUCTS_SUCCESS";
+export const postProductsSuccess = item => ({
+  type: POST_PRODUCTS_SUCCESS,
+  item
 });
+
 
 export const POST_PRODUCTS_ERROR = "POST_PRODUCTS_ERROR";
 export const postProductsError = error => ({
@@ -61,7 +62,7 @@ export const postProductsError = error => ({
   error
 });
 
-export const postProduct = product => dispatch => {
+export const postProduct = item => dispatch => {
   return fetch(`${API_BASE_URL}/api/products/`, {
     method: "POST",
     headers: {
