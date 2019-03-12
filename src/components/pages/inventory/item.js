@@ -4,7 +4,7 @@ import { connect } from "react-redux";
 import "./inventory-item.css";
 
 //Renders items in the database
-export class InventoryItem extends React.Component {
+class InventoryItem extends React.Component {
   render() {
     const products = this.props.products.map((product, i) => {
       return (
