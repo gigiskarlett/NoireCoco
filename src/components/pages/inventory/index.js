@@ -26,7 +26,7 @@ class Inventory extends React.Component {
           src="https://i.ibb.co/wYrwDgM/icons8-plus-math-60.png"
           alt="plus-icon"
         />
-        <Link to="/">ADD NEW</Link>
+        <Link className="link-to-add-new" to="/admin/new-entry">ADD NEW</Link>
       </button>
         </div>
         <InventoryItem />
