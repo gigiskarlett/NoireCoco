@@ -105,7 +105,7 @@ export default function NewInventoryEntry(props) {
                 ADD Product
               </button>
               <button type="button" className="cancel-button">
-                <Link to="/admin">Cancel</Link>
+                <Link className="cancel-button" to="/admin">Cancel</Link>
               </button>
             </fieldset>
           </form>
