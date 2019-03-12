@@ -4,7 +4,7 @@ import { connect } from "react-redux";
 import "./product.css";
 
 //Renders Product with product images and short information
-export class Product extends React.Component {
+class Product extends React.Component {
   render() {
     const products = this.props.products.map((product, i) => {
       return (
@@ -41,3 +41,7 @@ const mapStateToProps = state => ({
 });
 
 export default connect(mapStateToProps)(Product);
+
+
+//<Link to:/shop/{${productUrl}}><img></Link>
+//create url link
