@@ -15,16 +15,6 @@ class NewInventoryEntry extends React.Component {
 
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
-
-    const [name, setName] = useState("");
-    const [imageUrl, setImageUrl] = useState("");
-    const [secondImage, setSecondImage] = useState("");
-    const [thirdImage, setThirdImage] = useState("");
-    const [details, setDetails] = useState("");
-    const [shortDescription, setShortDescription] = useState("");
-    const [price, setPrice] = useState("");
-    const [style, setStyle] = useState("");
-    const [url, setUrl] = useState("");
   }
 
   handleSubmit(e) {
@@ -36,6 +26,16 @@ class NewInventoryEntry extends React.Component {
     this.setState({ value: event.target.value });
   }
   render() {
+
+    const [name, setName] = useState("");
+    const [imageUrl, setImageUrl] = useState("");
+    const [secondImage, setSecondImage] = useState("");
+    const [thirdImage, setThirdImage] = useState("");
+    const [details, setDetails] = useState("");
+    const [shortDescription, setShortDescription] = useState("");
+    const [price, setPrice] = useState("");
+    const [style, setStyle] = useState("");
+    const [url, setUrl] = useState("");
     return (
       <React.Fragment>
         <NavBar />
@@ -76,7 +76,7 @@ class NewInventoryEntry extends React.Component {
               <input
                 value={imageUrl}
                 onChange={e => setImageUrl(e.target.value)}
-                aria-label={image - url}
+                aria-label={imageUrl}
                 className="inventory-input "
                 type="text"
                 name="product-image-url"
@@ -89,7 +89,7 @@ class NewInventoryEntry extends React.Component {
               <input
                 value={secondImage}
                 onChange={e => setSecondImage(e.target.value)}
-                aria-label={second - image}
+                aria-label={secondImage}
                 className="inventory-input"
                 type="text"
                 name="product-image-url"
@@ -102,7 +102,7 @@ class NewInventoryEntry extends React.Component {
               <input
                 value={thirdImage}
                 onChange={e => setThirdImage(e.target.value)}
-                aria-label={third-image}
+                aria-label={thirdImage}
                 className="inventory-input "
                 type="text"
                 name="product-image-url"
@@ -115,7 +115,7 @@ class NewInventoryEntry extends React.Component {
               <textarea
                 value={shortDescription}
                 onChange={e => setShortDescription(e.target.value)}
-                aria-label={description}
+                aria-label={shortDescription}
                 className="inventory-input"
                 name="short-description"
                 id="shortDescription"
