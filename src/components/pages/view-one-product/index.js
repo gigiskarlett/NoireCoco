@@ -4,7 +4,7 @@ import { NavBar } from "../../reusable/navBar";
 import { ReusableBanner } from "../../reusable/banner";
 import { ProductInformationDesktopView } from "./product-information-desktop-view";
 import { ProductInformationMobileView } from "./product-information-mobile-view";
-import { ProductImagesDesktopView } from "./product-images-desktop-view";
+import  ProductImagesDesktopView  from "./product-images-desktop-view";
 import { Footer } from "../../reusable/footer";
 import "./index.css";
 
