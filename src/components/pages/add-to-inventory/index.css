@@ -60,7 +60,7 @@ fieldset {
     font-weight: bold;
 }
 
-input, textarea {
+.inventory-input, textarea {
     background-color: white;
     border: 1px solid gainsboro;
     margin-top: 3px;
@@ -96,7 +96,7 @@ legend {
     .inventory-input, select {
         height: 20px;
     }
-    input, textarea {
+    .inventory-input, textarea {
         border-radius: 3px;
         margin-bottom: 10px;
     }
