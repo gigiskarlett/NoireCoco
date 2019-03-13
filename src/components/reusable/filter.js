@@ -5,15 +5,6 @@ import "./filter.css";
 export function Filter(props) {
   return (
     <div className="container">
-      <div className="left">
-        <input
-          type="image"
-          src="https://i.ibb.co/BKHV7n4/icons8-slider-96-2.png"
-          className="filter-icon"
-          alt="adjust icon"
-        />
-        <p className="filter-instructions">SHOW FILTER</p>
-      </div>
       <div className="item-count-container">
       <span>100 items</span>
       </div>
