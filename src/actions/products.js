@@ -50,7 +50,7 @@ export const getAllProducts = products => dispatch => {
 //Fetch Post Api call
 
 export const POST_ITEM_SUCCESS = "POST_ITEM_SUCCESS";
-export const postItemsSuccess = item => ({
+export const postItemSuccess = item => ({
   type: POST_ITEM_SUCCESS,
   item
 });
