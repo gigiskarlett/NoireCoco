@@ -9,6 +9,7 @@ import { postItem } from "../../../actions/products";
 import "./index.css";
 
 class NewInventoryEntry extends React.Component {
+  //contains initial state
   constructor(props) {
     super(props);
     this.state = {
@@ -24,28 +25,12 @@ class NewInventoryEntry extends React.Component {
     };
   }
 
-
+  //handles submission of form and dispatches action to post api call
   handleSubmit(e) {
     e.preventDefault();
     this.props.dispatch(postItem(this.state));
   }
-
-  // newEntry(e) {
-  //   this.setState({
-  //     item: {
-  //       name: this.refs.name.value,
-  //       url: this.refs.url.value,
-  //       imageUrl: this.refs.imageUrl.value,
-  //       secondImage: this.refs.secondImage.value,
-  //       thirdImage: this.refs.thirdImage.value,
-  //       shortDescription: this.refs.shortDescription.value,
-  //       details: this.refs.details.value,
-  //       price: this.refs.price.value,
-  //       style: this.refs.style.value
-  //     }
-  //   });
-  // }
-//controlled components 
+//renders form
   render() {
     return (
       <React.Fragment>
@@ -61,9 +46,8 @@ class NewInventoryEntry extends React.Component {
             <label htmlFor="name">
               NAME
               <input
-              // ref={name => (this.name = name)}
                 value={this.state.name}
-                onChange={e => this.setState({name: e.target.value})}
+                onChange={e => this.setState({ name: e.target.value })}
                 aria-label="name"
                 aria-required="true"
                 className="inventory-input "
@@ -76,9 +60,8 @@ class NewInventoryEntry extends React.Component {
             <label htmlFor="url">
               URL
               <input
-                // ref={url => (this.url = url)}
                 value={this.state.url}
-                onChange={e => this.setState({url: e.target.value})}
+                onChange={e => this.setState({ url: e.target.value })}
                 aria-required="true"
                 className="inventory-input "
                 type="text"
@@ -90,9 +73,8 @@ class NewInventoryEntry extends React.Component {
             <label htmlFor="imageUrl">
               IMAGE URL
               <input
-                // ref={imageUrl => (this.imageUrl = imageUrl)}
                 value={this.state.imageUrl}
-                onChange={e => this.setState({imageUrl: e.target.value})}
+                onChange={e => this.setState({ imageUrl: e.target.value })}
                 aria-label="imageUrl"
                 className="inventory-input "
                 type="text"
@@ -104,9 +86,8 @@ class NewInventoryEntry extends React.Component {
             <label htmlFor="secondImage">
               SECOND IMAGE URL
               <input
-                // ref={secondImage => (this.secondImage = secondImage)}
                 value={this.state.secondImage}
-                onChange={e => this.setState({secondImage: e.target.value})}
+                onChange={e => this.setState({ secondImage: e.target.value })}
                 aria-label="secondImage"
                 className="inventory-input"
                 type="text"
@@ -118,9 +99,8 @@ class NewInventoryEntry extends React.Component {
             <label htmlFor="thirdImage">
               THIRD IMAGE URL
               <input
-                // ref={thirdImage => (this.thirdImage = thirdImage)}
                 value={this.state.thirdImage}
-                onChange={e => this.setState({thirdImage: e.target.value})}
+                onChange={e => this.setState({ thirdImage: e.target.value })}
                 aria-label="thirdImage"
                 className="inventory-input "
                 type="text"
@@ -132,11 +112,10 @@ class NewInventoryEntry extends React.Component {
             <label htmlFor="shortDescription">
               SHORT DESCRIPTION
               <textarea
-                // ref={shortDescription =>
-                //   (this.shortDescription = shortDescription)
-                // }
                 value={this.state.shortDescription}
-                onChange={e => this.setState({shortDescription: e.target.value})}
+                onChange={e =>
+                  this.setState({ shortDescription: e.target.value })
+                }
                 aria-label="shortDescription"
                 className="inventory-input"
                 name="short-description"
@@ -148,9 +127,8 @@ class NewInventoryEntry extends React.Component {
             <label htmlFor="details">
               DETAILS
               <textarea
-                // ref={details => (this.details = details)}
                 value={this.state.details}
-                onChange={e => this.setState({details: e.target.value})}
+                onChange={e => this.setState({ details: e.target.value })}
                 aria-label="details"
                 className="inventory-input"
                 name="product-details"
@@ -162,9 +140,8 @@ class NewInventoryEntry extends React.Component {
             <label htmlFor="price">
               PRICE
               <input
-                // ref={price => (this.price = price)}
                 value={this.state.price}
-                onChange={e => this.setState({price: e.target.value})}
+                onChange={e => this.setState({ price: e.target.value })}
                 aria-label="price"
                 className="inventory-input"
                 type="text"
@@ -176,9 +153,8 @@ class NewInventoryEntry extends React.Component {
             <label htmlFor="style">
               STYLE
               <select
-                // ref={select => (this.style = select)}
                 value={this.state.style}
-                onChange={e => this.setState({style: e.target.value})}
+                onChange={e => this.setState({ style: e.target.value })}
                 className="product-style"
                 name="bikini-style"
                 required
@@ -188,7 +164,7 @@ class NewInventoryEntry extends React.Component {
               </select>
             </label>
             <button type="submit" className="submit-button">
-              ADD Product
+            ADD PRODUCT
             </button>
             <button type="button" className="cancel-button">
               <Link className="cancel-button" to="/admin">
