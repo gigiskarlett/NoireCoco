@@ -100,7 +100,7 @@ export const postItem = (item, getState) => dispatch => {
 
 //delete API call
 
-export const DELETE_ITEM_SUCCESS = "DELETE_PRODUCTS_SUCCESS";
+export const DELETE_ITEM_SUCCESS = "DELETE_ITEM_SUCCESS";
 export const deleteItemSuccess = item => ({
   type: DELETE_ITEM_SUCCESS,
   item
