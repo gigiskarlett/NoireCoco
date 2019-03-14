@@ -2,6 +2,7 @@ import React from "react";
 
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import { connect } from "react-redux";
+import { getAllProducts } from "../../../actions/products";
 import "./product.css";
 
 //Renders Product with product images and short information
