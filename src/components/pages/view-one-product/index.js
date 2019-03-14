@@ -1,11 +1,15 @@
 import React from "react";
 
+import { connect } from "react-redux";
+import { getOneProduct } from "../../../actions/products";
+
 import { NavBar } from "../../reusable/navBar";
 import { ReusableBanner } from "../../reusable/banner";
 import { ProductInformationDesktopView } from "./product-information-desktop-view";
 import { ProductInformationMobileView } from "./product-information-mobile-view";
-import ProductImagesDesktopView from "./product-images-desktop-view";
+import {ProductImagesDesktopView} from "./product-images-desktop-view";
 import { Footer } from "../../reusable/footer";
+
 import "./index.css";
 
 //Renders page with product selected
@@ -13,7 +17,7 @@ import "./index.css";
 export class ShowOneProduct extends React.Component {
   componentDidMount() {
     //use postman and paste an id here
-    this.props.dispatch(getOneProduct("123112312123"));
+    this.props.dispatch(getOneProduct("5c872bdd9edb2b3123a68075"));
   }
 
   render() {
