@@ -71,10 +71,10 @@ export const postItem = (item, getState) => dispatch => {
   })
     .then(res => normalizeResponseErrors(res))
     .then(res => res.json())
-    .then(item => dispatch(postProductsSuccess(item)))
+    .then(item => dispatch(postItemSuccess(item)))
     .catch(err => {
       console.log("Whoops! Try this again.");
-      dispatch(postProductsError(err));
+      dispatch(postItemError(err));
     });
 };
   // //success and error action
