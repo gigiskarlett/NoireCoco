@@ -21,7 +21,7 @@ class NewInventoryEntry extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    this.props.dispatch(postProduct(this.state.item));
+    this.props.dispatch(postItem(this.state.item));
   }
 
   newEntry(e) {
