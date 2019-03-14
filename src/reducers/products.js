@@ -1,6 +1,8 @@
 import {
   FETCH_PRODUCTS_SUCCESS,
   FETCH_PRODUCTS_ERROR,
+  FETCH_ONE_PRODUCT_SUCCESS,
+  FETCH_ONE_PRODUCT_ERROR,
   POST_ITEM_SUCCESS,
   POST_ITEM_ERROR
 } from "../actions/products";
@@ -31,7 +33,10 @@ export default function reducer(state = initialState, action) {
       selectedProduct: action.product,
       error: null
     });
-    // FETCH PRODUCT ERROR
+  } else if (action.type === FETCH_ONE_PRODUCT_ERROR) {
+    return Object.assign({}, state, {
+      error: action.error
+    });
   } else if (action.type === POST_ITEM_SUCCESS) {
     return Object.assign({}, state, {
       item: action.item,
