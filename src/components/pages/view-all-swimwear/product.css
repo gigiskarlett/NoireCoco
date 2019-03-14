@@ -3,6 +3,12 @@
     flex-wrap: wrap;
 }
 
+.link-button {
+    text-decoration: none;
+    font-weight: bold;
+    color: #F96DB9;
+}
+
 .product-container {
     padding: 5px;
     width: 150px;
@@ -37,6 +43,10 @@
     height: 20px;
 }
 
+.name-link {
+    text-decoration: none;
+    color: black;
+}
 .product-button {
     border-top: 1px solid #F96DB9;
     border-left: none;
@@ -45,8 +55,6 @@
     background-color: white;
     display: flex;
     margin: auto;
-    font-weight: bold;
-    color: #F96DB9;
 }
 
 @media (min-width: 650px) {
@@ -73,9 +81,12 @@
     .heart {
         height: 25px;
     }
+
+    .link-button {
+        font-size: 12px;
+    }
     .product-button {
         margin-top: 3px;
-        font-size: 12px;
     }
 
     .listing-products{
