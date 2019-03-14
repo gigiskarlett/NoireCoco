@@ -5,50 +5,59 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import { NavBar } from "../../reusable/navBar";
 import { ReusableBanner } from "../../reusable/banner";
 import { Footer } from "../../reusable/footer";
-import { PostProduct } from "../../../actions/products";
+import { postProduct } from "../../../actions/products";
 import "./index.css";
 
 class NewInventoryEntry extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { value: "one-piece bikini" };
+  // onSubmit(event) {
+  //   event.preventDefault();
 
-    this.handleChange = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
-  }
+  //     const value = this.input.value;
+  //     this.props.dispatch(postProduct());
+
+  //   this.input.value = "";
+  //   this.input.focus();
+  // }
 
   handleSubmit(e) {
     e.preventDefault();
-    this.props.dispatch(PostProduct());
+let item;
+    this.props.dispatch(postProduct(this.state.item));
   }
 
-  handleChange(event) {
-    this.setState({ value: event.target.value });
+  newEntry(e) {
+    this.setState({
+      item: {
+        name: this.refs.name.value,
+        url: this.refs.url.value,
+        imageUrl: this.refs.imageUrl.value,
+        secondImage: this.refs.secondImage.value,
+        thirdImage: this.refs.thirdImage.value,
+        shortDescription: this.refs.shortDescription.value,
+        details: this.refs.details.value,
+        price: this.refs.price.value,
+        style: this.refs.style.value
+      }
+    });
   }
+
   render() {
-
-    const [name, setName] = useState("");
-    const [imageUrl, setImageUrl] = useState("");
-    const [secondImage, setSecondImage] = useState("");
-    const [thirdImage, setThirdImage] = useState("");
-    const [details, setDetails] = useState("");
-    const [shortDescription, setShortDescription] = useState("");
-    const [price, setPrice] = useState("");
-    const [style, setStyle] = useState("");
-    const [url, setUrl] = useState("");
     return (
       <React.Fragment>
         <NavBar />
         <ReusableBanner />
-        <form className="inventory-form " aria-live="polite">
+        <form
+          className="inventory-form "
+          aria-live="polite"
+          onSubmit={e => this.onSubmit(e)}
+        >
           <legend>ADD INVENTORY</legend>
           <fieldset>
             <label for="name">
               NAME
               <input
-                value={name}
-                onChange={e => setName(e.target.value)}
-                aria-label={name}
+                ref={name => (this.name = name)}
+                aria-label="name"
                 aria-required="true"
                 className="inventory-input "
                 type="text"
@@ -60,9 +69,7 @@ class NewInventoryEntry extends React.Component {
             <label for="url">
               URL
               <input
-                value={url}
-                onChange={e => setUrl(e.target.value)}
-                aria-label={url}
+                ref={url => (this.url = url)}
                 aria-required="true"
                 className="inventory-input "
                 type="text"
@@ -74,9 +81,8 @@ class NewInventoryEntry extends React.Component {
             <label for="imageUrl">
               IMAGE URL
               <input
-                value={imageUrl}
-                onChange={e => setImageUrl(e.target.value)}
-                aria-label={imageUrl}
+                ref={imageUrl => (this.imageUrl = imageUrl)}
+                aria-label="imageUrl"
                 className="inventory-input "
                 type="text"
                 name="product-image-url"
@@ -87,9 +93,8 @@ class NewInventoryEntry extends React.Component {
             <label for="secondImage">
               SECOND IMAGE URL
               <input
-                value={secondImage}
-                onChange={e => setSecondImage(e.target.value)}
-                aria-label={secondImage}
+                ref={secondImage => (this.secondImage = secondImage)}
+                aria-label="secondImage"
                 className="inventory-input"
                 type="text"
                 name="product-image-url"
@@ -100,9 +105,8 @@ class NewInventoryEntry extends React.Component {
             <label for="thirdImage">
               THIRD IMAGE URL
               <input
-                value={thirdImage}
-                onChange={e => setThirdImage(e.target.value)}
-                aria-label={thirdImage}
+                ref={thirdImage => (this.thirdImage = thirdImage)}
+                aria-label="thirdImage"
                 className="inventory-input "
                 type="text"
                 name="product-image-url"
@@ -113,9 +117,10 @@ class NewInventoryEntry extends React.Component {
             <label for="shortDescription">
               SHORT DESCRIPTION
               <textarea
-                value={shortDescription}
-                onChange={e => setShortDescription(e.target.value)}
-                aria-label={shortDescription}
+                ref={shortDescription =>
+                  (this.shortDescription = shortDescription)
+                }
+                aria-label="shortDescription"
                 className="inventory-input"
                 name="short-description"
                 id="shortDescription"
@@ -126,9 +131,8 @@ class NewInventoryEntry extends React.Component {
             <label for="details">
               DETAILS
               <textarea
-                value={details}
-                onChange={e => setDetails(e.target.value)}
-                aria-label={details}
+                ref={details => (this.details = details)}
+                aria-label="details"
                 className="inventory-input"
                 name="product-details"
                 rows="4"
@@ -139,9 +143,8 @@ class NewInventoryEntry extends React.Component {
             <label for="price">
               PRICE
               <input
-                value={price}
-                onChange={e => setPrice(e.target.value)}
-                aria-label={price}
+                ref={price => (this.price = price)}
+                aria-label="price"
                 className="inventory-input"
                 type="text"
                 name="product-price"
@@ -152,10 +155,9 @@ class NewInventoryEntry extends React.Component {
             <label for="style">
               STYLE
               <select
-                value={this.state.value}
-                onChange={this.handleChange}
+                ref={select => (this.style = select)}
                 className="product-style"
-                id="style"
+                name="bikini-style"
                 required
               >
                 <option value="one-piece bikini">One piece bikini</option>
