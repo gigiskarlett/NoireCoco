@@ -62,7 +62,7 @@ export const postItemError = error => ({
 });
 
 export const postItem = (item, getState) => dispatch => {
-  return fetch(`${API_BASE_URL}/api/products/`, {
+  return fetch(`${API_BASE_URL}/products/`, {
     method: "POST",
     headers: {
       "content-type": "application/json"
@@ -83,7 +83,7 @@ export const postItem = (item, getState) => dispatch => {
   // //
 
   // export const updateProduct = product => dispatch => {
-  //   return fetch(`${API_BASE_URL}/api/products/`, {
+  //   return fetch(`${API_BASE_URL}/products/`, {
   //     method: "PUT",
   //     headers: {
   //       "content-type": "application/json"
@@ -113,7 +113,7 @@ export const deleteItemError = error => ({
 });
 
   // export const deleteProduct = product => dispatch => {
-  //   return fetch(`${API_BASE_URL}/api/products/`, {
+  //   return fetch(`${API_BASE_URL}/products/`, {
   //     method: "DELETE",
   //     headers: {
   //       "content-type": "application/json"
