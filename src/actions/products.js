@@ -72,10 +72,25 @@ export const postItem = ( item) => dispatch => {
     .then(res => normalizeResponseErrors(res))
     .then(res => res.json())
     .then(item => dispatch(postItemSuccess(item)))
+    .then(clearFields())
     .catch(err => {
       console.log("Whoops! Try this again.");
       dispatch(postItemError(err));
     });
+};
+
+const clearFields = () => {
+  this.setState = {
+    name: "",
+    url: "",
+    imageUrl: "",
+    secondImage: "",
+    thirdImage: "",
+    shortDescription: "",
+    details: "",
+    price: "",
+    style: "one-piece bikini"
+  };
 };
   // //success and error action
   // //get all
