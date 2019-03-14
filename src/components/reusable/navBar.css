@@ -12,6 +12,11 @@
     color: #F40C89;
     padding: 12px;
     text-decoration: none;
+    display: inline;
+}
+
+li {
+    list-style: none;
 }
 
 nav {
