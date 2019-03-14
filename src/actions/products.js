@@ -73,44 +73,18 @@ export const postProduct = (item, getState) => dispatch => {
     .then(res => res.json())
     .then(item => dispatch(postProductsSuccess(item)))
     .catch(err => {
-      let message;
-      if (err.code === 422) {
-        message = err.message;
-      } else if (err.code === 500) {
-        message = "Internal server error";
-      } else {
-        message = "Something went wrong, please try again later";
-      }
+      console.log("Whoops! Try this again.");
+      dispatch(postProductsError(err));
     });
-
+};
   // //success and error action
   // //get all
   // //store
   // //
 
-  // // export const updateProduct = product => dispatch => {
-  // //   return fetch(`${API_BASE_URL}/api/products/`, {
-  // //     method: "PUT",
-  // //     headers: {
-  // //       "content-type": "application/json"
-  // //     },
-  // //     body: JSON.stringify(product)
-  // //   })
-  // //     .then(res => normalizeResponseErrors(res))
-  // //     .then(res => res.json())
-  // .catch(err => {
-  //   let message;
-  //   if (err.code === 422) {
-  //     message = err.message;
-  //   } else if (err.code === 500) {
-  //     message = "Internal server error";
-  //   } else {
-  //     message = "Something went wrong, please try again later";
-  //   }
-
-  // export const deleteProduct = product => dispatch => {
+  // export const updateProduct = product => dispatch => {
   //   return fetch(`${API_BASE_URL}/api/products/`, {
-  //     method: "DELETE",
+  //     method: "PUT",
   //     headers: {
   //       "content-type": "application/json"
   //     },
@@ -119,13 +93,22 @@ export const postProduct = (item, getState) => dispatch => {
   //     .then(res => normalizeResponseErrors(res))
   //     .then(res => res.json())
 //   .catch(err => {
-//     let message;
-//     if (err.code === 422) {
-//       message = err.message;
-//     } else if (err.code === 500) {
-//       message = "Internal server error";
-//     } else {
-//       message = "Something went wrong, please try again later";
-//     }
+//     console.log("Whoops! Try this again.");
+//     dispatch(fetchProductsError(err));
+//   });
 // };
-//
+
+  // export const deleteProduct = product => dispatch => {
+  //   return fetch(`${API_BASE_URL}/api/products/`, {
+  //     method: "DELETE",
+  //     headers: {
+  //       "content-type": "application/json"
+  //   })
+  //     .then(res => normalizeResponseErrors(res))
+  //     .then(res => res.json())
+//      .catch(err => {
+//   console.log("Whoops! Try this again.");
+//   dispatch(fetchProductsError(err));
+// });
+// };
+  
