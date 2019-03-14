@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import { NavBar } from "../../reusable/navBar";
 import { ReusableBanner } from "../../reusable/banner";
 import { Footer } from "../../reusable/footer";
-import { postProduct } from "../../../actions/products";
+import { postItem } from "../../../actions/products";
 import "./index.css";
 
 class NewInventoryEntry extends React.Component {
