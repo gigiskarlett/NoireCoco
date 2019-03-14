@@ -53,7 +53,7 @@ let item;
         >
           <legend>ADD INVENTORY</legend>
           <fieldset>
-            <label for="name">
+            <label htmlFor="name">
               NAME
               <input
                 ref={name => (this.name = name)}
@@ -66,7 +66,7 @@ let item;
                 required
               />
             </label>
-            <label for="url">
+            <label htmlFor="url">
               URL
               <input
                 ref={url => (this.url = url)}
@@ -78,7 +78,7 @@ let item;
                 required
               />
             </label>
-            <label for="imageUrl">
+            <label htmlFor="imageUrl">
               IMAGE URL
               <input
                 ref={imageUrl => (this.imageUrl = imageUrl)}
@@ -90,7 +90,7 @@ let item;
                 required
               />
             </label>
-            <label for="secondImage">
+            <label htmlFor="secondImage">
               SECOND IMAGE URL
               <input
                 ref={secondImage => (this.secondImage = secondImage)}
@@ -102,7 +102,7 @@ let item;
                 required
               />
             </label>
-            <label for="thirdImage">
+            <label htmlFor="thirdImage">
               THIRD IMAGE URL
               <input
                 ref={thirdImage => (this.thirdImage = thirdImage)}
@@ -114,7 +114,7 @@ let item;
                 required
               />
             </label>
-            <label for="shortDescription">
+            <label htmlFor="shortDescription">
               SHORT DESCRIPTION
               <textarea
                 ref={shortDescription =>
@@ -128,7 +128,7 @@ let item;
                 required
               />
             </label>
-            <label for="details">
+            <label htmlFor="details">
               DETAILS
               <textarea
                 ref={details => (this.details = details)}
@@ -140,7 +140,7 @@ let item;
                 required
               />
             </label>
-            <label for="price">
+            <label htmlFor="price">
               PRICE
               <input
                 ref={price => (this.price = price)}
@@ -152,7 +152,7 @@ let item;
                 required
               />
             </label>
-            <label for="style">
+            <label htmlFor="style">
               STYLE
               <select
                 ref={select => (this.style = select)}
