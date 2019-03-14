@@ -49,15 +49,15 @@ export const getAllProducts = products => dispatch => {
 
 //Fetch Post Api call
 
-export const POST_PRODUCTS_SUCCESS = "POST_PRODUCTS_SUCCESS";
-export const postProductsSuccess = item => ({
-  type: POST_PRODUCTS_SUCCESS,
+export const POST_ITEM_SUCCESS = "POST_ITEM_SUCCESS";
+export const postItemsSuccess = item => ({
+  type: POST_ITEM_SUCCESS,
   item
 });
 
-export const POST_PRODUCTS_ERROR = "POST_PRODUCTS_ERROR";
-export const postProductsError = error => ({
-  type: POST_PRODUCTS_ERROR,
+export const POST_ITEM_ERROR = "POST_ITEM_ERROR";
+export const postItemError = error => ({
+  type: POST_ITEM_ERROR,
   error
 });
 
@@ -97,6 +97,20 @@ export const postProduct = (item, getState) => dispatch => {
 //     dispatch(fetchProductsError(err));
 //   });
 // };
+
+//delete API call
+
+export const DELETE_ITEM_SUCCESS = "DELETE_PRODUCTS_SUCCESS";
+export const deleteItemSuccess = item => ({
+  type: DELETE_ITEM_SUCCESS,
+  item
+});
+
+export const DELETE_ITEM_ERROR = "DELETE_ITEM_ERROR";
+export const deleteItemError = error => ({
+  type: DELETE_ITEM_ERROR,
+  error
+});
 
   // export const deleteProduct = product => dispatch => {
   //   return fetch(`${API_BASE_URL}/api/products/`, {
