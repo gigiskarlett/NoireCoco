@@ -61,7 +61,7 @@ export const postItemError = error => ({
   error
 });
 
-export const postProduct = (item, getState) => dispatch => {
+export const postItem = (item, getState) => dispatch => {
   return fetch(`${API_BASE_URL}/api/products/`, {
     method: "POST",
     headers: {
