@@ -1,5 +1,6 @@
 import React from "react";
 
+import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 import { connect } from "react-redux";
 import "./product.css";
 
@@ -22,11 +23,11 @@ class Product extends React.Component {
                   src="https://i.ibb.co/CbBVXLq/imageedit-16-2644387967.png"
                   alt="heart"
                 />
-                {product.name}
+                <Link className="name-link" to="/{product.id}">{product.name}</Link>
               </h6>
               <p className="short-description">{product.shortDescription}</p>
               <p className="product-price">{product.price}</p>
-              <button className="product-button">BUY NOW</button>
+              <button className="product-button"><Link className="link-button" to="{product.url}">BUY NOW</Link></button>
             </div>
           </div>
         </li>
