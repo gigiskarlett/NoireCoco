@@ -30,22 +30,36 @@ export const getAllProducts = products => dispatch => {
     });
 };
 
-// // export const getOneProduct = product => dispatch => {
-// //     return fetch(`${API_BASE_URL}/api/products/`, {
-// //       method: "GET",
-// //       headers: {
-// // 'Accept': 'application/json',
-// //         "content-type": "application/json"
-// //       },
-// //       body: JSON.stringify(product)
-// //     })
-// //       .then(res => normalizeResponseErrors(res))
-// //       .then(res => res.json())
-// //       .catch(err => {
-// //         console.error(err);
-// //         res.status(500).json({ error: "something went terribly wrong" });
-// //       });
-// //   };
+export const getOneProduct = productId => dispatch => {
+  return fetch(`${API_BASE_URL}/products/${productId}`, {
+    method: "GET",
+    headers: {
+      Accept: "application/json",
+      "content-type": "application/json"
+    }
+  })
+    .then(res => normalizeResponseErrors(res))
+    .then(res => res.json())
+    .then(product => dispatch(fetchOneProductSuccess(product)))
+    .catch(err => {
+      console.error(err);
+      res.status(500).json({ error: "something went terribly wrong" });
+    });
+};
+
+
+//Fetch GET api call
+export const FETCH_ONE_PRODUCT_SUCCESS = "FETCH_ONE_PRODUCT_SUCCESS";
+export const fetchOneProductSuccess = products => ({
+  type: FETCH_ONE_PRODUCT_SUCCESS,
+  product
+});
+
+export const FETCH_ONE_PRODUCT_ERROR = "FETCH_ONE_PRODUCT_ERROR";
+export const fetchProductsError = error => ({
+  type: FETCH_ONE_PRODUCT_ERROR,
+  error
+});
 
 //Fetch Post Api call
 
@@ -61,7 +75,7 @@ export const postItemError = error => ({
   error
 });
 
-export const postItem = ( item) => dispatch => {
+export const postItem = item => dispatch => {
   return fetch(`${API_BASE_URL}/products/`, {
     method: "POST",
     headers: {
@@ -78,21 +92,21 @@ export const postItem = ( item) => dispatch => {
     });
 };
 
-  // //success and error action
-  // //get all
-  // //store
-  // //
+// //success and error action
+// //get all
+// //store
+// //
 
-  // export const updateProduct = product => dispatch => {
-  //   return fetch(`${API_BASE_URL}/products/`, {
-  //     method: "PUT",
-  //     headers: {
-  //       "content-type": "application/json"
-  //     },
-  //     body: JSON.stringify(product)
-  //   })
-  //     .then(res => normalizeResponseErrors(res))
-  //     .then(res => res.json())
+// export const updateProduct = product => dispatch => {
+//   return fetch(`${API_BASE_URL}/products/`, {
+//     method: "PUT",
+//     headers: {
+//       "content-type": "application/json"
+//     },
+//     body: JSON.stringify(product)
+//   })
+//     .then(res => normalizeResponseErrors(res))
+//     .then(res => res.json())
 //   .catch(err => {
 //     console.log("Whoops! Try this again.");
 //     dispatch(fetchProductsError(err));
@@ -113,17 +127,16 @@ export const deleteItemError = error => ({
   error
 });
 
-  // export const deleteProduct = product => dispatch => {
-  //   return fetch(`${API_BASE_URL}/products/`, {
-  //     method: "DELETE",
-  //     headers: {
-  //       "content-type": "application/json"
-  //   })
-  //     .then(res => normalizeResponseErrors(res))
-  //     .then(res => res.json())
+// export const deleteProduct = product => dispatch => {
+//   return fetch(`${API_BASE_URL}/products/`, {
+//     method: "DELETE",
+//     headers: {
+//       "content-type": "application/json"
+//   })
+//     .then(res => normalizeResponseErrors(res))
+//     .then(res => res.json())
 //      .catch(err => {
 //   console.log("Whoops! Try this again.");
 //   dispatch(fetchProductsError(err));
 // });
 // };
-  

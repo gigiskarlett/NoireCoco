@@ -4,17 +4,13 @@ import { connect } from "react-redux";
 import { NavBar } from "../../reusable/navBar";
 import { EmailCapture } from "../../reusable/email-capture";
 import { Filter } from "../../reusable/filter";
-import Product from "./product";
+import Products from "./products";
 import { Footer } from "../../reusable/footer";
 import { getAllProducts } from "../../../actions/products";
 
 import "./index.css";
 
 export class ViewAllSwimwear extends React.Component {
-  componentDidMount() {
-    this.props.dispatch(getAllProducts());
-  }
-
   render() {
     return (
       <React.Fragment>
@@ -24,7 +20,7 @@ export class ViewAllSwimwear extends React.Component {
         </div>
         <Filter />
         <section className="swimwear-products">
-          <Product />
+          <Products />
         </section>
         <Footer />
       </React.Fragment>

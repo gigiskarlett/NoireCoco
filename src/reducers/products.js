@@ -7,6 +7,12 @@ import {
 
 const initialState = {
   products: [],
+  selectedProduct: {
+    imageUrl: "",
+    shortDescription: "",
+    secondImage: "",
+    thirdImage: ""
+  },
   error: null
 };
 
@@ -20,14 +26,18 @@ export default function reducer(state = initialState, action) {
     return Object.assign({}, state, {
       error: action.error
     });
-  }
-  else if (action.type === POST_ITEM_SUCCESS) {
+  } else if (action.type === FETCH_ONE_PRODUCT_SUCCESS) {
+    return Object.assign({}, state, {
+      selectedProduct: action.product,
+      error: null
+    });
+    // FETCH PRODUCT ERROR
+  } else if (action.type === POST_ITEM_SUCCESS) {
     return Object.assign({}, state, {
       item: action.item,
       error: null
     });
-  }
-  else if (action.type === POST_ITEM_ERROR) {
+  } else if (action.type === POST_ITEM_ERROR) {
     return Object.assign({}, state, {
       error: action.error
     });
