@@ -1,5 +1,6 @@
 import React from "react";
 
+import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 import "./navBar.css";
 
 //Renders navigation bar component
@@ -12,15 +13,9 @@ export function NavBar(props) {
         alt="Noire Coco logo"
       />
       <ul className="nav-links">
-        <a href="#" className="link" aria-label="Shop">
-          Shop
-        </a>
-        <a href="#" className="link" aria-label="New">
-          New
-        </a>
-        <a href="#" className="link" aria-label="About">
-          About
-        </a>
+        <li className="link"><Link className="link" aria-label="Shop" to="/shop">Shop</Link></li>
+        <li className="link"><Link className="link" aria-label="New"to="/new">New</Link></li>
+        <li className="link"><Link className="link"aria-label="About"to="/about">About</Link></li>
       </ul>
     </nav>
   );
