@@ -61,13 +61,13 @@ export const postItemError = error => ({
   error
 });
 
-export const postItem = (item, getState) => dispatch => {
+export const postItem = ( getState) => dispatch => {
   return fetch(`${API_BASE_URL}/products/`, {
     method: "POST",
     headers: {
       "content-type": "application/json"
     },
-    body: JSON.stringify({item})
+    body: JSON.stringify({getState})
   })
     .then(res => normalizeResponseErrors(res))
     .then(res => res.json())
