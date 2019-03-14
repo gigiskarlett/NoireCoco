@@ -28,9 +28,24 @@ class NewInventoryEntry extends React.Component {
   //handles submission of form and dispatches action to post api call
   handleSubmit(e) {
     e.preventDefault();
-    this.props.dispatch(postItem(this.state));
+    this.props.dispatch(postItem(this.state))
+    .then(() => this.clearFields())
   }
-//renders form
+
+  clearFields(){
+    this.setState({
+      name: "",
+      url: "",
+      imageUrl: "",
+      secondImage: "",
+      thirdImage: "",
+      shortDescription: "",
+      details: "",
+      price: "",
+      style: "one-piece bikini"
+    });
+  };
+  //renders form
   render() {
     return (
       <React.Fragment>
@@ -164,7 +179,7 @@ class NewInventoryEntry extends React.Component {
               </select>
             </label>
             <button type="submit" className="submit-button">
-            ADD PRODUCT
+              ADD PRODUCT
             </button>
             <button type="button" className="cancel-button">
               <Link className="cancel-button" to="/admin">
