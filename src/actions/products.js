@@ -98,10 +98,15 @@ export const postProduct = item => dispatch => {
   // //   })
   // //     .then(res => normalizeResponseErrors(res))
   // //     .then(res => res.json())
-  // //     .catch(err => {
-  // //       console.error(err);
-  // //     });
-  // // };
+  // .catch(err => {
+  //   let message;
+  //   if (err.code === 422) {
+  //     message = err.message;
+  //   } else if (err.code === 500) {
+  //     message = "Internal server error";
+  //   } else {
+  //     message = "Something went wrong, please try again later";
+  //   }
 
   // export const deleteProduct = product => dispatch => {
   //   return fetch(`${API_BASE_URL}/api/products/`, {
@@ -113,8 +118,14 @@ export const postProduct = item => dispatch => {
   //   })
   //     .then(res => normalizeResponseErrors(res))
   //     .then(res => res.json())
-  //     .catch(err => {
-  //       console.error(err);
-  //     });
-};
+//   .catch(err => {
+//     let message;
+//     if (err.code === 422) {
+//       message = err.message;
+//     } else if (err.code === 500) {
+//       message = "Internal server error";
+//     } else {
+//       message = "Something went wrong, please try again later";
+//     }
+// };
 //
