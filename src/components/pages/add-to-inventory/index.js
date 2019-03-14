@@ -21,7 +21,6 @@ class NewInventoryEntry extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
-let item;
     this.props.dispatch(postProduct(this.state.item));
   }
 
@@ -49,7 +48,7 @@ let item;
         <form
           className="inventory-form "
           aria-live="polite"
-          onSubmit={e => this.onSubmit(e)}
+          onSubmit={e => this.handleSubmit(e)}
         >
           <legend>ADD INVENTORY</legend>
           <fieldset>
