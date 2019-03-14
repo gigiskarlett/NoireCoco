@@ -55,10 +55,9 @@ export const postProductsSuccess = item => ({
   item
 });
 
-
 export const POST_PRODUCTS_ERROR = "POST_PRODUCTS_ERROR";
 export const postProductsError = error => ({
-  type: POST,
+  type: POST_PRODUCTS_ERROR,
   error
 });
 
@@ -68,17 +67,7 @@ export const postProduct = item => dispatch => {
     headers: {
       "content-type": "application/json"
     },
-    body: JSON.stringify({
-      name,
-      imageUrl,
-      secondImage,
-      thirdImage,
-      details,
-      shortDescription,
-      price,
-      style,
-      url
-    })
+    body: JSON.stringify({item})
   })
     .then(res => normalizeResponseErrors(res))
     .then(res => res.json())
@@ -87,47 +76,45 @@ export const postProduct = item => dispatch => {
       let message;
       if (err.code === 422) {
         message = err.message;
-        }  else if (err.code === 500) {
-          message = 'Internal server error';
-        } else {
-          message = 'Something went wrong, please try again later';
-        }
-});
+      } else if (err.code === 500) {
+        message = "Internal server error";
+      } else {
+        message = "Something went wrong, please try again later";
+      }
+    });
 
+  // //success and error action
+  // //get all
+  // //store
+  // //
 
+  // // export const updateProduct = product => dispatch => {
+  // //   return fetch(`${API_BASE_URL}/api/products/`, {
+  // //     method: "PUT",
+  // //     headers: {
+  // //       "content-type": "application/json"
+  // //     },
+  // //     body: JSON.stringify(product)
+  // //   })
+  // //     .then(res => normalizeResponseErrors(res))
+  // //     .then(res => res.json())
+  // //     .catch(err => {
+  // //       console.error(err);
+  // //     });
+  // // };
 
-// //success and error action
-// //get all
-// //store
-// //
-
-// // export const updateProduct = product => dispatch => {
-// //   return fetch(`${API_BASE_URL}/api/products/`, {
-// //     method: "PUT",
-// //     headers: {
-// //       "content-type": "application/json"
-// //     },
-// //     body: JSON.stringify(product)
-// //   })
-// //     .then(res => normalizeResponseErrors(res))
-// //     .then(res => res.json())
-// //     .catch(err => {
-// //       console.error(err);
-// //     });
-// // };
-
-// export const deleteProduct = product => dispatch => {
-//   return fetch(`${API_BASE_URL}/api/products/`, {
-//     method: "DELETE",
-//     headers: {
-//       "content-type": "application/json"
-//     },
-//     body: JSON.stringify(product)
-//   })
-//     .then(res => normalizeResponseErrors(res))
-//     .then(res => res.json())
-//     .catch(err => {
-//       console.error(err);
-//     });
-}
-// 
+  // export const deleteProduct = product => dispatch => {
+  //   return fetch(`${API_BASE_URL}/api/products/`, {
+  //     method: "DELETE",
+  //     headers: {
+  //       "content-type": "application/json"
+  //     },
+  //     body: JSON.stringify(product)
+  //   })
+  //     .then(res => normalizeResponseErrors(res))
+  //     .then(res => res.json())
+  //     .catch(err => {
+  //       console.error(err);
+  //     });
+};
+//
