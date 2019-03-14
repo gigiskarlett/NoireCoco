@@ -20,7 +20,7 @@ class NewInventoryEntry extends React.Component {
       shortDescription: "",
       details: "",
       price: "",
-      style: ""
+      style: "one-piece bikini"
     };
   }
 
