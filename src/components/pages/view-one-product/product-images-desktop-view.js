@@ -1,39 +1,51 @@
 import React from "react";
+
+import { connect } from "react-redux";
 import "./product-images-desktop-view.css";
 
-export function ProductImagesDesktopView(props) {
-  return (
-    <React.Fragment>
-      <div className="image-container">
-        <div className="hero right">
-          <img
-            src="https://i.ibb.co/vPVX4tQ/2019-sexy-black-yellow-high-waist-cut-out-trikini-ribbed-bathing-suit-monokini-hollow-out-shoulder-swimwear-one-piece-swimsuit-1.jpg "
-            alt="igh-waist-cut-out-trikini-ribbed-bathing-suit."
-          />
-        </div>
-        <div className="left-thumbnails">
-          <a className="thumbnail" href="#">
-            <img
-              src="https://i.ibb.co/ft853Pz/2019-sexy-black-yellow-high-waist-cut-out-trikini-ribbed-bathing-suit-monokini-hollow-out-shoulder-swimwear-one-piece-swimsuit-2.jpg"
-              alt="trikini-ribbed-bathing-suit-monokini-hollow-out-shoulder-swimwear-one-piece-swimsuit."
-            />
-          </a>
-          <a className="thumbnail" href="#">
-            <img
-              src="https://i.ibb.co/9qZdCqQ/2019-sexy-black-yellow-high-waist-cut-out-trikini-ribbed-bathing-suit-monokini-hollow-out-shoulder-swimwear-one-piece-swimsuit-3.jpg"
-              alt="trikini-ribbed-bathing-suit-monokini-hollow-out-shoulder-swimwear-one-piece-swimsuit"
-            />
-          </a>
-        </div>
-      </div>
-    </React.Fragment>
-  );
+export class ProductImagesDesktopView extends React.Component {
+
+  render() {
+    console.log(this.props)
+    const products = this.props.products.map(
+      (product) => {
+        return (
+          <React.Fragment>
+            <div className="image-container" id="">
+              <div className="hero right">
+                <img src={product.imageUrl} alt={product.shortDescription} />
+              </div>
+              <div className="left-thumbnails">
+                <a className="thumbnail" href="#">
+                  <img
+                    src={product.secondImage}
+                    alt={product.shortDescription}
+                  />
+                </a>
+                <a className="thumbnail" href="#">
+                  <img
+                    src={product.thirdImage}
+                    alt={product.shortDescription}
+                  />
+                </a>
+              </div>
+            </div>
+          </React.Fragment>
+        );
+      });
+      return <React.Fragment>{products}</React.Fragment>
+  }
 }
+const mapStateToProps = state => ({
+  products: state.products.products
+});
+
+export default connect(mapStateToProps)(ProductImagesDesktopView);
 
 //TRANSLATE THIS TO REACT
 // function handleThumbnailClicks() {
 //     $('.thumbnail').on('click', function(event) {
-//        const imgSrc = $(this).find('img').attr('src');
+//        const imgSrc = $(this).find('img').attr('src'); 
 //        const imgAlt = $(this).find('img').attr('alt');
 //     $('.hero img').attr({'src': imgSrc, 'alt': imgAlt});
 //     });
