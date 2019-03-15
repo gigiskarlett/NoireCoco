@@ -34,11 +34,9 @@ class Products extends React.Component {
               <p className="short-description">{product.shortDescription}</p>
               <p className="product-price">{product.price}</p>
               <button className="product-button">
-                <Link className="link-button" to={product.url}>
-                  {" "}
-                  {/*Todo use link tag */}
+                <a href={product.url} className="link-button">
                   BUY NOW
-                </Link>
+                </a>
               </button>
             </div>
           </div>
