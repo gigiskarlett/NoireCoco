@@ -22,6 +22,7 @@
 
 .listing-products {
     list-style-type: none;
+    padding: 0;
 }
 
 .product-image {
