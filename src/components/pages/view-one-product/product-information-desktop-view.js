@@ -14,18 +14,14 @@ export class ProductInformationDesktopView extends React.Component {
             src="https://i.ibb.co/CbBVXLq/imageedit-16-2644387967.png"
             alt="heart"
           />
-          STRAPPY HIGH RISE THONG CUT BIKINI BOTTOMS IN WHITE
+         {this.props.product.name}
         </h2>
-        <h4 className="price">$40.00</h4>
-        <h3 className="colour-heading">COLOUR</h3>
-        <p className="colour">WHITE</p>
+        <h4 className="price">{this.props.product.price}</h4>
         <div className="desktop-product-details">
           <h3 className="details-heading">DETAILS</h3>
           <hr color="#FF70BD" />
           <p className="details">
-            Fabric: 80% chinlon,20% spandex Design: Falbala design Tie at back
-            About Cup Style: Padding bra Garment Care: Hand Wash and Hang Dry.
-            Recommend with Cold Water. Do not Use Bleach.
+           {this.props.product.details}
           </p>
         </div>
         <Button />
@@ -34,4 +30,3 @@ export class ProductInformationDesktopView extends React.Component {
   }
 }
 
-//pass state+props from db item
