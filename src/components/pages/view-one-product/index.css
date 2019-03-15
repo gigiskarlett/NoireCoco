@@ -17,7 +17,7 @@
     .product-container-desktop-view {
         margin: 20px 0 100px 0;
         display: flex;
-        padding: 70px;
+        padding: 80px;
     }
     .desktop-view {
         display: unset;
