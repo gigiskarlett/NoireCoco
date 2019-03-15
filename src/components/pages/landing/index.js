@@ -1,5 +1,6 @@
 import React from "react";
 
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import { NavBar } from "../../reusable/navBar";
 import { InstagramBanner } from "../../reusable/instagram-banner";
 import { Footer } from "../../reusable/footer";
@@ -23,7 +24,22 @@ export default class LandingPage extends React.Component {
         <div className="landing-banner">
           <h2>shop new styles</h2>
         </div>
-        <section className="shop-by-style" />
+        <div className="shop-by-style-container">
+          <Link to="/shop">
+            <img
+              src="https://i.ibb.co/Rjs5cJ0/imageedit-52-9996487550.jpg"
+              alt="shop-two-piece-sets"
+              className="shop-two-piece"
+            />
+          </Link>
+          <Link to="/shop">
+            <img
+              src="https://i.ibb.co/4WNdwD0/imageedit-45-5144540347.jpg"
+              alt="shop-one-piece-swimsuits"
+              className="shop-one-piece"
+            />
+          </Link>
+        </div>
         <InstagramBanner />
         <EmailCapture />
         <Footer />
