@@ -2,22 +2,38 @@
     background-color: #F1EAEA;
     text-align: center;
 }
+
 .landing-banner {
     background-color: #F5C6D7;
     height: 300px;
 }
+
 .catchy-phrase {
     padding: 12px;
     font-size: 15px;
     font-family: 'Shadows Into Light Two', cursive;
 }
 
-.shop-by-style {
+.shop-by-style-container {
     background-color: #F4F4F4;
-    height: 400px;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
 }
 
+.shop-one-piece {
+    height: 50%;
 
+}
+
+.shop-two-piece {
+    height: 50%;
+}
+
+.banner-with-bikinis {
+    display: flex;
+    justify-content: space-around;
+}
 
 @media (min-width: 650px) {
     .about-us-banner {
@@ -33,8 +49,19 @@
         padding-left: 15px;
         padding-right: 15px;
     }
+    .shop-by-style-container {
+        display: flex;
+        background-color: #F4F4F4;
+        height: 900px;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 40px;
+    }
+    .shop-one-piece {
+        height: 750px;
+    }
 
-    .shop-by-style {
-        height: 700px;
+    .shop-two-piece {
+        height: 750px;
     }
 }
