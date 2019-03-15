@@ -25,20 +25,20 @@ export default class LandingPage extends React.Component {
           <h2>shop new styles</h2>
         </div>
         <div className="shop-by-style-container">
-          <Link to="/shop">
-            <img
-              src="https://i.ibb.co/Rjs5cJ0/imageedit-52-9996487550.jpg"
-              alt="shop-two-piece-sets"
-              className="shop-two-piece"
-            />
-          </Link>
-          <Link to="/shop">
-            <img
-              src="https://i.ibb.co/4WNdwD0/imageedit-45-5144540347.jpg"
-              alt="shop-one-piece-swimsuits"
-              className="shop-one-piece"
-            />
-          </Link>
+          {/*<a href="" className="shop-two-piece-link">*/}
+          <img
+            src="https://i.ibb.co/Rjs5cJ0/imageedit-52-9996487550.jpg"
+            alt="shop-two-piece-sets"
+            className="shop-two-piece"
+          />
+          {/*</a>*/}
+          {/*<a href="" className="shop-one-piece-link">*/}
+          <img
+            src="https://i.ibb.co/4WNdwD0/imageedit-45-5144540347.jpg"
+            alt="shop-one-piece-swimsuits"
+            className="shop-one-piece"
+          />
+          {/*</a>*/}
         </div>
         <InstagramBanner />
         <EmailCapture />
