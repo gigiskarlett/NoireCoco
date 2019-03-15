@@ -13,13 +13,13 @@ import { Footer } from "../../reusable/footer";
 import "./index.css";
 
 //Renders page with product selected
-
-export class ShowOneProduct extends React.Component {
+class ShowOneProduct extends React.Component {
+  constructor(props) {
+    super(props);
+  }
   componentDidMount() {
-    //use postman and paste an id here
     this.props.dispatch(getOneProduct("5c872bdd9edb2b3123a68075"));
   }
-
   render() {
     return (
       <React.Fragment>
@@ -28,16 +28,15 @@ export class ShowOneProduct extends React.Component {
         <div className="desktop-view">
           <div className="product-container-desktop-view">
             <ProductImagesDesktopView product={this.product} />
-            <ProductInformationDesktopView />
+            <ProductInformationDesktopView product={this.product} />
           </div>
         </div>
         <div className="mobile-view">
           <div className="product-container-mobile-view">
-            <ProductInformationMobileView />
+            <ProductInformationMobileView product={this.product} />
           </div>
         </div>
         <Footer />
-        {/* Hello this is a comment */}
       </React.Fragment>
     );
   }
