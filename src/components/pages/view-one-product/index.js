@@ -27,13 +27,13 @@ class ShowOneProduct extends React.Component {
         <ReusableBanner />
         <div className="desktop-view">
           <div className="product-container-desktop-view">
-            <ProductImagesDesktopView product={this.product} />
-            <ProductInformationDesktopView product={this.product} />
+            <ProductImagesDesktopView product={this.props.product} />
+            <ProductInformationDesktopView product={this.props.product} />
           </div>
         </div>
         <div className="mobile-view">
           <div className="product-container-mobile-view">
-            <ProductInformationMobileView product={this.product} />
+            <ProductInformationMobileView product={this.props.product} />
           </div>
         </div>
         <Footer />
