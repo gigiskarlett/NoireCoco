@@ -44,8 +44,9 @@
 .call-to-action {
     font-family: 'Shadows Into Light Two', cursive;
     text-align: center;
-    font-size: 15px;
+    font-size: 25px;
     margin: auto;
+    margin-bottom: 5px;
 }
 
 @media (min-width: 650px) {
