@@ -6,7 +6,7 @@ import NewInventoryEntry from "../components/pages/add-to-inventory"
 import LandingPage from "../../src/components/pages/landing";
 import { AboutUs } from "../../src/components/pages/about-us";
 import ViewAllSwimwear from "../../src/components/pages/view-all-swimwear";
-import { ShowOneProduct } from "../../src/components/pages/view-one-product";
+import  ShowOneProduct from "../../src/components/pages/view-one-product";
 import Inventory from "../../src/components/pages/inventory";
 
 import { refreshAuthToken } from "../actions/auth";
