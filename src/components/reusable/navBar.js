@@ -7,11 +7,13 @@ import "./navBar.css";
 export function NavBar(props) {
   return (
     <nav>
+    <Link to="/">
       <img
         className="logo"
         src="https://i.ibb.co/VNZVnvr/imageedit-35-5868682626.png"
         alt="Noire Coco logo"
       />
+      </Link>
       <ul className="nav-links">
         <li className="link"><Link className="link" aria-label="Shop" to="/shop">Shop</Link></li>
         <li className="link"><Link className="link" aria-label="New"to="/new">New</Link></li>
