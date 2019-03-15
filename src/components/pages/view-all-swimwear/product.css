@@ -9,6 +9,10 @@
     color: #F96DB9;
 }
 
+.link-button, .name-link, .product-name, .short-description{
+    font-family: 'Rufina', serif;
+}
+
 .product-container {
     padding: 5px;
     width: 150px;
