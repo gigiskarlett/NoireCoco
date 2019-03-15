@@ -1,19 +1,19 @@
 import React from "react";
 
-import { connect } from "react-redux";
 import "./product-images-desktop-view.css";
 
+//renders images on desktop view for one product
 export class ProductImagesDesktopView extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      selectedImage: props.product.imageUrl
-    };
+    //   this.state = {
+    //     selectedImage: this.props.product.imageUrl
+    //   };
   }
   render() {
     return (
-      <div className="image-container" id="">
-        <img src={this.state.selectedImage} />
+      <div className="image-container">
+        {/*<img src={this.props.product.selectedImage} alt="main-image" />*/}
         <div className="hero right">
           <img
             src={this.props.product.imageUrl}
@@ -44,13 +44,3 @@ export class ProductImagesDesktopView extends React.Component {
     );
   }
 }
-
-//TRANSLATE THIS TO REACT
-// function handleThumbnailClicks() {
-//     $('.thumbnail').on('click', function(event) {
-//        const imgSrc = $(this).find('img').attr('src');
-//        const imgAlt = $(this).find('img').attr('alt');
-//     $('.hero img').attr({'src': imgSrc, 'alt': imgAlt});
-//     });
-//   }
-//   $(handleThumbnailClicks);
