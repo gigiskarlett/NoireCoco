@@ -64,4 +64,21 @@
     .shop-two-piece {
         height: 750px;
     }
+
+    .landing-banner{
+        display: flex;
+    }
+
+    .banner-left-img-container, .banner-right-img-container, .banner-center-img-container{
+        display: flex;
+    }
+
+    .banner-left-image, .banner-right-image, .banner-center-image {
+        height: 250px;
+    }
+
+    .left-img-word, .center-img-word, .right-img-word {
+        display: flex;
+    }
+
 }
