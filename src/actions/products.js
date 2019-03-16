@@ -125,16 +125,19 @@ export const deleteItemError = error => ({
   error
 });
 
-// export const deleteProduct = product => dispatch => {
-//   return fetch(`${API_BASE_URL}/products/`, {
-//     method: "DELETE",
-//     headers: {
-//       "content-type": "application/json"
-//   })
-//     .then(res => normalizeResponseErrors(res))
-//     .then(res => res.json())
-//      .catch(err => {
-//   console.log("Whoops! Try this again.");
-//   dispatch(fetchProductsError(err));
-// });
-// };
+export const deleteInventoryItem = itemId => dispatch => {
+  return fetch(`${API_BASE_URL}/products/${itemId}`, {
+    method: "GET",
+    headers: {
+      Accept: "application/json",
+      "content-type": "application/json"
+    }
+  })
+    .then(res => normalizeResponseErrors(res))
+    .then(res => res.json())
+    .then(item => dispatch(deleteItemSuccess(item)))
+    .catch(err => {
+      console.log("Whoops! Try this again.");
+      dispatch(deleteItemError(err));
+    });
+};
