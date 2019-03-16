@@ -22,7 +22,31 @@ export default class LandingPage extends React.Component {
           </p>
         </div>
         <div className="landing-banner">
-          <h2>shop new styles</h2>
+          <div className="landing-banner-left-img">
+          <img
+          src="https://i.ibb.co/6tjr3rC/Screen-Shot-2019-03-15-at-1-39-03-PM.png"
+          alt="girl-in-monokini-image"
+          className="banner-left-image"
+        />
+        <p className="left-img-word">Shop</p>
+          </div>
+          <div className="landing-banner-center-img">
+          <img
+          src="  https://i.ibb.co/TY7Z4F2/Screen-Shot-2019-02-11-at-8-26-10-AM.png"
+          alt="girl-in-two-piece-swimsuit-image"
+          className="banner-center-image"
+        />
+      
+        <p className="center-img-word">New</p>
+          </div>
+          <div className="landing-banner-right-img">
+          <img
+          src="https://i.ibb.co/sFVCvgS/Screen-Shot-2019-03-01-at-4-32-50-PM.png"
+          alt="girl-in-one-piece-swimsuit-sitting"
+          className="banner-right-image"
+        />
+        <p className="right-img-word">Styles</p>
+          </div>
         </div>
         <div className="shop-by-style-container">
           {/*<a href="" className="shop-two-piece-link">*/}
