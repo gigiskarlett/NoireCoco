@@ -67,6 +67,7 @@
 
     .landing-banner{
         display: flex;
+        justify-content: space-around;
     }
 
     .banner-left-img-container, .banner-right-img-container, .banner-center-img-container{
@@ -74,7 +75,7 @@
     }
 
     .banner-left-image, .banner-right-image, .banner-center-image {
-        height: 250px;
+        height: 250px;  
     }
 
     .left-img-word, .center-img-word, .right-img-word {
