@@ -79,4 +79,11 @@
     .banner-left-image {
         transform: rotate(-6deg);
     }
+    .banner-center-image{
+        transform: rotate(3deg);
+    }
+
+    .banner-right-image {
+
+    }
 }
