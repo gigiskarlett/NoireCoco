@@ -33,9 +33,9 @@ export function AboutUs(props) {
           swimwear.
         </p>
          <hr color="#FF70BD" />
-        <div className="empty-div"></div>
+        <div className="empty-div-about-us"></div>
        <Button/>
-       <div className="empty-space"></div>
+       <div className="empty-space-about-us"></div>
        <Footer/>
      </section>
     </React.Fragment>
