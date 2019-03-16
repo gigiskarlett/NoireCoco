@@ -136,6 +136,7 @@ export const deleteInventoryItem = itemId => dispatch => {
     .then(res => normalizeResponseErrors(res))
     .then(res => res.json())
     .then(item => dispatch(deleteItemSuccess(item)))
+    .then(dispatch(getAllProducts()))
     .catch(err => {
       console.log("Whoops! Try this again.");
       dispatch(deleteItemError(err));
