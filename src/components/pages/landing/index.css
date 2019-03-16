@@ -69,13 +69,12 @@
         height: 400px;
     }
     .banner-left-img-container, .banner-right-img-container, .banner-center-img-container {
-        display: flex;
+        text-align:center;
+        font-size: 35px;
+        font-family: 'Rufina', serif;
     }
     .banner-left-image, .banner-right-image, .banner-center-image {
         height: 250px;
-    }
-    .left-img-word, .center-img-word, .right-img-word {
-        display: flex;
     }
     .banner-left-image {
         transform: rotate(-6deg);
