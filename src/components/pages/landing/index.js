@@ -41,8 +41,8 @@ export default class LandingPage extends React.Component {
           </div>
           <div className="banner-right-img-container">
             <img
-              src="https://i.ibb.co/sFVCvgS/Screen-Shot-2019-03-01-at-4-32-50-PM.png"
-              alt="girl-in-one-piece-swimsuit-sitting"
+              src="https://i.ibb.co/KNB83Lk/Screen-Shot-2019-03-16-at-12-11-59-PM.png"
+              alt="girl-in-two-piece-swimsuit"
               className="banner-right-image"
             />
             <p className="right-img-word">Styles</p>
