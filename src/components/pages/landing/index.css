@@ -65,7 +65,7 @@
     justify-content: space-around;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 650px) {
     .about-us-banner {
         height: 100px;
     }
@@ -84,17 +84,21 @@
     .shop-one-piece {
         height: 750px;
     }
+    .landing-banner {
+        height: 300px;
+    }
     .shop-two-piece {
         height: 750px;
     }
     .landing-banner {
         height: 400px;
-        padding: 0px;
     }
     .banner-left-img-container, .banner-right-img-container, .banner-center-img-container {
         font-size: 35px;
+        height: auto;
     }
     .banner-left-image, .banner-right-image, .banner-center-image {
         height: 300px;
+        width: auto;
     }
 }
