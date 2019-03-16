@@ -6,6 +6,9 @@ import "./item.css";
 
 //Renders items in the database
 class InventoryItem extends React.Component {
+  deleteItem(itemId) {
+    this.props.dispatch(deleteInventoryItem(itemId))
+  }
   render() {
     const products = this.props.products.map((product, i) => {
       return (
@@ -46,12 +49,16 @@ class InventoryItem extends React.Component {
             <h4 className="field-header">STYLE</h4>
             <p className="inventory-list">{product.style}</p>
           </section>
-          <input
-            type="image"
-            src="https://i.ibb.co/jRXb1ng/icons8-delete-60-1.png"
+          <button
+            id={product.id}
+            type="button"
             className="delete-icon"
             alt="delete icon"
-          />
+            onClick={e => {
+              e.preventDefault();
+              this.deleteItem(`${product.id}`);
+            }}
+          >X</button>
         </section>
       );
     });
