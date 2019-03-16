@@ -14,7 +14,7 @@ export default class LandingPage extends React.Component {
       <React.Fragment>
         <NavBar />
         <div className="about-us-banner">
-          <p className="catchy-phrase">SWIM</p>
+          <p className="catchy-phrase title-for-catchy-phrase">SWIM</p>
           <p className="catchy-phrase">
             There’s nothing better than wearing the perfect swimwear to go to
             the pool or the beach, that’s why we have selected our favorite
