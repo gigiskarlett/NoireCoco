@@ -18,7 +18,7 @@ export default class LandingPage extends React.Component {
           <p className="catchy-phrase">
             There’s nothing better than wearing the perfect swimwear to go to
             the pool or the beach, that’s why we have selected our favorite
-            selection of swimwear for you
+            selection of quality and beautiful swimwear for you
           </p>
         </div>
         <div className="landing-banner">
