@@ -5,12 +5,39 @@
 
 .landing-banner {
     background-color: #F5C6D7;
-    height: 250px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding: 15px;
 }
 
+.banner-left-image, .banner-right-image, .banner-center-image {
+    width: 75%;
+    height: 80%;
+}
+
+.banner-left-img-container, .banner-right-img-container, .banner-center-img-container {
+    text-align: center;
+    font-size: 23px;
+    font-family: 'Rufina', serif;
+    height: 125px;
+}
+
+.banner-right-image {
+    width: 100%;
+}
+
+.banner-left-image {
+    transform: rotate(-6deg);
+}
+
+.banner-center-image {
+    transform: rotate(3deg);
+}
+
+.banner-right-image {
+    transform: rotate(-3deg);
+}
 
 .catchy-phrase {
     padding: 12px;
@@ -38,7 +65,7 @@
     justify-content: space-around;
 }
 
-@media (min-width: 650px) {
+@media (min-width: 769px) {
     .about-us-banner {
         height: 100px;
         text-align: center;
@@ -68,9 +95,10 @@
     }
     .landing-banner {
         height: 400px;
+        padding: 0px;
     }
     .banner-left-img-container, .banner-right-img-container, .banner-center-img-container {
-        text-align:center;
+        text-align: center;
         font-size: 35px;
         font-family: 'Rufina', serif;
     }
