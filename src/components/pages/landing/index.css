@@ -23,7 +23,6 @@
 
 .shop-one-piece {
     height: 50%;
-
 }
 
 .shop-two-piece {
@@ -60,27 +59,24 @@
     .shop-one-piece {
         height: 750px;
     }
-
     .shop-two-piece {
         height: 750px;
     }
-
-    .landing-banner{
+    .landing-banner {
         display: flex;
         justify-content: space-around;
         align-items: center;
     }
-
-    .banner-left-img-container, .banner-right-img-container, .banner-center-img-container{
+    .banner-left-img-container, .banner-right-img-container, .banner-center-img-container {
         display: flex;
     }
-
     .banner-left-image, .banner-right-image, .banner-center-image {
-        height: 250px;  
+        height: 250px;
     }
-
     .left-img-word, .center-img-word, .right-img-word {
         display: flex;
     }
-
+    .banner-left-image {
+        transform: rotate(-6deg);
+    }
 }
