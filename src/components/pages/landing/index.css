@@ -47,17 +47,16 @@
 
 .shop-by-style-container {
     background-color: #F4F4F4;
-    height: 800px;
     display: flex;
     flex-direction: column;
 }
 
 .shop-one-piece {
-    height: 50%;
+    width: 100%;
 }
 
 .shop-two-piece {
-    height: 50%;
+ width: 100%;
 }
 
 .banner-with-bikinis {
@@ -84,6 +83,7 @@
     .shop-one-piece {
         height: 750px;
     }
+
     .landing-banner {
         height: 300px;
     }
