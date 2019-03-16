@@ -68,10 +68,6 @@
 @media (min-width: 769px) {
     .about-us-banner {
         height: 100px;
-        text-align: center;
-    }
-    .landing-banner {
-        height: 300px;
     }
     .catchy-phrase {
         padding: 10px;
@@ -80,8 +76,6 @@
         padding-right: 15px;
     }
     .shop-by-style-container {
-        display: flex;
-        background-color: #F4F4F4;
         height: 900px;
         flex-direction: row;
         justify-content: space-around;
@@ -98,20 +92,9 @@
         padding: 0px;
     }
     .banner-left-img-container, .banner-right-img-container, .banner-center-img-container {
-        text-align: center;
         font-size: 35px;
-        font-family: 'Rufina', serif;
     }
     .banner-left-image, .banner-right-image, .banner-center-image {
         height: 300px;
-    }
-    .banner-left-image {
-        transform: rotate(-6deg);
-    }
-    .banner-center-image {
-        transform: rotate(3deg);
-    }
-    .banner-right-image {
-        transform: rotate(-3deg);
     }
 }
