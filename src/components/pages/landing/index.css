@@ -28,7 +28,7 @@
 }
 
 .banner-left-image {
-    transform: rotate(-6deg);
+    transform: rotate(-4deg);
 }
 
 .banner-center-image {
@@ -36,11 +36,11 @@
 }
 
 .banner-right-image {
-    transform: rotate(-3deg);
+    transform: rotate(2deg);
 }
 
 .catchy-phrase {
-    padding: 12px;
+    padding: 5px;
     font-size: 15px;
     font-family: 'Shadows Into Light Two', cursive;
 }
@@ -56,12 +56,7 @@
 }
 
 .shop-two-piece {
- width: 100%;
-}
-
-.banner-with-bikinis {
-    display: flex;
-    justify-content: space-around;
+    width: 100%;
 }
 
 @media (min-width: 650px) {
@@ -80,15 +75,15 @@
         justify-content: space-around;
         padding: 40px;
     }
-    .shop-one-piece {
-        height: 750px;
+    .title-for-catchy-phrase {
+        padding-bottom: 3px;
     }
-
     .landing-banner {
         height: 300px;
     }
-    .shop-two-piece {
+    .shop-two-piece, .shop-one-piece {
         height: 750px;
+        width: auto;
     }
     .landing-banner {
         height: 400px;
@@ -100,5 +95,11 @@
     .banner-left-image, .banner-right-image, .banner-center-image {
         height: 300px;
         width: auto;
+    }
+    .banner-left-image {
+        transform: rotate(-6deg);
+    }
+    .banner-right-image {
+        transform: rotate(-3deg);
     }
 }
