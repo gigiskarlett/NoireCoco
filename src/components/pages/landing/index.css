@@ -5,8 +5,12 @@
 
 .landing-banner {
     background-color: #F5C6D7;
-    height: 300px;
+    height: 250px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
+
 
 .catchy-phrase {
     padding: 12px;
