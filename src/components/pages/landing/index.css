@@ -66,6 +66,7 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
+        height: 400px;
     }
     .banner-left-img-container, .banner-right-img-container, .banner-center-img-container {
         display: flex;
