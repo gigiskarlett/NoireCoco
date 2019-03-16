@@ -3,8 +3,10 @@
 }
 
 .delete-icon {
-    height: 20px;
+    font-size: 20px;
     border:none;
+    color: red;
+    font-weight: bolder;
 }
 
 .inventory-items {
