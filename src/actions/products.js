@@ -127,7 +127,7 @@ export const deleteItemError = error => ({
 
 export const deleteInventoryItem = itemId => dispatch => {
   return fetch(`${API_BASE_URL}/products/${itemId}`, {
-    method: "GET",
+    method: "DELETE",
     headers: {
       Accept: "application/json",
       "content-type": "application/json"
