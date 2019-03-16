@@ -1,6 +1,7 @@
 import React from "react";
 
 import { connect } from "react-redux";
+import { deleteInventoryItem } from "../../../actions/products";
 import "./item.css";
 
 //Renders items in the database
