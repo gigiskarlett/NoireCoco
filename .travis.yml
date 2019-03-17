@@ -3,3 +3,10 @@ node_js: node
 cache:
   directories:
   - node_modules
+deploy:
+  provider: heroku
+  api_key:
+    secure: i8zInpwKp088XcVwmjEyZXdhPAE7j81jzmmyocaGW/UcGvbTqtzTiUsnKgoDGhQADZDx4+kp8qdeecEDMXBn0KjxnFLGRibD4QLoiIsOgzSrBvaVmmYwzM4qIaeOSJttn2f67cwhXkjnsVhJ2SYgXdkmvTgpcm1nkK+ZXnF2jQMYrYzUmswYsUJjYBVyx3ebr4gsTszbSRFdZ3fp+6/WbR6GV1R5BBkBURYtPCawQZPisfQ0X6f72iQfh1pRJiokoDtiUlCC/4GxdW8LhVQSg7cDR5G7SNrOc0B8CdK2otxjHfMWW0Dv9a6+x+Q5KkAJOguevGxFSyCZHbp3RcQB5QmcAGpNfnFe3lgmM3PAD//kbeRwGN1xlHJ/hey2lAYWS2YgSZsA9N50CitACqhTkYL+5XPuWku0av1vuVOwQxF3hizRpzAHNMWLqKw0Zggrm/Vq2FeRGCFYtGUvZ8b9zAfbf04qD6j37HxHgYGNA//tgO1IhxH1K+bMpddg9SJkqUmpLRmVsISH+UXUbB4zds95uctCQkh5wPi19HLa/KmCUchqroj7xyUV2CM0B5zWiaEaPhWYlsOcAvHbZ6fJNZeDkQa38TMp59maCm1WXGJmLzFCJAxE2Fk0yuPHhZqlJfGQeFJEEpviqEBk1f+lqI2XLb37RBAF5xIhskJuKIY=
+  app: mysterious-shelf-82156
+  on:
+    repo: gigiskarlett/NoireCoco
