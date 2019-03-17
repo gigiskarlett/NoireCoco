@@ -18,7 +18,7 @@ export class ProductInformationMobileView extends React.Component {
           />
         {this.props.product.name}
         </h2>
-        <h4 className="price">{this.props.product.price}</h4>
+        <h4 className="price">${this.props.product.price}</h4>
         <ProductImagesMobileView product={this.props.product} />
         <div className="product-details">
           <h3 className="details-heading">DETAILS</h3>

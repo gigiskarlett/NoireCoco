@@ -43,7 +43,7 @@ class InventoryItem extends React.Component {
           </section>
           <section className="item-price">
             <h4 className="field-header">PRICE</h4>
-            <p className="inventory-list">{product.price}</p>
+            <p className="inventory-list">${product.price}</p>
           </section>
           <section className="style">
             <h4 className="field-header">STYLE</h4>

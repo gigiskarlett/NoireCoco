@@ -32,7 +32,7 @@ class Products extends React.Component {
                 </Link>
               </h6>
               <p className="short-description">{product.shortDescription}</p>
-              <p className="product-price">{product.price}</p>
+              <p className="product-price">${product.price}</p>
               <button className="product-button">
                 <a href={product.url} className="link-button">
                   BUY NOW
