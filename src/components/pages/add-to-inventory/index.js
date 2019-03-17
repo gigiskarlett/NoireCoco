@@ -56,7 +56,7 @@ class NewInventoryEntry extends React.Component {
           aria-live="polite"
           onSubmit={e => this.handleSubmit(e)}
         >
-          <legend>ADD INVENTORY</legend>
+          <legend>ADD TO INVENTORY</legend>
           <fieldset>
             <label htmlFor="name">
               NAME
