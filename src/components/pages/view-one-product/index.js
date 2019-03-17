@@ -18,7 +18,7 @@ class ShowOneProduct extends React.Component {
     super(props);
   }
   componentDidMount() {
-    this.props.dispatch(getOneProduct("5c872bdd9edb2b3123a68075"));
+    this.props.dispatch(getOneProduct("5c8e6eac3b396c1edc1f1c68"));
   }
   render() {
     return (
