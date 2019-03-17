@@ -159,7 +159,8 @@ class NewInventoryEntry extends React.Component {
                 onChange={e => this.setState({ price: e.target.value })}
                 aria-label="price"
                 className="inventory-input"
-                type="text"
+                type="number"
+                step="0.01"
                 name="product-price"
                 id="price"
                 required
