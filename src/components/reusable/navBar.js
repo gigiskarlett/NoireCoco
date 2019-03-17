@@ -16,7 +16,6 @@ export function NavBar(props) {
       </Link>
       <ul className="nav-links">
         <li className="link"><Link className="link" aria-label="Shop" to="/shop">Shop</Link></li>
-        <li className="link"><Link className="link" aria-label="New"to="/new">New</Link></li>
         <li className="link"><Link className="link"aria-label="About"to="/about">About</Link></li>
       </ul>
     </nav>
