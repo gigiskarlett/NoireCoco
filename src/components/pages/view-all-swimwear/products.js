@@ -27,14 +27,14 @@ class Products extends React.Component {
                   src="https://i.ibb.co/CbBVXLq/imageedit-16-2644387967.png"
                   alt="heart"
                 />
-                <Link className="name-link" to={`/shop/${product.id}`}>
+                <Link className="name-link" to={`/shop/${product.id}`} target="_blank">
                   {product.name}
                 </Link>
               </h6>
               <p className="short-description">{product.shortDescription}</p>
               <p className="product-price">${product.price}</p>
               <button className="product-button">
-                <a href={product.url} className="link-button">
+                <a target="_blank" href={product.url} className="link-button">
                   BUY NOW
                 </a>
               </button>
