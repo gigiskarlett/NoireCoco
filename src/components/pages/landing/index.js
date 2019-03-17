@@ -58,7 +58,7 @@ export default class LandingPage extends React.Component {
           {/*</a>*/}
           {/*<a href="" className="shop-one-piece-link">*/}
           <img
-            src="https://i.ibb.co/4WNdwD0/imageedit-45-5144540347.jpg"
+            src="https://i.ibb.co/G33rjhm/shop-one-piece.jpg"
             alt="shop-one-piece-swimsuits"
             className="shop-one-piece"
           />
