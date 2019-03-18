@@ -14,12 +14,6 @@ export class ProductImagesDesktopView extends React.Component {
     return (
       <div className="image-container">
         {/*<img src={this.props.product.selectedImage} alt="main-image" />*/}
-        <div className="hero right">
-          <img
-            src={this.props.product.imageUrl}
-            alt={this.props.product.shortDescription}
-          />
-        </div>
         <div className="left-thumbnails">
           <a className="thumbnail" href="#">
             <img
@@ -39,6 +33,12 @@ export class ProductImagesDesktopView extends React.Component {
               }
             />
           </a>
+        </div>
+        <div className="hero right">
+          <img
+            src={this.props.product.imageUrl}
+            alt={this.props.product.shortDescription}
+          />
         </div>
       </div>
     );
