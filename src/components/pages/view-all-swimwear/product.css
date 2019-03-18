@@ -13,6 +13,11 @@
     font-family: 'Rufina', serif;
 }
 
+.product-price{
+    margin: 5px 0 3px 0;
+    font-weight: bolder;
+}
+
 .product-container {
     padding: 5px;
     width: 150px;
@@ -38,9 +43,7 @@
     font-size: 12px;
     line-height: normal;
 }
-.product-price{
-    margin-bottom: 5px;
-}
+
 .product-name {
     font-size: 14px;
 }
@@ -100,5 +103,9 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+    }
+
+    .product-price {
+        font-size: 15px;
     }
 }
