@@ -4,6 +4,6 @@ import './banner.css';
 
 export function ReusableBanner(props) {
     return (
-        <div className="banner"></div>
+        <div className="banner">{props.text}</div>
     )
 }
