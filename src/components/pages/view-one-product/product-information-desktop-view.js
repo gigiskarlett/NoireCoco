@@ -1,5 +1,6 @@
 import React from "react";
 
+// import {newLine, replaceForNewLine} from '../../../functions/regex';
 import { Button } from "../../reusable/button";
 import "./product-information-desktop-view.css";
 
