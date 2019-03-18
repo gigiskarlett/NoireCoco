@@ -1,6 +1,6 @@
 <h1>Noire Coco</h1>
 
-<p>Noire Coco is a webpage that features a handpicked selection of beautiful, affordable, highly reviewed swimwear from<a href="https://www.amazon.com"/>Amazon</a>.I wanted to make beautiful quality swimwear with reasonable prices accessible to every woman who struggles either searching through hundreds of pages or even worse, after receiving the swimwear notices the bad reviews it had and now is stuck with a low-quality swimwear item. <p>
+<p>Noire Coco is a webpage that features a handpicked selection of beautiful, affordable, highly reviewed swimwear from <a href="https://www.amazon.com"/>Amazon</a>. I wanted to make beautiful quality swimwear with reasonable prices accessible to every woman who struggles either searching through hundreds of pages or even worse, after receiving the swimwear notices the bad reviews it had and now is stuck with a low-quality swimwear item. <p>
   
 <p>Noire Coco is a webpage that features a handpick selection of beautiful, affordable, highly reviewed swimwear from </p>
 
