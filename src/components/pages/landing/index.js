@@ -73,4 +73,3 @@ export default class LandingPage extends React.Component {
   }
 }
 
-//header with pics, pics that act as link to two pieces and one piece
