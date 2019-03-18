@@ -15,7 +15,7 @@ export class Filter extends React.Component {
     return (
       <div className="container">
         <div className="item-count-container">
-          <span>{this.countProducts()}</span>
+          {this.countProducts()}
         </div>
         <div className="right">
           <p className="sortBy">SORT BY</p>
