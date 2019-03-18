@@ -15,19 +15,16 @@ export class ProductInformationDesktopView extends React.Component {
             src="https://i.ibb.co/CbBVXLq/imageedit-16-2644387967.png"
             alt="heart"
           />
-         {this.props.product.name}
+          {this.props.product.name}
         </h2>
         <h4 className="price">${this.props.product.price}</h4>
         <div className="desktop-product-details">
           <h3 className="details-heading">DETAILS</h3>
           <hr color="#FF70BD" />
-          <p className="details">
-           {this.props.product.details}
-          </p>
+          <p className="details">{this.props.product.details}</p>
         </div>
-        <Button />
+        <Button text="Buy now" />
       </div>
     );
   }
 }
-

@@ -6,7 +6,7 @@ import { ReusableBanner } from "../../reusable/banner";
 import { Button } from "../../reusable/button";
 import { Footer } from "../../reusable/footer";
 
-//Renders about us page page 
+//Renders about us page page
 export function AboutUs(props) {
   return (
     <React.Fragment>
@@ -32,12 +32,12 @@ export function AboutUs(props) {
           women who finds herself always on a quest when trying to find
           swimwear.
         </p>
-         <hr color="#FF70BD" />
-        <div className="empty-div-about-us"></div>
-       <Button/>
-       <div className="empty-space-about-us"></div>
-       <Footer/>
-     </section>
+        <hr color="#FF70BD" />
+        <div className="empty-div-about-us" />
+        <Button text="Shop all swimwear" />
+        <div className="empty-space-about-us" />
+        <Footer />
+      </section>
     </React.Fragment>
   );
 }

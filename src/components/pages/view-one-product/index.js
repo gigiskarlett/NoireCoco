@@ -7,7 +7,7 @@ import { NavBar } from "../../reusable/navBar";
 import { ReusableBanner } from "../../reusable/banner";
 import { ProductInformationDesktopView } from "./product-information-desktop-view";
 import { ProductInformationMobileView } from "./product-information-mobile-view";
-import {ProductImagesDesktopView} from "./product-images-desktop-view";
+import { ProductImagesDesktopView } from "./product-images-desktop-view";
 import { Footer } from "../../reusable/footer";
 
 import "./index.css";
@@ -18,7 +18,7 @@ class ShowOneProduct extends React.Component {
     super(props);
   }
   componentDidMount() {
-    this.props.dispatch(getOneProduct("5c8e6eac3b396c1edc1f1c68"));
+    this.props.dispatch(getOneProduct(this.props.match.params.product));
   }
   render() {
     return (

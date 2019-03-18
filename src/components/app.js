@@ -2,11 +2,11 @@ import React from "react";
 import { connect } from "react-redux";
 import { Route, withRouter } from "react-router-dom";
 
-import NewInventoryEntry from "../components/pages/add-to-inventory"
+import NewInventoryEntry from "../components/pages/add-to-inventory";
 import LandingPage from "../../src/components/pages/landing";
 import { AboutUs } from "../../src/components/pages/about-us";
 import ViewAllSwimwear from "../../src/components/pages/view-all-swimwear";
-import  ShowOneProduct from "../../src/components/pages/view-one-product";
+import ShowOneProduct from "../../src/components/pages/view-one-product";
 import Inventory from "../../src/components/pages/inventory";
 
 import { refreshAuthToken } from "../actions/auth";
@@ -46,10 +46,11 @@ export class App extends React.Component {
       <div className="app">
         <Route exact path="/" component={LandingPage} />
         <Route exact path="/shop" component={ViewAllSwimwear} />
+        <Route exact path="/category/:type" component={ViewAllSwimwear} />
         <Route exact path="/about" component={AboutUs} />
         <Route exact path="/shop/:product" component={ShowOneProduct} />
         <Route exact path="/admin" component={Inventory} />
-        <Route exact path="/admin/new-entry" component = {NewInventoryEntry}/>
+        <Route exact path="/admin/new-entry" component={NewInventoryEntry} />
       </div>
     );
   }

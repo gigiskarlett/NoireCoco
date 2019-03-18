@@ -14,8 +14,8 @@ export const fetchProductsError = error => ({
   error
 });
 
-export const getAllProducts = products => dispatch => {
-  return fetch(`${API_BASE_URL}/products/`, {
+export const getAllProducts = filter => dispatch => {
+  return fetch(`${API_BASE_URL}/products`, {
     method: "GET",
     headers: {
       "content-type": "application/json"

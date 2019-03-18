@@ -21,7 +21,7 @@ export class ViewAllSwimwear extends React.Component {
         <div className="pink-banner">
           <EmailCapture />
         </div>
-        <Filter product={this.props.product}/>
+        <Filter product={this.props.product} />
         <section className="swimwear-products">
           <Products />
         </section>

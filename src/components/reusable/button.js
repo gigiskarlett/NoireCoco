@@ -1,9 +1,7 @@
-import React from 'react';
+import React from "react";
 
-import './button.css';
+import "./button.css";
 
 export function Button(props) {
-    return (
-        <button className="button">BUY NOW</button>
-    )
+  return <button className="button">{props.text}</button>;
 }

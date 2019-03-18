@@ -49,20 +49,20 @@ export default class LandingPage extends React.Component {
           </div>
         </div>
         <div className="shop-by-style-container">
-          {/*<a href="" className="shop-two-piece-link">*/}
-          <img
-            src="https://i.ibb.co/Rjs5cJ0/imageedit-52-9996487550.jpg"
-            alt="shop-two-piece-sets"
-            className="shop-two-piece"
-          />
-          {/*</a>*/}
-          {/*<a href="" className="shop-one-piece-link">*/}
-          <img
-            src="https://i.ibb.co/G33rjhm/shop-one-piece.jpg"
-            alt="shop-one-piece-swimsuits"
-            className="shop-one-piece"
-          />
-          {/*</a>*/}
+          <Link to="/category/one-piece" className="shop-two-piece-link">
+            <img
+              src="https://i.ibb.co/Rjs5cJ0/imageedit-52-9996487550.jpg"
+              alt="shop-two-piece-sets"
+              className="shop-two-piece"
+            />
+          </Link>
+          <Link to="/category/two-piece" className="shop-one-piece-link">
+            <img
+              src="https://i.ibb.co/G33rjhm/shop-one-piece.jpg"
+              alt="shop-one-piece-swimsuits"
+              className="shop-one-piece"
+            />
+          </Link>
         </div>
         <InstagramBanner />
         <EmailCapture />
@@ -71,4 +71,3 @@ export default class LandingPage extends React.Component {
     );
   }
 }
-

@@ -11,7 +11,15 @@ class Products extends React.Component {
     this.props.dispatch(getAllProducts());
   }
   render() {
-    const products = this.props.products.map((product, i) => {
+    let filteredProducts = this.props.products;
+
+    if (this.props.match.params.type) {
+      let filteredProducts = this.props.products.filter(
+        product => product.style === this.props.match.params.type
+      );
+    }
+
+    const products = filteredProducts.map((product, i) => {
       return (
         <li key={i}>
           <div className="products" id={product.id}>
@@ -27,7 +35,11 @@ class Products extends React.Component {
                   src="https://i.ibb.co/CbBVXLq/imageedit-16-2644387967.png"
                   alt="heart"
                 />
-                <Link className="name-link" to={`/shop/${product.id}`} target="_blank">
+                <Link
+                  className="name-link"
+                  to={`/shop/${product.id}`}
+                  target="_blank"
+                >
                   {product.name}
                 </Link>
               </h6>
@@ -52,5 +64,3 @@ const mapStateToProps = state => ({
 });
 
 export default connect(mapStateToProps)(Products);
-
-

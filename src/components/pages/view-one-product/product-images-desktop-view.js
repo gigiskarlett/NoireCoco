@@ -6,9 +6,9 @@ import "./product-images-desktop-view.css";
 export class ProductImagesDesktopView extends React.Component {
   constructor(props) {
     super(props);
-    //   this.state = {
-    //     selectedImage: this.props.product.imageUrl
-    //   };
+    this.state = {
+      selectedImage: this.props.product.imageUrl
+    };
   }
   render() {
     return (
@@ -16,11 +16,8 @@ export class ProductImagesDesktopView extends React.Component {
         {/*<img src={this.props.product.selectedImage} alt="main-image" />*/}
         <div className="hero right">
           <img
-            src={this.props.product.imageUrl}
+            src={this.props.product.selectedImage}
             alt={this.props.product.shortDescription}
-            onClick={e =>
-              this.setState({ selectedImage: this.props.product.imageUrl })
-            }
           />
         </div>
         <div className="left-thumbnails">
@@ -37,6 +34,9 @@ export class ProductImagesDesktopView extends React.Component {
             <img
               src={this.props.product.thirdImage}
               alt={this.props.product.shortDescription}
+              onClick={e =>
+                this.setState({ selectedImage: this.props.product.thirdImage })
+              }
             />
           </a>
         </div>
