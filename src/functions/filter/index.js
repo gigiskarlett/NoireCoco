@@ -1,7 +1,7 @@
-const OnePiecefilter = `${product.style}`.filter(
+export const onePiecefilter = `${product.style}`.filter(
   style => style === "one-piece bikini"
 );
 
-const TwoPiecefilter = `${product.style}`.filter(
+export const twoPiecefilter = `${product.style}`.filter(
   style => style === "two-piece bikini"
 );
