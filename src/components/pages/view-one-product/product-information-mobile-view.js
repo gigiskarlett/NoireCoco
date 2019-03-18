@@ -10,7 +10,7 @@ import "./product-information-mobile-view.css";
 export class ProductInformationMobileView extends React.Component {
   render() {
     return (
-      <div className="product-information">
+      <div className="mobile-product-information">
         <h2 className="product-name">
           <img
             className="heart"
@@ -28,7 +28,7 @@ export class ProductInformationMobileView extends React.Component {
            {this.props.product.details}
           </p>
         </div>
-        <Button />
+        <Button text="BUY NOW"/>
       </div>
     );
   }
