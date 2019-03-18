@@ -35,7 +35,7 @@
 ![image](https://user-images.githubusercontent.com/38567356/54554983-ff4f5780-4972-11e9-92c8-dfd50ad12655.png)
 
 <h3> Inventory</h3>
-<img src="https://i.ibb.co/hFvvN3x/Screen-Shot-2019-03-16-at-6-24-00-PM.png" alt="Screen-Shot-2019-03-16-at-6-24-00-PM" border="0">
+<img src="https://i.ibb.co/rcnSy4M/Screen-Shot-2019-03-16-at-6-37-20-PM.png" alt="Screen-Shot-2019-03-16-at-6-37-20-PM" border="0">
 
 <h3> Add New Item</h3>
 <img src="https://i.ibb.co/hFvvN3x/Screen-Shot-2019-03-16-at-6-24-00-PM.png" alt="Screen-Shot-2019-03-16-at-6-24-00-PM" border="0">
