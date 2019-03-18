@@ -1,6 +1,7 @@
 import React from "react";
 
 // import {onePiecefilter, twoPiecefilter} from '../../functions/filter';
+import {Link} from 'react-router-dom';
 import { NavBar } from "../../reusable/navBar";
 import { InstagramBanner } from "../../reusable/instagram-banner";
 import { Footer } from "../../reusable/footer";
