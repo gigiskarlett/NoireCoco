@@ -4,6 +4,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: 'Rufina', serif;
 }
 
 @media (min-width: 650px) {
