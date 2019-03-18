@@ -53,5 +53,4 @@ const mapStateToProps = state => ({
 
 export default connect(mapStateToProps)(Products);
 
-//<Link to:/shop/{${productUrl}}><img></Link>
-//create url link
+
