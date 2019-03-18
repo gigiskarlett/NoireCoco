@@ -23,7 +23,7 @@ export class ProductInformationDesktopView extends React.Component {
           <hr color="#FF70BD" />
           <p className="details">{this.props.product.details}</p>
         </div>
-        <Button text="Buy now" />
+        <Button text="BUY NOW" />
       </div>
     );
   }

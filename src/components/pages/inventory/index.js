@@ -18,7 +18,7 @@ class Inventory extends React.Component {
     return (
       <React.Fragment>
         <NavBar />
-        <ReusableBanner />
+        <ReusableBanner text="INVENTORY" />
         <div className="add-button-container">
         <button className="add-button">
         <img

@@ -11,7 +11,7 @@ export function AboutUs(props) {
   return (
     <React.Fragment>
       <NavBar />
-      <ReusableBanner />
+      <ReusableBanner text="ABOUT US"/>
       <section className="pictureContainer">
         <img
           className="img"
@@ -34,7 +34,7 @@ export function AboutUs(props) {
         </p>
         <hr color="#FF70BD" />
         <div className="empty-div-about-us" />
-        <Button text="Shop all swimwear" />
+        <Button text="SHOP SWIMWEAR" />
         <div className="empty-space-about-us" />
         <Footer />
       </section>

@@ -24,7 +24,11 @@ class ShowOneProduct extends React.Component {
     return (
       <React.Fragment>
         <NavBar />
-        <ReusableBanner />
+        <ReusableBanner
+          text="There’s nothing better than wearing the perfect swimwear to go to
+          the pool or the beach, that’s why we have selected our favorite
+          selection of quality and beautiful swimwear for you"
+        />
         <div className="desktop-view">
           <div className="product-container-desktop-view">
             <ProductImagesDesktopView product={this.props.product} />

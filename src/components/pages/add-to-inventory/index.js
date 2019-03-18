@@ -50,7 +50,7 @@ class NewInventoryEntry extends React.Component {
     return (
       <React.Fragment>
         <NavBar />
-        <ReusableBanner />
+        <ReusableBanner text="INVENTORY"/>
         <form
           className="inventory-form "
           aria-live="polite"
