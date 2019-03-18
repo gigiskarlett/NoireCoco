@@ -24,25 +24,26 @@ class Products extends React.Component {
         <li key={i}>
           <div className="products" id={product.id}>
             <div className="product-container">
-              <img
-                className="product-image"
-                src={product.imageUrl}
-                alt="bikini"
-              />
-              <h6 className="product-name">
+              <Link
+                className="name-link"
+                to={`/shop/${product.id}`}
+                target="_blank"
+              >
                 <img
-                  className="heart"
-                  src="https://i.ibb.co/CbBVXLq/imageedit-16-2644387967.png"
-                  alt="heart"
+                  className="product-image"
+                  src={product.imageUrl}
+                  alt="bikini"
                 />
-                <Link
-                  className="name-link"
-                  to={`/shop/${product.id}`}
-                  target="_blank"
-                >
+                <h6 className="product-name">
+                  <img
+                    className="heart"
+                    src="https://i.ibb.co/CbBVXLq/imageedit-16-2644387967.png"
+                    alt="heart"
+                  />
+
                   {product.name}
-                </Link>
-              </h6>
+                </h6>
+              </Link>
               <p className="short-description">{product.shortDescription}</p>
               <p className="product-price">${product.price}</p>
               <button className="product-button">
