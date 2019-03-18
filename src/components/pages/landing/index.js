@@ -1,6 +1,5 @@
 import React from "react";
 
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 // import {onePiecefilter, twoPiecefilter} from '../../functions/filter';
 import { NavBar } from "../../reusable/navBar";
 import { InstagramBanner } from "../../reusable/instagram-banner";

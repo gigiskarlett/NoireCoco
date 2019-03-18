@@ -1,10 +1,10 @@
 import React from "react";
 
-import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import "./navBar.css";
 
 //Renders navigation bar component
-export function NavBar(props) {
+export function NavBar() {
   return (
     <nav>
     <Link to="/">
@@ -22,4 +22,4 @@ export function NavBar(props) {
   );
 }
 
-//change from a to Link
+
