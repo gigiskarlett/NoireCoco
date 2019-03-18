@@ -175,8 +175,8 @@ class NewInventoryEntry extends React.Component {
                 name="bikini-style"
                 required
               >
-                <option value="one-piece bikini">One piece bikini</option>
-                <option value="two-piece bikini">Two piece bikini</option>
+                <option value="one-piece">One piece swimsuit</option>
+                <option value="two-piece">Two piece swimsuit</option>
               </select>
             </label>
             <button type="submit" className="submit-button">
