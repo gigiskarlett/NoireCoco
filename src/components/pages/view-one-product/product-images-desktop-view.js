@@ -4,19 +4,19 @@ import "./product-images-desktop-view.css";
 
 //renders images on desktop view for one product
 export class ProductImagesDesktopView extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      selectedImage: this.props.product.imageUrl
-    };
-  }
+  // constructor(props) {
+  //   super(props);
+  //   this.state = {
+  //     selectedImage: this.props.product.imageUrl
+  //   };
+  // }
   render() {
     return (
       <div className="image-container">
         {/*<img src={this.props.product.selectedImage} alt="main-image" />*/}
         <div className="hero right">
           <img
-            src={this.props.product.selectedImage}
+            src={this.props.product.imageUrl}
             alt={this.props.product.shortDescription}
           />
         </div>
