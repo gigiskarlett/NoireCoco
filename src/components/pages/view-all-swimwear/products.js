@@ -13,11 +13,11 @@ class Products extends React.Component {
   render() {
     let filteredProducts = this.props.products;
 
-    if (this.props.match.params.type) {
-      let filteredProducts = this.props.products.filter(
-        product => product.style === this.props.match.params.type
-      );
-    }
+    // if (this.props.match.params.type) {
+    //   let filteredProducts = this.props.products.filter(
+    //     product => product.style === this.props.match.params.type
+    //   );
+    // }
 
     const products = filteredProducts.map((product, i) => {
       return (
