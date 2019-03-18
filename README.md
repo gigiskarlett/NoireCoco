@@ -31,17 +31,17 @@
 <h3> Noire Coco Administrative Portal</h3>
 
 <h3> Registration Portal</h3>
-![image](https://user-images.githubusercontent.com/38567356/54554925-dfb82f00-4972-11e9-882e-2ed6490a4f19.png)
+![image](https://user-images.githubusercontent.com/38567356/54556358-ebf1bb80-4975-11e9-9ca3-be294154d75a.png)
 
 <h3> Login Portal</h3>
 
 ![image](https://user-images.githubusercontent.com/38567356/54554983-ff4f5780-4972-11e9-92c8-dfd50ad12655.png)
 
 <h3> Inventory</h3>
-![image](https://user-images.githubusercontent.com/38567356/54555051-273ebb00-4973-11e9-9006-5365e1469c66.png)
+![image](https://user-images.githubusercontent.com/38567356/54556386-ff048b80-4975-11e9-8011-61d13a782b70.png)
 
 <h3> Add New Item</h3>
-![image](https://user-images.githubusercontent.com/38567356/54555064-2e65c900-4973-11e9-857a-692c5ed985f7.png)
+![image](https://user-images.githubusercontent.com/38567356/54556405-0af04d80-4976-11e9-9ef5-948a0d724474.png)
 
 <h2> Built utilizing the MERN stack:</h2>
 
