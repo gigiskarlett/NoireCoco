@@ -2,39 +2,34 @@
     box-sizing: border-box;
 }
 
-.hero {
-    height: 500px;
-    display: flex;
-    order: 2;
-    margin-left: 15px;
-}
-
-.hero img {
-    height: 100%
-}
-
-.thumbnail {
+.left-thumbnails {
+    width: 50%;
+    float: left;
+    height: 245px;
     cursor: pointer;
-    height: 100%;
-    margin-bottom: 10px;
-}
-
-.image-container {
-    display: flex;
 }
 
 a.thumbnail:hover {
     box-shadow: 5px 5px 5px rgb(255, 182, 249);
 }
 
-.thumbnail img {
-    max-height: 100%;
+.thumbnail>img {
+    height: 100%;
+    margin-bottom: 5px;
 }
 
-.left-thumbnails {
-    order: 1;
+.hero {
+    width: 100%;
+    float: right;
+    height: 500px;
+    margin-left: 8px;
+}
+
+.hero>img {
+    height: 100%;
+}
+
+.image-container {
     display: flex;
-    flex-direction: column;
-    height: 245px;
+    width: 100%;
 }
-
