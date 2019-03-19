@@ -1,4 +1,5 @@
 import { normalizeResponseErrors } from "./utils";
+import { API_BASE_URL } from "../config";
 
 //Fetch Post Api call action
 export const POST_SUBSCRIBE_SUCCESS = "POST_SUBSCRIBE_SUCCESS";
@@ -23,9 +24,9 @@ export const postEmail = email => dispatch => {
   })
     .then(res => normalizeResponseErrors(res))
     .then(res => res.json())
-    .then(item => dispatch(postItemSuccess(email)))
+    .then(email => dispatch(postSubscribeSuccess(email)))
     .catch(err => {
       console.log("Whoops! Try this again.");
-      dispatch(postItemError(err));
+      dispatch(postSubscribeError(err));
     });
 };
