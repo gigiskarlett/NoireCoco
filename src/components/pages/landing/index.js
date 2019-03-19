@@ -1,12 +1,12 @@
 import React from "react";
 
 // import {onePiecefilter, twoPiecefilter} from '../../functions/filter';
-import {Link} from 'react-router-dom';
+import { Link } from "react-router-dom";
 import { NavBar } from "../../reusable/navBar";
 import { InstagramBanner } from "../../reusable/instagram-banner";
 import { Footer } from "../../reusable/footer";
 import "./index.css";
-import { EmailCapture } from "../../reusable/email-capture";
+import EmailCapture from "../../reusable/email-capture";
 
 //Renders landing page
 export default class LandingPage extends React.Component {
