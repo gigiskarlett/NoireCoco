@@ -1,13 +1,14 @@
 .button {
     background-color: #FF70BD;
     border: none;
-    height: 30px;
+    height: 45px;
     font-size: 13px;
     color: white;
     margin: auto;
     display: flex;
     justify-content: center;
     font-weight: bold;
+    width: 50%;
 }
 
 @media (min-width: 650px) {
