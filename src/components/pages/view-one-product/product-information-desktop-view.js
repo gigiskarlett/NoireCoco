@@ -11,11 +11,11 @@ export class ProductInformationDesktopView extends React.Component {
     console.log(details);
     if (this.props.product.details) {
       const regex = /[.]/g;
-      const subst = `\n`;
+      const subst = `<li className="desktop-details-list">`;
 
       const detailsResult = details.replace(regex, subst);
 
-      return <p className="details">{detailsResult}</p>;
+      return <li className="desktop-details" dangerouslySetInnerHTML={{__html:detailsResult}}/>;
     }
   }
   render() {
