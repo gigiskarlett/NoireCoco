@@ -103,3 +103,10 @@
         transform: rotate(-3deg);
     }
 }
+
+@media only screen and (min-width: 1024px) and (max-height: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
+    .shop-by-style-container {
+        height: 800px;
+        flex-direction: row;
+    }
+}
