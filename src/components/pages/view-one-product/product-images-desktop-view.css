@@ -5,7 +5,7 @@
 .left-thumbnails {
     width: 50%;
     float: left;
-    height: 245px;
+    height: 350px;
     cursor: pointer;
 }
 
@@ -17,7 +17,7 @@
 .hero {
     width: 100%;
     float: right;
-    height: 500px;
+    height: 700px;
     margin-left: 12px;
 }
 
