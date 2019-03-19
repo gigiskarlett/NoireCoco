@@ -90,29 +90,6 @@ export const postItem = item => dispatch => {
     });
 };
 
-// //success and error action
-// //get all
-// //store
-// //
-
-// export const updateProduct = product => dispatch => {
-//   return fetch(`${API_BASE_URL}/products/`, {
-//     method: "PUT",
-//     headers: {
-//       "content-type": "application/json"
-//     },
-//     body: JSON.stringify(product)
-//   })
-//     .then(res => normalizeResponseErrors(res))
-//     .then(res => res.json())
-//   .catch(err => {
-//     console.log("Whoops! Try this again.");
-//     dispatch(fetchProductsError(err));
-//   });
-// };
-
-//delete API call
-
 export const DELETE_ITEM_SUCCESS = "DELETE_ITEM_SUCCESS";
 export const deleteItemSuccess = item => ({
   type: DELETE_ITEM_SUCCESS,
