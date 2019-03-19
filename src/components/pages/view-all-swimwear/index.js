@@ -15,6 +15,13 @@ export class ViewAllSwimwear extends React.Component {
     this.props.dispatch(getAllProducts());
   }
   render() {
+    let filteredProducts = this.props.products;
+
+    if (this.props.match.params.type) {
+      let filteredProducts = this.props.products.filter(
+        product => product.style === this.props.match.params.type
+      );
+    }
     return (
       <React.Fragment>
         <NavBar />
@@ -23,7 +30,7 @@ export class ViewAllSwimwear extends React.Component {
         </div>
         <Filter product={this.props.product} />
         <section className="swimwear-products">
-          <Products />
+          <Products filteredProducts={this.props.products} />
         </section>
         <Footer />
       </React.Fragment>
