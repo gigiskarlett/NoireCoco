@@ -76,13 +76,16 @@ span {
 
 .item-count-container {
     display: flex;
+    width: 25%;
+    justify-content: center;
 }
+
 
 .container {
     padding: 5px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end
 }
 
 .sortBy {
@@ -123,5 +126,9 @@ span {
 
     .sortBy {
         font-size:15px;
+    }
+
+    .item-count-container {
+        width: 85%;
     }
 }
