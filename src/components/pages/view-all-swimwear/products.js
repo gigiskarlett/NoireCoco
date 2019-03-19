@@ -1,18 +1,12 @@
 import React from "react";
 
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import { connect } from "react-redux";
-import { getAllProducts } from "../../../actions/products";
 import "./product.css";
 
 //Renders Product with product images and short information
-class Products extends React.Component {
-  componentDidMount() {
-    this.props.dispatch(getAllProducts());
-  }
+export default class Products extends React.Component {
   render() {
-    let filteredProducts = this.props.products;
-    const products = filteredProducts.map((product, i) => {
+    const products = this.props.products.map((product, i) => {
       return (
         <li key={i}>
           <div className="products" id={product.id}>
@@ -53,8 +47,5 @@ class Products extends React.Component {
     return <ul className="listing-products">{products}</ul>;
   }
 }
-const mapStateToProps = state => ({
-  products: state.products.products
-});
 
-export default connect(mapStateToProps)(Products);
+
