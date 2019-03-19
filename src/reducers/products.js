@@ -15,7 +15,8 @@ const initialState = {
     imageUrl: "",
     shortDescription: "",
     secondImage: "",
-    thirdImage: ""
+    thirdImage: "", 
+    details: ""
   },
   error: null
 };
