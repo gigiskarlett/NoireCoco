@@ -10,7 +10,7 @@
     margin-bottom: 80px;
 }
 
-@media (min-width: 650px) {
+@media (min-width: 769px) {
     .mobile-view {
         display: none;
     }
