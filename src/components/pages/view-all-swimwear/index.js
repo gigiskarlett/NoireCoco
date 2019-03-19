@@ -18,7 +18,7 @@ export class ViewAllSwimwear extends React.Component {
     let filteredProducts = this.props.products;
 
     if (this.props.match.params.type) {
-      let filteredProducts = this.props.products.filter(
+      filteredProducts = this.props.products.filter(
         product => product.style === this.props.match.params.type
       );
     }
@@ -28,9 +28,9 @@ export class ViewAllSwimwear extends React.Component {
         <div className="pink-banner">
           <EmailCapture />
         </div>
-        <Filter product={this.props.product} />
+        <Filter products={this.props.products} />
         <section className="swimwear-products">
-          <Products filteredProducts={this.props.products} />
+          <Products products={filteredProducts} />
         </section>
         <Footer />
       </React.Fragment>
@@ -38,7 +38,7 @@ export class ViewAllSwimwear extends React.Component {
   }
 }
 const mapStateToProps = state => ({
-  product: state.products.products
+  products: state.products.products
 });
 
 export default connect(mapStateToProps)(ViewAllSwimwear);
