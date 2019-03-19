@@ -6,6 +6,7 @@ import authReducer from './reducers/auth';
 import protectedDataReducer from './reducers/protected-data';
 import {setAuthToken, refreshAuthToken} from './actions/auth';
 import productsReducer from './reducers/products'
+import emailCaptureReducer from './reducers/email-capture'
 
 const store = createStore(
     combineReducers({
@@ -13,6 +14,7 @@ const store = createStore(
         auth: authReducer,
         protectedData: protectedDataReducer,
         products: productsReducer,
+        emailCapture: emailCaptureReducer,
     },
     window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()),
     applyMiddleware(thunk)
