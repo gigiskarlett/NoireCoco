@@ -29,4 +29,5 @@
     display: flex;
     width: 60%;
     margin-left: 2%;
+    overflow: auto;
 }
