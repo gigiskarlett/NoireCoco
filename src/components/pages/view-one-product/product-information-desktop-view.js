@@ -6,14 +6,18 @@ import "./product-information-desktop-view.css";
 
 //Renders information about product
 export class ProductInformationDesktopView extends React.Component {
-// replaceForNewLine() {
-//   const details = this.props.product.details;
-//   const regex = /[.]/g;
-//   const subst = `\n`;
+  replaceForNewLine() {
+    let details = this.props.product.details;
+    console.log(details);
+    if (this.props.product.details) {
+      const regex = /[.]/g;
+      const subst = `\n`;
 
-//   const detailsResult = details.replace(regex, subst);
-//   return <p className="details">{detailsResult}</p>
-//   }; }
+      const detailsResult = details.replace(regex, subst);
+
+      return <p className="details">{detailsResult}</p>;
+    }
+  }
   render() {
     return (
       <div className="product-information">
@@ -29,7 +33,7 @@ export class ProductInformationDesktopView extends React.Component {
         <div className="desktop-product-details">
           <h3 className="details-heading">DETAILS</h3>
           <hr color="#FF70BD" />
-          // {this.replaceForNewLine()}
+          {this.replaceForNewLine()}
         </div>
         <Button text="BUY NOW" />
       </div>
