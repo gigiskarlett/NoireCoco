@@ -1,21 +1,13 @@
 import React from "react";
 
-// import {onePiecefilter, twoPiecefilter} from '../../functions/filter';
 import "./filter.css";
 
 export class Filter extends React.Component {
-  countProducts() {
-    let products = this.props.product;
-    for (let i = 0; i <= products.length; i++) {
-      i = products.length;
-      return <span>{i} ITEM(S)</span>;
-    }
-  }
   render() {
     return (
       <div className="container">
         <div className="item-count-container">
-          {this.countProducts()}
+        <span>{this.props.products.length} ITEM(S)</span>
         </div>
         <div className="right">
           <p className="sortBy">SORT BY</p>
