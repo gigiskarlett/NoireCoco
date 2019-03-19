@@ -1,4 +1,9 @@
 import {
-    POST_SUBSCRIBE_SUCCESS ,
-    POST_SUBSCRIBE_ERROR
-  } from "../actions/products";
+  POST_SUBSCRIBE_SUCCESS,
+  POST_SUBSCRIBE_ERROR
+} from "../actions/products";
+
+const initialState = {
+  email: "",
+  error: null
+};
