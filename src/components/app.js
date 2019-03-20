@@ -11,6 +11,7 @@ import Inventory from "../../src/components/pages/inventory";
 
 import { refreshAuthToken } from "../actions/auth";
 import RegistrationPage from "./pages/registration/registration-page";
+import LoginForm  from "./pages/login/login-form";
 
 export class App extends React.Component {
   componentDidUpdate(prevProps) {
@@ -53,6 +54,7 @@ export class App extends React.Component {
         <Route exact path="/admin" component={Inventory} />
         <Route exact path="/admin/new-entry" component={NewInventoryEntry} />
         <Route exact path="/admin/register" component={RegistrationPage} />
+        <Route exact path="/admin/login" component={LoginForm} />
       </div>
     );
   }
