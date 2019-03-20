@@ -3,6 +3,14 @@
     min-height: 100vh;
 }
 
+.login-form{
+    margin: auto;
+    background-color: #FFA3D4;
+    padding: 0 5% 0 5%;
+    width: 80%;
+    font-family: 'Sintony', serif;
+}
+
 .login-form-label, .login-page-title, .login-form-title {
     color: white;
     text-align: center;
@@ -30,6 +38,10 @@
 .login-button-container {}
 
 @media (min-width: 650px) {
+    .login-form {
+        padding: 0 90px 30px 90px;
+        border-radius: 3px;
+    }
     .login-form-container {
         padding: 80px;
     }
