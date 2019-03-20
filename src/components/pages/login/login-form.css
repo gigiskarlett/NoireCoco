@@ -19,7 +19,9 @@
 
 .login-form-label {}
 
-.login-form-container {}
+.login-form-container {
+    padding: 20% 0 70% 0;
+}
 
 .login-page-title {}
 
@@ -28,7 +30,9 @@
 .login-button-container {}
 
 @media (min-width: 650px) {
-    .login-form-container {}
+    .login-form-container {
+        padding: 80px;
+    }
     .login-page {}
     .login-form-label {}
     .login-page-title {}
