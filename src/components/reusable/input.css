@@ -5,5 +5,8 @@
 }
 
 @media (min-width: 650px) {
-    .registration-login-form-input {}
+    .registration-login-form-input {
+        height: 25px;
+        margin: 3px;
+    }
 }
