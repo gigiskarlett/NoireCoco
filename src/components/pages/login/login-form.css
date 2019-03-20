@@ -37,7 +37,9 @@
     color: yellow;
 }
 
-.login-form-label {}
+.login-form-label {
+    padding: 3px;
+}
 
 .login-form-container {
     padding: 20% 0 70% 0;
@@ -58,7 +60,9 @@
         padding: 80px;
     }
     .login-page {}
-    .login-form-label {}
+    .login-form-label {
+        padding: 4px;
+    }
     .login-page-title {
         padding: 60px;
     }
