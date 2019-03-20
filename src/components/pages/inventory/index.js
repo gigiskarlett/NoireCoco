@@ -37,8 +37,4 @@ class Inventory extends React.Component {
   }
 }
 
-// Inventory.defaultProps ={
-//   heading: INVENTORY
-// } add inventory to banner
-
 export default connect()(Inventory);
