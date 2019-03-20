@@ -42,10 +42,11 @@ export class ProductInformationMobileView extends React.Component {
 
           {this.replaceForNewLine()}
         </div>
+        <a target="_blank" href={this.props.product.url} className="link-button">
         <Button text="BUY NOW" />
+      </a>
       </div>
     );
   }
 }
 
-//pass state+props from db item
