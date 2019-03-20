@@ -109,4 +109,7 @@
         height: 800px;
         flex-direction: row;
     }
+    .landing-page-email-container{
+        margin-bottom: 100px;
+    }
 }
