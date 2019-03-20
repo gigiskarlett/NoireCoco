@@ -26,7 +26,7 @@ export default class LandingPage extends React.Component {
           <div className="banner-left-img-container">
             <img
               src="https://i.ibb.co/6tjr3rC/Screen-Shot-2019-03-15-at-1-39-03-PM.png"
-              alt="girl-in-monokini-image"
+              alt="girl-in-monokini"
               className="banner-left-image"
             />
             <p className="left-img-word">Shop</p>
@@ -34,7 +34,7 @@ export default class LandingPage extends React.Component {
           <div className="banner-center-img-container">
             <img
               src="https://i.ibb.co/fS1yBzG/purple-swimsuit.png"
-              alt="girl-in-two-piece-swimsuit-image"
+              alt="girl-in-two-piece-swimsuit"
               className="banner-center-image"
             />
 
