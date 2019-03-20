@@ -7,7 +7,7 @@ import Input from "../../reusable/input";
 import { login } from "../../../actions/auth";
 import { required, nonEmpty } from "../../../validators";
 
-export class LoginForm extends React.Component {
+class LoginForm extends React.Component {
   onSubmit(values) {
     return this.props.dispatch(login(values.username, values.password));
   }
@@ -22,7 +22,7 @@ export class LoginForm extends React.Component {
       );
     }
     return (
-      <React.Fragment>
+      <div className="login-page">
         <NavBar />
         <div className="login-form-container">
           <form
@@ -61,7 +61,7 @@ export class LoginForm extends React.Component {
           </form>
         </div>
         <Footer />
-      </React.Fragment>
+      </div>
     );
   }
 }
