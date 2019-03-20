@@ -14,9 +14,6 @@ import "./index.css";
 
 //Renders page with product selected
 class ShowOneProduct extends React.Component {
-  constructor(props) {
-    super(props);
-  }
   componentDidMount() {
     this.props.dispatch(getOneProduct(this.props.match.params.product));
   }
