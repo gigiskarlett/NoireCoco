@@ -62,13 +62,15 @@ class RegistrationForm extends React.Component {
             name="passwordConfirm"
             validate={[required, nonEmpty, matchesPassword]}
           />
-          <button
-            className="registration-button"
-            type="submit"
-            disabled={this.props.pristine || this.props.submitting}
-          >
-            Register
-          </button>
+          <div className="registration-button-container">
+            <button
+              className="registration-button"
+              type="submit"
+              disabled={this.props.pristine || this.props.submitting}
+            >
+              Register
+            </button>
+          </div>
           <div className="login-link-container">
             <Link className="login-link" to="/admin/login">
               Login
