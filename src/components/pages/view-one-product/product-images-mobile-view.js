@@ -18,10 +18,10 @@ export class ProductImagesMobileView extends React.Component {
           <img src={this.props.product.imageUrl} alt={this.props.product.shortDescription} />
         </div>
         <div className="bottom-thumbnails-container">
-          <a className="thumbnails" href="#">
+          <a className="thumbnails">
             <img src={this.props.product.secondImage} alt={this.props.product.shortDescription} />
           </a>
-          <a className="thumbnails" href="#">
+          <a className="thumbnails">
             <img src={this.props.product.thirdImage} alt={this.props.product.shortDescription} />
           </a>
         </div>

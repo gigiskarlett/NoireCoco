@@ -15,7 +15,7 @@ export class ProductImagesDesktopView extends React.Component {
       <div className="image-container">
         {/*<img src={this.props.product.selectedImage} alt="main-image" />*/}
         <div className="left-thumbnails">
-          <a className="thumbnail" href="#">
+          <a className="thumbnail">
             <img
               src={this.props.product.secondImage}
               alt={this.props.product.shortDescription}
@@ -24,7 +24,7 @@ export class ProductImagesDesktopView extends React.Component {
               }
             />
           </a>
-          <a className="thumbnail" href="#">
+          <a className="thumbnail" >
             <img
               src={this.props.product.thirdImage}
               alt={this.props.product.shortDescription}
