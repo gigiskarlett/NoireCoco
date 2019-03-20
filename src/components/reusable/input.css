@@ -8,6 +8,11 @@
 .form-error, .form-warning, .registration-login-form-input{
     text-align: center
 }
+
+.form-error, .form-warning {
+    padding: 3px;
+    color: yellow;
+}
 @media (min-width: 650px) {
     .registration-login-form-input {
         height: 25px;
