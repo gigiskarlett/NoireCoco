@@ -12,12 +12,12 @@ export class ProductInformationMobileView extends React.Component {
     console.log(details);
     if (this.props.product.details) {
       const regex = /[.]/g;
-      const subst = `<li className="mobile-details-list">`;
+      const subst = `<p className="mobile-details-list">`;
 
       const detailsResult = details.replace(regex, subst);
 
       return (
-        <li
+        <div
           className="details"
           dangerouslySetInnerHTML={{ __html: detailsResult }}
         />
