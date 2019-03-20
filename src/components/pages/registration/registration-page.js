@@ -1,6 +1,6 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import {Link, Redirect} from 'react-router-dom';
+import {Redirect} from 'react-router-dom';
 
 import RegistrationForm from './registration-form';
 import { NavBar } from '../../reusable/navBar';
@@ -18,7 +18,6 @@ export function RegistrationPage(props) {
             <NavBar/>
             <h2 className="registration-title">ADMINISTRATIVE PAGE FOR NOIRE COCO</h2>
             <RegistrationForm />
-            <Link className="login-link" to="/admin/login">Login</Link>
             <Footer/>
         </div>
     );
