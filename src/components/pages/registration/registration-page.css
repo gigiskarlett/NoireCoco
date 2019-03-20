@@ -1,0 +1,24 @@
+.admin-home {
+    background-color: black;
+}
+
+.registration-title {
+    padding-top: 20px;
+    font-family: 'Rufina', serif;
+}
+
+.registration-title, .login-link {
+    color: white;
+    text-align: center;
+}
+
+.login-link {
+    text-decoration: none;
+    font-family: 'Sintony', serif;
+}
+
+@media (min-width: 650px) {
+    .registration-title {
+        padding: 40px;
+    }
+}
