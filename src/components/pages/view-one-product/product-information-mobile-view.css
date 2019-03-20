@@ -19,23 +19,12 @@
 }
 
 .details {
-    list-style-type: square;
-}
-
-.mobile-details-list:last-of-type {
-    list-style: none;
-}
-
-.mobile-details-list {
-    list-style-type: square;
-}
-
-.details {
     text-transform: capitalize;
     font-size: 14px;
     text-align: left;
     line-height: normal;
-    padding:10px;
+    padding: 10px;
+    text-align: center;
 }
 
 /* heart icon */
@@ -48,7 +37,7 @@
     margin: 20px;
 }
 
-.colour{
+.colour {
     padding: 5px;
 }
 
