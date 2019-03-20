@@ -25,7 +25,7 @@ export default class Input extends React.Component {
           {error}
           {warning}
         </label>
-        <input
+        <input className="registration-login-form-input"
           {...this.props.input}
           id={this.props.input.name}
           type={this.props.type}
