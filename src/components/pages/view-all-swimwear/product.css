@@ -9,11 +9,11 @@
     color: #F96DB9;
 }
 
-.link-button, .name-link, .product-name, .short-description{
+.link-button, .name-link, .product-name, .short-description {
     font-family: 'Rufina', serif;
 }
 
-.product-price{
+.product-price {
     margin: 5px 0 3px 0;
     font-weight: bolder;
 }
@@ -56,6 +56,7 @@
     text-decoration: none;
     color: black;
 }
+
 .product-button {
     border-top: 1px solid #F96DB9;
     border-left: none;
@@ -71,8 +72,8 @@
         display: flex;
         justify-content: center;
         margin: auto;
+        width: 300px;
     }
-
     .short-description {
         margin-bottom: 2px;
     }
@@ -90,21 +91,18 @@
     .heart {
         height: 25px;
     }
-
     .link-button {
         font-size: 12px;
     }
     .product-button {
         margin-top: 3px;
     }
-
-    .listing-products{
+    .listing-products {
         display: -webkit-box;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
-
     .product-price {
         font-size: 15px;
     }
