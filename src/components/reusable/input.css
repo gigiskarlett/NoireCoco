@@ -1,0 +1,9 @@
+.registration-login-form-input {
+    border-radius: 2px;
+    border: none;
+    width: 100%;
+}
+
+@media (min-width: 650px) {
+    .registration-login-form-input {}
+}
