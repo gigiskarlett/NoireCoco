@@ -1,0 +1,89 @@
+.registration-form-container {
+    padding: 30% 0 60% 0;
+}
+
+.registration-form-container, .registration-button {
+    display: flex;
+    justify-content: center;
+}
+
+.registration-form {
+    margin: auto;
+    background-color: #FFA3D4;
+    padding: 0 20% 0 20%;
+    font-family: 'Sintony', serif;
+}
+
+.registration-form, .registration-form {
+    border-radius: 2px;
+}
+
+.register-form-title {
+    padding: 15px;
+}
+
+.register-form-title {
+    font-weight: 800;
+    text-align: center;
+}
+
+.registration-label {
+    padding: 2px;
+    text-align: center;
+}
+
+.login-link {
+    text-decoration: none;
+    font-family: 'Sintony', serif;
+    font-size: 12px;
+    color: black;
+}
+
+.registration-button {
+    background-color: #FF70BD;
+    border: none;
+    height: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    margin: 20px 20px 4px 20px;
+    width: 70%;
+}
+
+.login-link-container{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+    font-weight: bolder;
+}
+
+@media (min-width: 650px) {
+    .registration-form-container {
+        padding: 60px;
+    }
+    .registration-form {
+        padding: 0 90px 30px 90px;
+        border-radius: 3px;
+    }
+    .register-form-title {
+        padding: 30px
+    }
+    .registration-label {
+        padding: 3px
+    }
+    .registration-button {
+        width: 200px;
+        font-size: 19px;
+        margin: 70px 20px 5px 20px;
+    }
+    .login-link {
+        text-decoration: none;
+        font-family: 'Sintony', serif;
+        font-size: 15px;
+        color: black;
+    }
+
+    .login-link-container{
+        padding-bottom: 30px;
+    }
+}
