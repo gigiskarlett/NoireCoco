@@ -24,6 +24,7 @@ class RegistrationForm extends React.Component {
         className="login-form"
         onSubmit={this.props.handleSubmit(values => this.onSubmit(values))}
       >
+        <h2 className="register-form-title">REGISTER</h2>
         <label htmlFor="firstName">First name</label>
         <Field component={Input} type="text" name="firstName" />
         <label htmlFor="lastName">Last name</label>
