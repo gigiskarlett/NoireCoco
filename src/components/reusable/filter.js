@@ -21,8 +21,8 @@ export class Filter extends React.Component {
               />
             </button>
             <div className="dropdown-content">
-              <a href="#">Price high to low</a>
-              <a href="#">Price low to high</a>
+              <a href="/high-to-low">Price high to low</a>
+              <a href="low-to-high">Price low to high</a>
             </div>
           </div>
         </div>
