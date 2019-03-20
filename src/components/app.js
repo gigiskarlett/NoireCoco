@@ -10,7 +10,7 @@ import ShowOneProduct from "../../src/components/pages/view-one-product";
 import Inventory from "../../src/components/pages/inventory";
 
 import { refreshAuthToken } from "../actions/auth";
-import RegistrationForm from "./pages/registration";
+import RegistrationForm from "./pages/registration/registration-form";
 
 export class App extends React.Component {
   componentDidUpdate(prevProps) {
