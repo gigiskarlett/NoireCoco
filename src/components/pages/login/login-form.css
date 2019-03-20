@@ -8,6 +8,12 @@
     text-align: center;
 }
 
+.register-link-container, .login-form-container, .login-button-container {
+    display: flex;
+    justify-content: center;
+}
+
+
 .register-link-container{}
 .register-link{}
 
