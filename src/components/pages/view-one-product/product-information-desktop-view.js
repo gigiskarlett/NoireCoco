@@ -35,7 +35,9 @@ export class ProductInformationDesktopView extends React.Component {
           <hr color="#FF70BD" />
           {this.replaceForNewLine()}
         </div>
+        <a target="_blank" href={this.props.product.url} className="link-button">
         <Button text="BUY NOW" />
+      </a>
       </div>
     );
   }
