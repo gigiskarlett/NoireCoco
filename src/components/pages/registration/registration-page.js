@@ -5,6 +5,7 @@ import {Link, Redirect} from 'react-router-dom';
 import RegistrationForm from './registration-form';
 import { NavBar } from '../../reusable/navBar';
 import { Footer } from '../../reusable/footer';
+import './registration-page.css'
 
 export function RegistrationPage(props) {
     // If we are logged in (which happens automatically when registration
