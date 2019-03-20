@@ -1,5 +1,6 @@
 import React from "react";
 
+import { Link } from "react-router-dom";
 import { Field, reduxForm, focus } from "redux-form";
 import { registerUser } from "../../../actions/users";
 import { login } from "../../../actions/auth";
@@ -68,6 +69,11 @@ class RegistrationForm extends React.Component {
           >
             Register
           </button>
+          <div className="login-link-container">
+            <Link className="login-link" to="/admin/login">
+              Login
+            </Link>
+          </div>
         </form>
       </div>
     );
