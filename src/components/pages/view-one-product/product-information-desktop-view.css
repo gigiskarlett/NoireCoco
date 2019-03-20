@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-.product-name, .price, .colour-heading, .colour, .desktop-product-details, .details-heading {
+.product-name, .price, .colour-heading, .colour, .desktop-product-details, .desktop-details, .details-heading {
     text-align: center;
 }
 
@@ -14,16 +14,6 @@
     padding: 10px;
 }
 
-.desktop-details {
-    list-style-type: square;
-}
-
-.desktop-details-list:last-of-type {
-    list-style: none;
-}
-.desktop-details-list{
-    list-style-type: square;
-}
 .price, .desktop-details {
     font-family: 'Sintony', serif;
 }
@@ -52,7 +42,6 @@
 .desktop-details {
     text-transform: capitalize;
     font-size: 15px;
-    text-align: left;
     line-height: normal;
 }
 
