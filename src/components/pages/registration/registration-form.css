@@ -51,6 +51,10 @@
     width: 70%;
 }
 
+.registration-button-container {
+    margin: 20px 20px 4px 20px;
+}
+
 .login-link-container {
     display: flex;
     justify-content: center;
@@ -60,7 +64,7 @@
 
 @media (min-width: 650px) {
     .registration-form-container {
-        padding: 60px;
+        padding: 80px;
     }
     .registration-form {
         padding: 0 90px 30px 90px;
@@ -82,7 +86,5 @@
         font-size: 15px;
         color: black;
     }
-    .login-link-container {
-        padding-bottom: 30px;
-    }
+
 }
