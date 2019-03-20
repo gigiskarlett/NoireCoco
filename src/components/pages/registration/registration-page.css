@@ -7,14 +7,9 @@
     font-family: 'Rufina', serif;
 }
 
-.registration-title, .login-link {
+.registration-title {
     color: white;
     text-align: center;
-}
-
-.login-link {
-    text-decoration: none;
-    font-family: 'Sintony', serif;
 }
 
 @media (min-width: 650px) {
