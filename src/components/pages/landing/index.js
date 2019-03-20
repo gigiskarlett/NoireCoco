@@ -66,7 +66,9 @@ export default class LandingPage extends React.Component {
           </Link>
         </div>
         <InstagramBanner />
-        <EmailCapture />
+        <div className="landing-page-email-container">
+          <EmailCapture />
+        </div>
         <Footer />
       </React.Fragment>
     );
