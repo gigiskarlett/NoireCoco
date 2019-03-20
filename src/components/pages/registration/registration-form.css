@@ -10,7 +10,8 @@
 .registration-form {
     margin: auto;
     background-color: #FFA3D4;
-    padding: 0 20% 0 20%;
+    padding: 0 5% 0 5%;
+    width: 80%;
     font-family: 'Sintony', serif;
 }
 
@@ -46,11 +47,11 @@
     font-size: 16px;
     font-weight: 600;
     color: black;
-    margin: 20px 20px 4px 20px;
+    margin: auto;
     width: 70%;
 }
 
-.login-link-container{
+.login-link-container {
     display: flex;
     justify-content: center;
     padding-bottom: 10px;
@@ -74,7 +75,6 @@
     .registration-button {
         width: 200px;
         font-size: 19px;
-        margin: 70px 20px 5px 20px;
     }
     .login-link {
         text-decoration: none;
@@ -82,8 +82,7 @@
         font-size: 15px;
         color: black;
     }
-
-    .login-link-container{
+    .login-link-container {
         padding-bottom: 30px;
     }
 }
