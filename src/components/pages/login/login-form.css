@@ -12,13 +12,18 @@
 }
 
 .login-form-label, .login-page-title, .login-form-title {
-    color: white;
     text-align: center;
 }
 
 .register-link-container, .login-form-container, .login-button-container {
     display: flex;
     justify-content: center;
+}
+
+.login-page-title{
+    color: white;
+    padding: 50px 4px 0px 4px;
+    font-family: 'Rufina', serif;
 }
 
 
@@ -47,7 +52,9 @@
     }
     .login-page {}
     .login-form-label {}
-    .login-page-title {}
+    .login-page-title {
+        padding: 60px;
+    }
     .login-form-title {}
     .login-button-container {}
     .register-link{}
