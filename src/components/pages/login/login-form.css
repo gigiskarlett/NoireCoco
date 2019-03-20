@@ -45,9 +45,9 @@
     padding: 20% 0 70% 0;
 }
 
-.login-page-title {}
-
-.login-form-title {}
+.login-form-title {
+    font-weight: 800;
+}
 
 .login-button-container {}
 
@@ -59,14 +59,15 @@
     .login-form-container {
         padding: 80px;
     }
-    .login-page {}
     .login-form-label {
         padding: 4px;
     }
     .login-page-title {
         padding: 60px;
     }
-    .login-form-title {}
+    .login-form-title {
+        padding: 30px
+    }
     .login-button-container {}
     .register-link {
         font-size: 15px;
