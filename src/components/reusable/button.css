@@ -14,13 +14,6 @@
 @media (min-width: 650px) {
     .button {
         width: 200px;
-        background-color: #FF70BD;
-        border: none;
-        height: 45px;
         font-size: 19px;
-        color: white;
-        margin: auto;
-        display: flex;
-        justify-content: center;
     }
 }
