@@ -1,5 +1,6 @@
 import React from "react";
 
+import { Link } from "react-router-dom";
 import { NavBar } from "../../reusable/navBar";
 import { Footer } from "../../reusable/footer";
 import { Field, reduxForm, focus } from "redux-form";
@@ -31,7 +32,7 @@ class LoginForm extends React.Component {
             className="login-form"
             onSubmit={this.props.handleSubmit(values => this.onSubmit(values))}
           >
-          <h2 className="login-form-title">LOG IN</h2>
+            <h2 className="login-form-title">LOG IN</h2>
             <label className="login-form-label" htmlFor="username">
               Username
             </label>
@@ -60,6 +61,11 @@ class LoginForm extends React.Component {
               >
                 Log in
               </button>
+            </div>
+            <div className="register-link-container">
+              <Link className="register-link" to="/admin/register">
+                Register
+              </Link>
             </div>
           </form>
         </div>
