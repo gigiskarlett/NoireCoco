@@ -20,53 +20,56 @@ class RegistrationForm extends React.Component {
 
   render() {
     return (
-      <form
-        className="registration-form"
-        onSubmit={this.props.handleSubmit(values => this.onSubmit(values))}
-      >
-        <h2 className="register-form-title">REGISTER</h2>
-        <label className="registration-label" htmlFor="firstName">
-          First name
-        </label>
-        <Field component={Input} type="text" name="firstName" />
-        <label className="registration-label" htmlFor="lastName">
-          Last name
-        </label>
-        <Field component={Input} type="text" name="lastName" />
-        <label className="registration-label" htmlFor="username">
-          Username
-        </label>
-        <Field
-          component={Input}
-          type="text"
-          name="username"
-          validate={[required, nonEmpty, isTrimmed]}
-        />
-        <label className="registration-label" htmlFor="password">
-          Password
-        </label>
-        <Field
-          component={Input}
-          type="password"
-          name="password"
-          validate={[required, passwordLength, isTrimmed]}
-        />
-        <label className="registration-label" htmlFor="passwordConfirm">
-          Confirm password
-        </label>
-        <Field
-          component={Input}
-          type="password"
-          name="passwordConfirm"
-          validate={[required, nonEmpty, matchesPassword]}
-        />
-        <button className="registration-button"
-          type="submit"
-          disabled={this.props.pristine || this.props.submitting}
+      <div className="registration-form-container">
+        <form
+          className="registration-form"
+          onSubmit={this.props.handleSubmit(values => this.onSubmit(values))}
         >
-          Register
-        </button>
-      </form>
+          <h2 className="register-form-title">REGISTER</h2>
+          <label className="registration-label" htmlFor="firstName">
+            First name
+          </label>
+          <Field component={Input} type="text" name="firstName" />
+          <label className="registration-label" htmlFor="lastName">
+            Last name
+          </label>
+          <Field component={Input} type="text" name="lastName" />
+          <label className="registration-label" htmlFor="username">
+            Username
+          </label>
+          <Field
+            component={Input}
+            type="text"
+            name="username"
+            validate={[required, nonEmpty, isTrimmed]}
+          />
+          <label className="registration-label" htmlFor="password">
+            Password
+          </label>
+          <Field
+            component={Input}
+            type="password"
+            name="password"
+            validate={[required, passwordLength, isTrimmed]}
+          />
+          <label className="registration-label" htmlFor="passwordConfirm">
+            Confirm password
+          </label>
+          <Field
+            component={Input}
+            type="password"
+            name="passwordConfirm"
+            validate={[required, nonEmpty, matchesPassword]}
+          />
+          <button
+            className="registration-button"
+            type="submit"
+            disabled={this.props.pristine || this.props.submitting}
+          >
+            Register
+          </button>
+        </form>
+      </div>
     );
   }
 }
