@@ -86,5 +86,10 @@
         font-size: 15px;
         color: black;
     }
-
+    .login-link-container {
+        padding-bottom: 50px;
+    }
+    .registration-button-container {
+        margin-bottom: 15px;
+    }
 }
