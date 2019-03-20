@@ -5,7 +5,9 @@
     height: 20px;
     margin: 2px;
 }
-
+.form-error, .form-warning, .registration-login-form-input{
+    text-align: center
+}
 @media (min-width: 650px) {
     .registration-login-form-input {
         height: 25px;
