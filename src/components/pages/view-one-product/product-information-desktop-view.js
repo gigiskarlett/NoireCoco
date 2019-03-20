@@ -8,7 +8,6 @@ import "./product-information-desktop-view.css";
 export class ProductInformationDesktopView extends React.Component {
   replaceForNewLine() {
     let details = this.props.product.details;
-    console.log(details);
     if (this.props.product.details) {
       const regex = /[.]/g;
       const subst = `<p className="desktop-details-list">`;

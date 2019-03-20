@@ -9,7 +9,6 @@ import "./product-information-mobile-view.css";
 export class ProductInformationMobileView extends React.Component {
   replaceForNewLine() {
     let details = this.props.product.details;
-    console.log(details);
     if (this.props.product.details) {
       const regex = /[.]/g;
       const subst = `<p className="mobile-details-list">`;
