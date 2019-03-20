@@ -7,6 +7,11 @@ import { NavBar } from '../../reusable/navBar';
 import { Footer } from '../../reusable/footer';
 
 export function RegistrationPage(props) {
+    // If we are logged in (which happens automatically when registration
+    // is successful) redirect to the inventory
+    if (props.loggedIn) {
+        return <Redirect to="/admin/inventory" />;
+    }
     return (
         <div className="admin-home">
             <NavBar/>
