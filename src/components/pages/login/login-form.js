@@ -25,15 +25,17 @@ class LoginForm extends React.Component {
     return (
       <div className="login-page">
         <NavBar />
+        <h2 className="login-page-title">ADMINISTRATIVE PAGE FOR NOIRE COCO</h2>
         <div className="login-form-container">
           <form
             className="login-form"
             onSubmit={this.props.handleSubmit(values => this.onSubmit(values))}
           >
-            {error}
+          <h2 className="login-form-title">LOG IN</h2>
             <label className="login-form-label" htmlFor="username">
               Username
             </label>
+            {error}
             <Field
               component={Input}
               type="text"
