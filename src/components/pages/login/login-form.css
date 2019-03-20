@@ -49,7 +49,9 @@
     font-weight: 800;
 }
 
-.login-button-container {}
+.login-button-container {
+    margin: 20px 20px 4px 20px;
+}
 
 @media (min-width: 650px) {
     .login-form {
@@ -68,11 +70,13 @@
     .login-form-title {
         padding: 30px
     }
-    .login-button-container {}
+    .login-button-container {
+        margin-bottom: 15px;
+    }
     .register-link {
         font-size: 15px;
     }
     .register-link-container {
-        padding-bottom: 50px;
+        margin-bottom: 40px;
     }
 }
