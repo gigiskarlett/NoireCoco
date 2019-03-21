@@ -18,12 +18,10 @@ class LoginPage extends React.Component {
     }
     return (
       <div className="login-page">
-        <NavBar />
         <h2 className="login-page-title">ADMINISTRATIVE PAGE FOR NOIRE COCO</h2>
         <div className="login-form-container">
           <LoginForm />
         </div>
-        <Footer />
       </div>
     );
   }
