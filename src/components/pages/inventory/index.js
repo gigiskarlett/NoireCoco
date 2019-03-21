@@ -7,6 +7,7 @@ import { ReusableBanner } from "../../reusable/banner";
 import { Footer } from "../../reusable/footer";
 import InventoryItem from "./item";
 import { getAllProducts } from "../../../actions/products";
+import requiresLogin from "../../reusable/requires-login";
 // import requiresLogin from "../../pages/login/requires-login";
 // import { fetchProtectedData } from "../../../actions/protected-data";
 
@@ -45,12 +46,4 @@ class Inventory extends React.Component {
   }
 }
 
-// const mapStateToProps = state => {
-//   const {currentUser} = state.auth;
-//   return {
-//       protectedData: state.protectedData.data
-//   };
-// requiresLogin() put in line 53 before connect like: export default requiresLogin()(connect(mapStateToProps)
-// };
-
-export default connect()(Inventory);
+export default requiresLogin()(connect()(Inventory));
