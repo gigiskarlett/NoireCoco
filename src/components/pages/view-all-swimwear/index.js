@@ -7,10 +7,16 @@ import EmailCapture from "../../reusable/email-capture";
 import { Filter } from "../../reusable/filter";
 import Products from "./products";
 import { Footer } from "../../reusable/footer";
+import Spinner from 'react-spinkit';
 
 import "./index.css";
 
 export class ViewAllSwimwear extends React.Component {
+  isLoading() {
+    if (this.props.loading) {
+      return <Spinner name="three-bounce" color="fuchsia"/>;
+  }
+  }
   componentDidMount() {
     this.props.dispatch(getAllProducts());
   }
