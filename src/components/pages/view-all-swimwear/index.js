@@ -1,5 +1,6 @@
 import React from "react";
 
+import { NavBar } from "../../reusable/navBar";
 import { connect } from "react-redux";
 import { getAllProducts } from "../../../actions/products";
 import EmailCapture from "../../reusable/email-capture";
@@ -9,6 +10,7 @@ import Spinner from "react-spinkit";
 
 import "./index.css";
 
+//Renders all swimwear
 export class ViewAllSwimwear extends React.Component {
   isLoading() {
     if (this.props.loading) {
@@ -28,6 +30,7 @@ export class ViewAllSwimwear extends React.Component {
     }
     return (
       <React.Fragment>
+      <NavBar />
         <div className="pink-banner">
           <EmailCapture />
         </div>

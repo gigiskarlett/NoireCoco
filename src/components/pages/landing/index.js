@@ -1,5 +1,6 @@
 import React from "react";
 
+import { NavBar } from "../../reusable/navBar";
 import { Link } from "react-router-dom";
 import { InstagramBanner } from "../../reusable/instagram-banner";
 import "./index.css";
@@ -10,6 +11,7 @@ export default class LandingPage extends React.Component {
   render() {
     return (
       <React.Fragment>
+      <NavBar />
         <div className="about-us-banner">
           <p className="catchy-phrase title-for-catchy-phrase">SWIM</p>
           <p className="catchy-phrase">

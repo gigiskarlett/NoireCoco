@@ -1,5 +1,6 @@
 import React from "react";
 
+import { NavBar } from "../../reusable/navBar";
 import "./index.css";
 import { ReusableBanner } from "../../reusable/banner";
 import { Button } from "../../reusable/button";
@@ -8,6 +9,7 @@ import { Button } from "../../reusable/button";
 export function AboutUs(props) {
   return (
     <React.Fragment>
+    <NavBar />
       <ReusableBanner text="ABOUT US"/>
       <section className="pictureContainer">
         <img
@@ -38,4 +40,3 @@ export function AboutUs(props) {
   );
 }
 
-//add prop to button to say "shop all swimwear"

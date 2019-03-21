@@ -5,6 +5,7 @@ import { Redirect } from "react-router-dom";
 import "./login-form.css";
 import LoginForm from "./login-form";
 
+//Renders login page
 class LoginPage extends React.Component {
   render() {
     if (this.props.loggedIn) {
