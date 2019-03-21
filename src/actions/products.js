@@ -21,7 +21,11 @@ export const fetchProductsError = error => ({
 });
 
 export const getAllProducts = filter => dispatch => {
+<<<<<<< HEAD
   dispatch(startLoading()); 
+=======
+  dispatch(startLoading()); // THIS WAS MISSING
+>>>>>>> 7e975309de8b5431cf8366ffa7fbec4d14dfdf31
   return fetch(`${API_BASE_URL}/products`, {
     method: "GET",
     headers: {
@@ -51,6 +55,7 @@ export const fetchOneProductError = error => ({
 
 export const getOneProduct = productId => dispatch => {
   dispatch(startLoading()); 
+
   return fetch(`${API_BASE_URL}/products/${productId}`, {
     method: "GET",
     headers: {

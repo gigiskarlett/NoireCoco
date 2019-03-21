@@ -25,6 +25,7 @@ const initialState = {
 
 export default function reducer(state = initialState, action) {
   if (action.type === START_LOADING) {
+    console.log("SHIT'S LOADING YA");
     return Object.assign({}, state, {
       loading: true
     });
