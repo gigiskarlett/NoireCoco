@@ -2,10 +2,9 @@ import React from "react";
 
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
-import { NavBar } from "../../reusable/navBar";
 import { ReusableBanner } from "../../reusable/banner";
-import { Footer } from "../../reusable/footer";
 import { postItem } from "../../../actions/products";
+import requiresLogin from "../../reusable/requires-login";
 import "./index.css";
 
 class NewInventoryEntry extends React.Component {
@@ -193,4 +192,4 @@ class NewInventoryEntry extends React.Component {
   }
 }
 
-export default connect()(NewInventoryEntry);
+export default requiresLogin()(connect()(NewInventoryEntry));
