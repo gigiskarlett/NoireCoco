@@ -5,9 +5,7 @@ import { getOneProduct } from "../../../actions/products";
 
 import { NavBar } from "../../reusable/navBar";
 import { ReusableBanner } from "../../reusable/banner";
-import { ProductInformationDesktopView } from "./product-information-desktop-view";
 import { ProductInformationMobileView } from "./product-information-mobile-view";
-import { ProductImagesDesktopView } from "./product-images-desktop-view";
 import { Footer } from "../../reusable/footer";
 
 import "./index.css";
@@ -26,16 +24,8 @@ class ShowOneProduct extends React.Component {
           the pool or the beach, that’s why we have selected our favorite
           selection of quality and beautiful swimwear for you"
         />
-        <div className="desktop-view">
-          <div className="product-container-desktop-view">
-            <ProductImagesDesktopView product={this.props.product} />
-            <ProductInformationDesktopView product={this.props.product} />
-          </div>
-        </div>
-        <div className="mobile-view">
-          <div className="product-container-mobile-view">
-            <ProductInformationMobileView product={this.props.product} />
-          </div>
+        <div className="view-one-product-container">
+          <ProductInformationMobileView product={this.props.product} />
         </div>
         <Footer />
       </React.Fragment>
