@@ -2,7 +2,7 @@ import { API_BASE_URL } from "../config";
 import { normalizeResponseErrors } from "./utils";
 
 export const START_LOADING = "START_LOADING";
-export const startLoading = (loading) => ({
+export const startLoading = loading => ({
   type: START_LOADING,
   loading
 });
@@ -21,11 +21,8 @@ export const fetchProductsError = error => ({
 });
 
 export const getAllProducts = filter => dispatch => {
-<<<<<<< HEAD
-  dispatch(startLoading()); 
-=======
-  dispatch(startLoading()); // THIS WAS MISSING
->>>>>>> 7e975309de8b5431cf8366ffa7fbec4d14dfdf31
+  dispatch(startLoading());
+
   return fetch(`${API_BASE_URL}/products`, {
     method: "GET",
     headers: {
@@ -54,7 +51,7 @@ export const fetchOneProductError = error => ({
 });
 
 export const getOneProduct = productId => dispatch => {
-  dispatch(startLoading()); 
+  dispatch(startLoading());
 
   return fetch(`${API_BASE_URL}/products/${productId}`, {
     method: "GET",
@@ -94,7 +91,7 @@ export const postItem = item => (dispatch, getState) => {
       "content-type": "application/json",
       Authorization: `Bearer ${authToken}`
     },
-    
+
     body: JSON.stringify(item)
   })
     .then(res => normalizeResponseErrors(res))

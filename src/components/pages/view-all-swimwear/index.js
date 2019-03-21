@@ -14,6 +14,7 @@ import "./index.css";
 export class ViewAllSwimwear extends React.Component {
   isLoading() {
     if (this.props.loading) {
+      console.log("loading");
       return <Spinner name="three-bounce" color="fuchsia" />;
     }
   }
@@ -21,6 +22,10 @@ export class ViewAllSwimwear extends React.Component {
     this.props.dispatch(getAllProducts());
   }
   render() {
+    {
+      this.isLoading();
+    }
+    console.log("Loaded");
     let filteredProducts = this.props.products;
 
     if (this.props.match.params.type) {
@@ -30,13 +35,13 @@ export class ViewAllSwimwear extends React.Component {
     }
     return (
       <React.Fragment>
-      <NavBar />
+        <NavBar />
         <div className="pink-banner">
           <EmailCapture />
         </div>
         <Filter products={this.props.products} />
         <section className="swimwear-products">
-        {this.isLoading()}
+          {this.isLoading()}
           <Products products={filteredProducts} />
         </section>
       </React.Fragment>
