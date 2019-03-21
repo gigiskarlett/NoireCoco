@@ -1,0 +1,24 @@
+.admin-nav-links {
+    float: right;
+    padding-left: 0px;
+    padding-top: 10px;
+}
+
+.logout-link {
+    color: #F40C89;
+    padding: 8px;
+    text-decoration: none;
+    display: inline;
+    list-style: none;
+}
+
+@media (min-width: 650px) {
+    .admin-nav-links {
+        float: right;
+        margin-top: 10px;
+    }
+    .logout-link {
+        padding: 30px;
+        text-decoration: none;
+    }
+}
