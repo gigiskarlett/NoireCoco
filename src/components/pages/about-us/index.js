@@ -1,10 +1,8 @@
 import React from "react";
 
 import "./index.css";
-import { NavBar } from "../../reusable/navBar";
 import { ReusableBanner } from "../../reusable/banner";
 import { Button } from "../../reusable/button";
-import { Footer } from "../../reusable/footer";
 
 //Renders about us page page
 export function AboutUs(props) {

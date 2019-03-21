@@ -2,11 +2,8 @@ import React from "react";
 
 import { connect } from "react-redux";
 import { getOneProduct } from "../../../actions/products";
-
-import { NavBar } from "../../reusable/navBar";
 import { ReusableBanner } from "../../reusable/banner";
-import { ViewOneProductImagesAndDetails} from "./view-one-product-images-and-details.js";
-import { Footer } from "../../reusable/footer";
+import { ViewOneProductImagesAndDetails } from "./view-one-product-images-and-details.js";
 
 import "./index.css";
 

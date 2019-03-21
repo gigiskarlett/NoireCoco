@@ -2,11 +2,9 @@ import React from "react";
 
 import { connect } from "react-redux";
 import { getAllProducts } from "../../../actions/products";
-import { NavBar } from "../../reusable/navBar";
 import EmailCapture from "../../reusable/email-capture";
 import { Filter } from "../../reusable/filter";
 import Products from "./products";
-import { Footer } from "../../reusable/footer";
 import Spinner from "react-spinkit";
 
 import "./index.css";
