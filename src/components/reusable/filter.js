@@ -3,11 +3,17 @@ import React from "react";
 import "./filter.css";
 
 export class Filter extends React.Component {
+  // sortDescOrder = this.props.product.sort(
+  //   (a, b) => parseFloat(a.price) - parseFloat(b.price)
+  // );
+
+  //action -> asc || desc -> add sort to reducer //
+
   render() {
     return (
       <div className="container">
         <div className="item-count-container">
-        <span>{this.props.products.length} ITEM(S)</span>
+          <span>{this.props.products.length} ITEM(S)</span>
         </div>
         <div className="right">
           <p className="sortBy">SORT BY</p>
@@ -21,8 +27,10 @@ export class Filter extends React.Component {
               />
             </button>
             <div className="dropdown-content">
-              <a href="/high-to-low">Price high to low</a>
-              <a href="low-to-high">Price low to high</a>
+              <a href="#" onClick={e => this.sortDescOrder()}>
+                Price high to low
+              </a>
+              <a href="#">Price low to high</a>
             </div>
           </div>
         </div>
