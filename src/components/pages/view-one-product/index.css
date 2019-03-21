@@ -3,12 +3,12 @@
 }
 
 .view-one-product-container {
-    margin-bottom: 40px;
+    margin-bottom: 200px;
 }
 
 @media (min-width: 769px) {
     .view-one-product-container {
-        margin-bottom: 140px;
+        margin-bottom: 240px;
     }
 }
 
