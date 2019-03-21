@@ -3,6 +3,7 @@ import React from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import { ReusableBanner } from "../../reusable/banner";
+import { AdminPagesNavBar } from "../../reusable/admin-page-nav-bar";
 import InventoryItem from "./item";
 import { getAllProducts } from "../../../actions/products";
 import requiresLogin from "../../reusable/requires-login";
@@ -17,6 +18,7 @@ class Inventory extends React.Component {
   render() {
     return (
       <React.Fragment>
+        <AdminPagesNavBar />
         <ReusableBanner text="INVENTORY" />
         <div className="add-button-container">
           <button className="add-button">

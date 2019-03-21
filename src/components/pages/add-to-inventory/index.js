@@ -3,10 +3,12 @@ import React from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import { ReusableBanner } from "../../reusable/banner";
+import { AdminPagesNavBar } from "../../reusable/admin-page-nav-bar";
 import { postItem } from "../../../actions/products";
 import requiresLogin from "../../reusable/requires-login";
 import "./index.css";
 
+//Renders new entry form
 class NewInventoryEntry extends React.Component {
   //contains initial state
   constructor(props) {
@@ -48,6 +50,7 @@ class NewInventoryEntry extends React.Component {
   render() {
     return (
       <React.Fragment>
+      <AdminPagesNavBar/>
         <ReusableBanner text="INVENTORY"/>
         <form
           className="inventory-form "
