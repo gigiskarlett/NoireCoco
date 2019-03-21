@@ -107,7 +107,7 @@ export const deleteItemError = error => ({
   error
 });
 
-export const deleteInventoryItem = itemId => dispatch => {
+export const deleteInventoryItem = itemId => (dispatch, getState) => {
   const authToken = getState().auth.authToken;
 
   return fetch(`${API_BASE_URL}/products/${itemId}`, {
