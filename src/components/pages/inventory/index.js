@@ -3,7 +3,7 @@ import React from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import { ReusableBanner } from "../../reusable/banner";
-import { AdminPagesNavBar } from "../../reusable/admin-page-nav-bar";
+import AdminPagesNavBar  from "../../reusable/admin-page-nav-bar";
 import InventoryItem from "./item";
 import { getAllProducts } from "../../../actions/products";
 import requiresLogin from "../../reusable/requires-login";

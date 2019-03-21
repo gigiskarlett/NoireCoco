@@ -3,7 +3,7 @@ import React from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import { ReusableBanner } from "../../reusable/banner";
-import { AdminPagesNavBar } from "../../reusable/admin-page-nav-bar";
+import AdminPagesNavBar from "../../reusable/admin-page-nav-bar";
 import { postItem } from "../../../actions/products";
 import requiresLogin from "../../reusable/requires-login";
 import "./index.css";
@@ -30,10 +30,10 @@ class NewInventoryEntry extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     this.props.dispatch(postItem(this.state))
-    .then(() => this.clearFields())
+    .then(() => this.clearFields());
   }
 
-  clearFields(){
+  clearFields() {
     this.setState({
       name: "",
       url: "",
@@ -45,13 +45,13 @@ class NewInventoryEntry extends React.Component {
       price: "",
       style: "one-piece bikini"
     });
-  };
+  }
   //renders form
   render() {
     return (
       <React.Fragment>
-      <AdminPagesNavBar/>
-        <ReusableBanner text="INVENTORY"/>
+        <AdminPagesNavBar />
+        <ReusableBanner text="INVENTORY" />
         <form
           className="inventory-form "
           aria-live="polite"
