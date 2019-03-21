@@ -78,7 +78,8 @@ export const postItemError = error => ({
   error
 });
 
-export const postItem = item => dispatch => {
+export const postItem = item => (dispatch, getState) => {
+  const authToken = getState().auth.authToken;
   return fetch(`${API_BASE_URL}/products/`, {
     method: "POST",
     headers: {
