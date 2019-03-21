@@ -2,8 +2,9 @@ import { API_BASE_URL } from "../config";
 import { normalizeResponseErrors } from "./utils";
 
 export const START_LOADING = "START_LOADING";
-export const startLoading = () => ({
-  type: START_LOADING
+export const startLoading = (loading) => ({
+  type: START_LOADING,
+  loading
 });
 
 //Fetch GET api call
@@ -20,6 +21,7 @@ export const fetchProductsError = error => ({
 });
 
 export const getAllProducts = filter => dispatch => {
+  dispatch(startLoading()); 
   return fetch(`${API_BASE_URL}/products`, {
     method: "GET",
     headers: {
@@ -48,7 +50,7 @@ export const fetchOneProductError = error => ({
 });
 
 export const getOneProduct = productId => dispatch => {
-  dispatch(startLoading(startLoading)); // TODO Add to all gets
+  dispatch(startLoading()); 
   return fetch(`${API_BASE_URL}/products/${productId}`, {
     method: "GET",
     headers: {
