@@ -36,6 +36,7 @@ export class ViewAllSwimwear extends React.Component {
         </div>
         <Filter products={this.props.products} />
         <section className="swimwear-products">
+        {this.isLoading()}
           <Products products={filteredProducts} />
         </section>
       </React.Fragment>
