@@ -27,7 +27,6 @@
 }
 
 /* heart icon */
-
 .heart {
     height: 30px
 }
@@ -48,7 +47,20 @@
 }
 
 @media (min-width: 650px) {
-    .product-details {}
-    .details {}
-    .details-heading {}
+    .details {
+        font-size: 16px;
+    }
+    .details-heading {
+        font-size: 20px;
+    }
+    .product-name {
+        padding: 5px;
+        font-size: 20px;
+    }
+    .price {
+        font-size: 18px;
+    }
+    .heart {
+        height: 40px;
+    }
 }
