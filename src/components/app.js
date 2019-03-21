@@ -1,7 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
 import { Route, withRouter } from "react-router-dom";
-import { NavBar } from "./reusable/navBar";
 import { Footer } from "./reusable/footer";
 import NewInventoryEntry from "../components/pages/add-to-inventory";
 import LandingPage from "../../src/components/pages/landing";
@@ -47,7 +46,6 @@ export class App extends React.Component {
   render() {
     return (
       <div className="app">
-        <NavBar />
         <Route exact path="/" component={LandingPage} />
         <Route exact path="/shop" component={ViewAllSwimwear} />
         <Route exact path="/category/:type" component={ViewAllSwimwear} />
@@ -55,8 +53,9 @@ export class App extends React.Component {
         <Route exact path="/shop/:product" component={ShowOneProduct} />
         <Route exact path="/login" component={LoginPage} />
         <Route exact path="/admin" component={Inventory} />
-        <Route exact path="/admin/new-entry" component={NewInventoryEntry} />
         <Route exact path="/register" component={RegistrationPage} />
+        <Route exact path="/admin" component={Inventory} />
+        <Route exact path="/admin/new-entry" component={NewInventoryEntry} />
         <Footer />
       </div>
     );
