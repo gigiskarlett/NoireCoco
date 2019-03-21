@@ -18,30 +18,20 @@
     justify-content: center;
 }
 
-.thumbnails img{
+.thumbnails img {
     margin-top: 15px;
     height: 110px;
     padding: 4px;
+    cursor: pointer;
 }
 
 @media (min-width: 650px) {
-    .images-container {
-        padding: 10px;
-    }
     .hero-image img {
         height: 400px;
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-    }
-    .bottom-thumbnails-container {
-        display: flex;
-        justify-content: center;
     }
     .thumbnails img {
-        margin-top: 15px;
+        margin: 15px;
         height: 250px;
         padding: 10px;
-        cursor: pointer;
     }
 }
