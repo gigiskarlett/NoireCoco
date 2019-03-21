@@ -8,21 +8,21 @@ export class ViewOneProductImages extends React.Component {
   constructor(props) {
     super(props);
       this.state = {
-        selectedImage: props.product.imageUrl
+        selectedImage: this.props.product.imageUrl
       };
   }
   render() {
     return (
       <div className="images-container">
         <div className="hero-image">
-        <img src={this.props.product.selectedImage || this.props.product.imageUrl} alt={this.props.product.shortDescription} />
+        <img src={this.state.selectedImage || this.props.product.imageUrl} alt={this.props.product.shortDescription} />
         </div>
         <div className="bottom-thumbnails-container">
           <a className="thumbnails">
           <img
           src={this.props.product.secondImage}
           alt={this.props.product.shortDescription}
-          onClick={e =>
+          onClick={(e) =>
             this.setState({ selectedImage: this.props.product.secondImage })
           }
         />
@@ -31,7 +31,7 @@ export class ViewOneProductImages extends React.Component {
           <img
           src={this.props.product.imageUrl}
           alt={this.props.product.shortDescription}
-          onClick={e =>
+          onClick={(e) =>
             this.setState({ selectedImage: this.props.product.imageUrl })
           }
         />
@@ -40,7 +40,7 @@ export class ViewOneProductImages extends React.Component {
           <img
           src={this.props.product.thirdImage}
           alt={this.props.product.shortDescription}
-          onClick={e =>
+          onClick={(e) =>
             this.setState({ selectedImage: this.props.product.thirdImage })
           }
         />
