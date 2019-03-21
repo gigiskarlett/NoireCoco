@@ -2,11 +2,11 @@
     box-sizing: border-box;
 }
 
-.product-name, .price, .colour-heading, .colour, .product-details, .details-heading {
+.product-name, .price, .product-details, .details-heading {
     text-align: center;
 }
 
-.product-name, .colour-heading, .details-heading {
+.product-name, .details-heading {
     font-family: 'Rufina', serif;
 }
 
@@ -48,6 +48,7 @@
 }
 
 @media (min-width: 650px) {
-
-
+    .product-details {}
+    .details {}
+    .details-heading {}
 }
