@@ -30,7 +30,6 @@ export class ViewAllSwimwear extends React.Component {
     }
     return (
       <React.Fragment>
-        <NavBar />
         <div className="pink-banner">
           <EmailCapture />
         </div>
@@ -38,7 +37,6 @@ export class ViewAllSwimwear extends React.Component {
         <section className="swimwear-products">
           <Products products={filteredProducts} />
         </section>
-        <Footer />
       </React.Fragment>
     );
   }

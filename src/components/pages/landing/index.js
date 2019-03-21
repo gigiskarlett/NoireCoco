@@ -13,7 +13,6 @@ export default class LandingPage extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <NavBar />
         <div className="about-us-banner">
           <p className="catchy-phrase title-for-catchy-phrase">SWIM</p>
           <p className="catchy-phrase">
@@ -69,7 +68,6 @@ export default class LandingPage extends React.Component {
         <div className="landing-page-email-container">
           <EmailCapture />
         </div>
-        <Footer />
       </React.Fragment>
     );
   }

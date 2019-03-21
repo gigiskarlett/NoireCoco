@@ -10,7 +10,6 @@ import { Footer } from "../../reusable/footer";
 export function AboutUs(props) {
   return (
     <React.Fragment>
-      <NavBar />
       <ReusableBanner text="ABOUT US"/>
       <section className="pictureContainer">
         <img
@@ -36,7 +35,6 @@ export function AboutUs(props) {
         <div className="empty-div-about-us" />
         <Button text="SHOP SWIMWEAR" />
         <div className="empty-space-about-us" />
-        <Footer />
       </section>
     </React.Fragment>
   );

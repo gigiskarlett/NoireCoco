@@ -49,7 +49,6 @@ class NewInventoryEntry extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <NavBar />
         <ReusableBanner text="INVENTORY"/>
         <form
           className="inventory-form "
@@ -189,7 +188,6 @@ class NewInventoryEntry extends React.Component {
             </button>
           </fieldset>
         </form>
-        <Footer />
       </React.Fragment>
     );
   }

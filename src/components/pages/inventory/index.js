@@ -23,7 +23,6 @@ class Inventory extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <NavBar />
         <ReusableBanner text="INVENTORY" />
         <div className="add-button-container">
           <button className="add-button">
@@ -40,7 +39,6 @@ class Inventory extends React.Component {
         {/*Protected data: {this.props.protectedData}*/}
         <InventoryItem />
         <div className="empty-space" />
-        <Footer />
       </React.Fragment>
     );
   }

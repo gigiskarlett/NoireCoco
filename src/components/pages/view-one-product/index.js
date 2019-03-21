@@ -18,7 +18,6 @@ class ShowOneProduct extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <NavBar />
         <ReusableBanner
           text="There’s nothing better than wearing the perfect swimwear to go to
           the pool or the beach, that’s why we have selected our favorite
@@ -27,7 +26,6 @@ class ShowOneProduct extends React.Component {
         <div className="view-one-product-container">
           <ViewOneProductImagesAndDetails product={this.props.product} />
         </div>
-        <Footer />
       </React.Fragment>
     );
   }

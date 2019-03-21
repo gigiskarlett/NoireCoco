@@ -15,10 +15,8 @@ export function RegistrationPage(props) {
   }
   return (
     <div className="admin-home">
-      <NavBar />
       <h2 className="registration-title">ADMINISTRATIVE PAGE FOR NOIRE COCO</h2>
       <RegistrationForm />
-      <Footer />
     </div>
   );
 }
