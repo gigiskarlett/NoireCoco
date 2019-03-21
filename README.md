@@ -1,18 +1,16 @@
-<h1>Noire Coco</h1>
+# Noire Coco
 
 <p>Noire Coco is a webpage that features a handpicked selection of beautiful, affordable, highly reviewed swimwear from <a href="https://www.amazon.com"/>Amazon</a>. I wanted to make beautiful quality swimwear with reasonable prices accessible to every woman who struggles either searching through hundreds of pages or even worse, after receiving the swimwear notices the bad reviews it had and now is stuck with a low-quality swimwear item. <p>
   
 <p>Noire Coco is a webpage that features a handpick selection of beautiful, affordable, highly reviewed swimwear from </p>
 
-<h2>Demo</h2>
+## Demo
 
 <a href="https://heroku.com"/>Live Demo</a>
 
-  
+## Screenshots
 
-<h2>Screenshots</h2>
-
-<h3> Landing Page</h3>
+### Landing Page
 
 ![image](https://user-images.githubusercontent.com/38567356/54554328-6e2bb100-4971-11e9-88a4-af70052d8dec.png)
 
@@ -42,8 +40,20 @@
 
 <h2> Built utilizing the MERN stack:</h2>
 
-<li><strong>Front End:</strong> React/Redux<l/i>
-<li><strong>Back End:</strong> Mongo/MLab/Nodejs/Expressjs<l/i>
-<li><strong>Testing:</strong> Enzyme/Mocha/Chai<l/i>
-<li><strong>Testing:</strong> Enzyme/Mocha/Chai<l/i>
+- **Front End:** React/Redux
+- **Back End:** Mongo/MLab/Nodejs/Expressjs
+- **Testing:** Enzyme/Mocha/Chai
+- **Testing:** Enzyme/Mocha/Chai
 
+# ToDo
+
+- To logout. Dispatch clearAuth when button is clicked
+- Finish Loading
+- add Authorization: `Bearer ${authToken}` on actions except for get.
+- requires login on all admin routes
+- Clean the console!
+
+# Extras
+
+- Password protect Register
+- sort

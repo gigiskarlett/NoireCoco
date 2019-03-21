@@ -6,7 +6,8 @@ import {
   POST_ITEM_SUCCESS,
   POST_ITEM_ERROR,
   DELETE_ITEM_SUCCESS,
-  DELETE_ITEM_ERROR
+  DELETE_ITEM_ERROR,
+  START_LOADING
 } from "../actions/products";
 
 const initialState = {
@@ -15,35 +16,45 @@ const initialState = {
     imageUrl: "",
     shortDescription: "",
     secondImage: "",
-    thirdImage: "", 
+    thirdImage: "",
     details: ""
   },
-  error: null
+  error: null,
+  loading: false
 };
 
 export default function reducer(state = initialState, action) {
-  if (action.type === FETCH_PRODUCTS_SUCCESS) {
+  if (action.type === START_LOADING) {
+    return Object.assign({}, state, {
+      loading: true
+    });
+  } else if (action.type === FETCH_PRODUCTS_SUCCESS) {
     return Object.assign({}, state, {
       products: action.products,
-      error: null
+      error: null,
+      loading: false
     });
   } else if (action.type === FETCH_PRODUCTS_ERROR) {
     return Object.assign({}, state, {
-      error: action.error
+      error: action.error,
+      loading: false
     });
   } else if (action.type === FETCH_ONE_PRODUCT_SUCCESS) {
     return Object.assign({}, state, {
       selectedProduct: action.product,
-      error: null
+      error: null,
+      loading: false
     });
   } else if (action.type === FETCH_ONE_PRODUCT_ERROR) {
     return Object.assign({}, state, {
-      error: action.error
+      error: action.error,
+      loading: false
     });
   } else if (action.type === POST_ITEM_SUCCESS) {
     return Object.assign({}, state, {
       item: action.item,
-      error: null
+      error: null,
+      loading: false
     });
   } else if (action.type === POST_ITEM_ERROR) {
     return Object.assign({}, state, {

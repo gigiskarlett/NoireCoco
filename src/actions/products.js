@@ -1,6 +1,11 @@
 import { API_BASE_URL } from "../config";
 import { normalizeResponseErrors } from "./utils";
 
+export const START_LOADING = "START_LOADING";
+export const startLoading = () => ({
+  type: START_LOADING
+});
+
 //Fetch GET api call
 export const FETCH_PRODUCTS_SUCCESS = "FETCH_PRODUCTS_SUCCESS";
 export const fetchProductsSuccess = products => ({
@@ -43,6 +48,7 @@ export const fetchOneProductError = error => ({
 });
 
 export const getOneProduct = productId => dispatch => {
+  dispatch(startLoading(startLoading)); // TODO Add to all gets
   return fetch(`${API_BASE_URL}/products/${productId}`, {
     method: "GET",
     headers: {
@@ -60,7 +66,6 @@ export const getOneProduct = productId => dispatch => {
 };
 
 //Fetch Post Api call
-
 export const POST_ITEM_SUCCESS = "POST_ITEM_SUCCESS";
 export const postItemSuccess = item => ({
   type: POST_ITEM_SUCCESS,
@@ -103,11 +108,14 @@ export const deleteItemError = error => ({
 });
 
 export const deleteInventoryItem = itemId => dispatch => {
+  const authToken = getState().auth.authToken;
+
   return fetch(`${API_BASE_URL}/products/${itemId}`, {
     method: "DELETE",
     headers: {
       Accept: "application/json",
-      "content-type": "application/json"
+      "content-type": "application/json",
+      Authorization: `Bearer ${authToken}`
     }
   })
     .then(res => normalizeResponseErrors(res))

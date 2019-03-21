@@ -7,15 +7,15 @@ import EmailCapture from "../../reusable/email-capture";
 import { Filter } from "../../reusable/filter";
 import Products from "./products";
 import { Footer } from "../../reusable/footer";
-import Spinner from 'react-spinkit';
+import Spinner from "react-spinkit";
 
 import "./index.css";
 
 export class ViewAllSwimwear extends React.Component {
   isLoading() {
     if (this.props.loading) {
-      return <Spinner name="three-bounce" color="fuchsia"/>;
-  }
+      return <Spinner name="three-bounce" color="fuchsia" />;
+    }
   }
   componentDidMount() {
     this.props.dispatch(getAllProducts());
@@ -44,7 +44,8 @@ export class ViewAllSwimwear extends React.Component {
   }
 }
 const mapStateToProps = state => ({
-  products: state.products.products
+  products: state.products.products,
+  loading: state.products.loading
 });
 
 export default connect(mapStateToProps)(ViewAllSwimwear);
