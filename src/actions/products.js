@@ -82,8 +82,11 @@ export const postItem = item => dispatch => {
   return fetch(`${API_BASE_URL}/products/`, {
     method: "POST",
     headers: {
-      "content-type": "application/json"
+      Accept: "application/json",
+      "content-type": "application/json",
+      Authorization: `Bearer ${authToken}`
     },
+    
     body: JSON.stringify(item)
   })
     .then(res => normalizeResponseErrors(res))
