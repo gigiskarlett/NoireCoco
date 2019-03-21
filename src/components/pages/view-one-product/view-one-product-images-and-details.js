@@ -11,7 +11,7 @@ export class ViewOneProductImagesAndDetails extends React.Component {
     let details = this.props.product.details;
     if (this.props.product.details) {
       const regex = /[.]/g;
-      const subst = `<p className="mobile-details-list">`;
+      const subst = `<p className="details-list">`;
 
       const detailsResult = details.replace(regex, subst);
 
@@ -25,7 +25,7 @@ export class ViewOneProductImagesAndDetails extends React.Component {
   }
   render() {
     return (
-      <div className="mobile-product-information">
+      <div className="container-product-information">
         <h2 className="product-name">
           <img
             className="heart"
