@@ -12,13 +12,15 @@ import "./index.css";
 class ShowOneProduct extends React.Component {
   isLoading() {
     if (this.props.loading) {
-      return <Spinner name="three-bounce" color="fuchsia" />;
+      return <Spinner name="three-bounce"  style={{display: 'flex', color:"#FFA3D4",justifyContent: 'center', margin:"40px"}} />;
     }
   }
   componentDidMount() {
     this.props.dispatch(getOneProduct(this.props.match.params.product));
   }
   render() {
+    {this.isLoading();
+    }
     return (
       <React.Fragment>
         <NavBar />
@@ -27,8 +29,8 @@ class ShowOneProduct extends React.Component {
           the pool or the beach, that’s why we have selected our favorite
           selection of quality and beautiful swimwear for you"
         />
+        {this.isLoading()}
         <div className="view-one-product-container">
-          {this.isLoading()}
           <ViewOneProductImagesAndDetails product={this.props.product} />
         </div>
       </React.Fragment>
@@ -37,7 +39,8 @@ class ShowOneProduct extends React.Component {
 }
 
 const mapStateToProps = state => ({
-  product: state.products.selectedProduct
+  product: state.products.selectedProduct,
+  loading: state.products.loading
 });
 
 export default connect(mapStateToProps)(ShowOneProduct);

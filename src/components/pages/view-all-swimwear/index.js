@@ -14,8 +14,7 @@ import "./index.css";
 export class ViewAllSwimwear extends React.Component {
   isLoading() {
     if (this.props.loading) {
-      console.log("loading");
-      return <Spinner name="three-bounce" color="fuchsia" />;
+       return <Spinner name="three-bounce"  style={{display: 'flex', color:"#FFA3D4",justifyContent: 'center', margin:"40px"}} />;
     }
   }
   componentDidMount() {
@@ -25,7 +24,6 @@ export class ViewAllSwimwear extends React.Component {
     {
       this.isLoading();
     }
-    console.log("Loaded");
     let filteredProducts = this.props.products;
 
     if (this.props.match.params.type) {
