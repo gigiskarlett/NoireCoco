@@ -8,14 +8,14 @@
 }
 
 .empty-space-about-us {
-    margin-top: 100px;
+    margin-top: 25%;
 }
 
 .pictureContainer {
     height: 200px;
     display: flex;
     padding: 20px;
-    margin:10px;
+    margin: 28px;
 }
 
 .img {
@@ -30,6 +30,10 @@ hr {
 
 .empty-div-about-us {
     margin-bottom: 50px;
+}
+
+.about-us-section {
+    min-height: 38vh;
 }
 
 @media (min-width: 650px) {
