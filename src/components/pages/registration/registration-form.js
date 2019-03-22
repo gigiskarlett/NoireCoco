@@ -74,7 +74,7 @@ class RegistrationForm extends React.Component {
             </button>
           </div>
           <div className="login-link-container">
-            <Link className="login-link" to="/admin/login">
+            <Link className="login-link" to="/login">
               Login
             </Link>
           </div>
