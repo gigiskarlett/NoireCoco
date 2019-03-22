@@ -22,13 +22,13 @@ export function AboutUs(props) {
       <section className="about-us-section">
         <p className="about-us-paragraph">
           Noire Coco was created by a beach lover who’s always on the search for
-          swimwear for her next vacation. I’ve always struggled on finding a
-          nice swimwear and it seems that at times I stumbled upon having too
-          many or too little options for pieces that I didn’t really like. I
+          swimwear to take on her next vacation. I’ve always struggled to find
+          nice swimwear and often times, I've found too
+          many pieces that I just didn’t really like. I
           wanted to create a page where finding a beautiful swimsuit for a
           reasonable price wouldn’t be a search down hundreds of pages. I wanted
-          to make beautiful swimwear with reasonable prices accessible to every
-          women who finds herself always on a quest when trying to find
+          to make the search for that perfect swimsuit a little less painful to every
+          women who finds herself always on a quest to find
           swimwear.
         </p>
         <hr color="#FF70BD" />
