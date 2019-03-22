@@ -11,6 +11,9 @@
     display: inline;
     list-style: none;
 }
+.link {
+    cursor: pointer;
+}
 
 @media (min-width: 650px) {
     .admin-nav-links {
