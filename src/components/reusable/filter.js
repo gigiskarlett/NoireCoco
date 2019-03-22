@@ -2,13 +2,8 @@ import React from "react";
 
 import "./filter.css";
 
+//Filter bar that displays amount of products + shows products being sorted from newest to oldest addition
 export class Filter extends React.Component {
-  // sortDescOrder = this.props.product.sort(
-  //   (a, b) => parseFloat(a.price) - parseFloat(b.price)
-  // );
-
-  //action -> asc || desc -> add sort to reducer //
-
   render() {
     return (
       <div className="container">
@@ -18,20 +13,7 @@ export class Filter extends React.Component {
         <div className="right">
           <p className="sortBy">SORT BY</p>
           <div className="drop-down">
-            <button className="dropbtn">
-              What's new
-              <img
-                className="downward-arrow"
-                src="https://i.ibb.co/rfFd82D/icons8-chevron-down-filled-100-1.png"
-                alt="downward arrow"
-              />
-            </button>
-            <div className="dropdown-content">
-              <a href="#" onClick={e => this.sortDescOrder()}>
-                Price high to low
-              </a>
-              <a href="#">Price low to high</a>
-            </div>
+            <button className="dropbtn">What's New</button>
           </div>
         </div>
       </div>
