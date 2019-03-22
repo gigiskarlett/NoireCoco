@@ -23,7 +23,7 @@ class AdminPagesNavBar extends React.Component {
         <ul className="admin-nav-links">
           <li className="logout-link">
             <p
-              className="link"
+              className="logout-link"
               aria-label="Logout"
               onClick={e => {
                 e.preventDefault();
