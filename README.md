@@ -29,17 +29,19 @@ Noire Coco is a webpage that features a handpick selection of beautiful, afforda
 ### Noire Coco Administrative Portal
 
 ### Registration Portal
-![image] (https://i.imgur.com/ZnJaBQI.png)
+
+![image](https://i.imgur.com/ZnJaBQI.png)
+
 
 ### Login Portal
 
 ![image](https://i.imgur.com/x9h4m7U.png)
 
 ### Inventory
-<img src="https://i.imgur.com/s0sPlus.png" alt="Inventory-image" border="0">
+![image](https://i.imgur.com/s0sPlus.png) 
 
 ### Add New Item
-<img src="https://i.imgur.com/nrFuCH5.png" alt="Add-to-inventory-image" border="0">
+![image](https://i.imgur.com/nrFuCH5.png)
 
 ## Built utilizing the MERN stack:
 
