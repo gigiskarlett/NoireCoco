@@ -2,7 +2,6 @@ import React from "react";
 
 import { NavBar } from "../../reusable/navBar";
 import { Link } from "react-router-dom";
-import { InstagramBanner } from "../../reusable/instagram-banner";
 import "./index.css";
 import EmailCapture from "../../reusable/email-capture";
 
@@ -63,7 +62,6 @@ export default class LandingPage extends React.Component {
             />
           </Link>
         </div>
-        <InstagramBanner />
         <div className="landing-page-email-container">
           <EmailCapture />
         </div>
