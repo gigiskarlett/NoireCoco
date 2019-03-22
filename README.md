@@ -1,8 +1,7 @@
 # Noire Coco
 
-Noire Coco is a webpage that features a handpicked selection of beautiful, affordable, highly reviewed swimwear from <a href="https://www.amazon.com"/>Amazon</a>. I wanted to make beautiful quality swimwear with reasonable prices accessible to every woman who struggles either searching through hundreds of pages or even worse, after receiving the swimwear notices the bad reviews it had and now is stuck with a low-quality swimwear item. 
-  
-Noire Coco is a webpage that features a handpick selection of beautiful, affordable, highly reviewed swimwear from 
+Noire Coco is a webpage that features a handpicked selection of beautiful, affordable, highly reviewed swimwear from <a href="https://www.amazon.com"/>Amazon</a>. Noire Coco was created by a beach lover who’s always on the search for swimwear to take on her next vacation. I’ve always struggled to find nice swimwear and often times, I've found too many pieces that I just didn’t really like. I wanted to create a page where finding a beautiful swimsuit for a reasonable price wouldn’t be a search down hundreds of pages. I wanted to make the search for that perfect swimsuit a little less painful to every women who finds herself always on a quest to find swimwear. 
+
 
 ## Demo
 
