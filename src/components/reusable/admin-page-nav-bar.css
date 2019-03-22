@@ -1,6 +1,5 @@
 .admin-nav-links {
     float: right;
-    padding-left: 0px;
     padding-top: 10px;
 }
 
@@ -10,9 +9,8 @@
     text-decoration: none;
     display: inline;
     list-style: none;
-}
-.link {
     cursor: pointer;
+    font-family: 'Rufina', serif;
 }
 
 @media (min-width: 650px) {
@@ -21,7 +19,6 @@
         margin-top: 10px;
     }
     .logout-link {
-        padding: 30px;
         text-decoration: none;
     }
 }
