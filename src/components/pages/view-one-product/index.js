@@ -10,6 +10,7 @@ import "./index.css";
 
 //Renders page with product selected
 class ShowOneProduct extends React.Component {
+    //if page is loading shows loading transition 
   isLoading() {
     if (this.props.loading) {
       return (
@@ -25,6 +26,7 @@ class ShowOneProduct extends React.Component {
       );
     }
   }
+  //dispatches action to fetch the product selected
   componentDidMount() {
     this.props.dispatch(getOneProduct(this.props.match.params.product));
   }

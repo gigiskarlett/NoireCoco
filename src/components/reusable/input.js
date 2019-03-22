@@ -1,6 +1,7 @@
 import React from "react";
 import "./input.css";
 
+//Renders input used on login and registration form
 export default class Input extends React.Component {
   componentDidUpdate(prevProps) {
     if (!prevProps.meta.active && this.props.meta.active) {

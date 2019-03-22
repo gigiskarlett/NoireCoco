@@ -10,7 +10,9 @@ import { required, nonEmpty, matches, length, isTrimmed } from "./validators";
 const passwordLength = length({ min: 6, max: 72 });
 const matchesPassword = matches("password");
 
+//Renders registration form 
 class RegistrationForm extends React.Component {
+  //dispatches action to register user
   onSubmit(values) {
     const { username, password, firstName, lastName } = values;
     const user = { username, password, firstName, lastName };

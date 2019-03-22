@@ -7,6 +7,7 @@ import "./admin-page-nav-bar.css";
 
 //Renders navigation bar for admin pages
 class AdminPagesNavBar extends React.Component {
+  //Logs out user
   logout() {
     this.props.dispatch(clearAuth());
   }

@@ -2,7 +2,7 @@ import React from "react";
 
 import "./filter.css";
 
-//Filter bar that displays amount of products + shows products being sorted from newest to oldest addition
+//Filter bar that displays amount of products and shows products being sorted from newest to oldest addition
 export class Filter extends React.Component {
   render() {
     return (

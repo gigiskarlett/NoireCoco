@@ -6,6 +6,7 @@ import "./item.css";
 
 //Renders items in the database
 class InventoryItem extends React.Component {
+  //dispatches action to delete database item
   deleteItem(itemId) {
     this.props.dispatch(deleteInventoryItem(itemId))
   }

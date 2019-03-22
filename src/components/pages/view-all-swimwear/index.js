@@ -12,6 +12,7 @@ import "./index.css";
 
 //Renders all swimwear
 export class ViewAllSwimwear extends React.Component {
+  //if page is loading shows loading transition 
   isLoading() {
     if (this.props.loading) {
       return (
@@ -27,9 +28,12 @@ export class ViewAllSwimwear extends React.Component {
       );
     }
   }
+  //dispatches action to fetch all products
   componentDidMount() {
     this.props.dispatch(getAllProducts());
   }
+  //if user selects to filter product by style
+  //it matches the params to display only the style selected
   render() {
     let filteredProducts = this.props.products;
 
