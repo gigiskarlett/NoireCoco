@@ -6,7 +6,7 @@ Noire Coco is a webpage that features a handpick selection of beautiful, afforda
 
 ## Demo
 
-<a href="https://heroku.com"/>Live Demo</a>
+<a href="http://www.noirecoco.com"/>Live Demo</a>
 
 ## Screenshots
 
