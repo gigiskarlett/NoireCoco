@@ -20,23 +20,26 @@ Noire Coco is a webpage that features a handpick selection of beautiful, afforda
 
 ### View Selected Swimwear
 
-![image](https://user-images.githubusercontent.com/38567356/54554638-2a857700-4972-11e9-94ea-b96b1a01d41c.png)
+![image](https://i.imgur.com/0a3N5io.png)
 
 ### About Noire Coco
 
-![image](https://user-images.githubusercontent.com/38567356/54554679-40933780-4972-11e9-808d-c220f71975b4.png)
+![image](https://i.imgur.com/D0DbWcZ.png)
 
 ### Noire Coco Administrative Portal
 
+### Registration Portal
+![image] (https://i.imgur.com/ZnJaBQI.png)
+
 ### Login Portal
 
-![image](https://user-images.githubusercontent.com/38567356/54554983-ff4f5780-4972-11e9-92c8-dfd50ad12655.png)
+![image](https://i.imgur.com/x9h4m7U.png)
 
 ### Inventory
-<img src="https://i.ibb.co/rcnSy4M/Screen-Shot-2019-03-16-at-6-37-20-PM.png" alt="Screen-Shot-2019-03-16-at-6-37-20-PM" border="0">
+<img src="https://i.imgur.com/s0sPlus.png" alt="Inventory-image" border="0">
 
 ### Add New Item
-<img src="https://i.ibb.co/hFvvN3x/Screen-Shot-2019-03-16-at-6-24-00-PM.png" alt="Screen-Shot-2019-03-16-at-6-24-00-PM" border="0">
+<img src="https://i.imgur.com/nrFuCH5.png" alt="Add-to-inventory-image" border="0">
 
 ## Built utilizing the MERN stack:
 
