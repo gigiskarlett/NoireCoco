@@ -11,11 +11,14 @@
 }
 
 .add-button {
-    position: absolute;
-    right: 10px;
     border: none;
     background: none;
-    top: 90px;
+}
+
+.add-button-container{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5px;
 }
 
 .plus-icon {
@@ -35,7 +38,6 @@
         top: 130px;
         right: 20px;
     }
-
     .link-to-add-new {
         font-size: 15px;
     }
