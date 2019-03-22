@@ -14,16 +14,23 @@ import "./index.css";
 export class ViewAllSwimwear extends React.Component {
   isLoading() {
     if (this.props.loading) {
-       return <Spinner name="three-bounce"  style={{display: 'flex', color:"#FFA3D4",justifyContent: 'center', margin:"40px"}} />;
+      return (
+        <Spinner
+          name="three-bounce"
+          style={{
+            display: "flex",
+            color: "#FFA3D4",
+            justifyContent: "center",
+            margin: "40px"
+          }}
+        />
+      );
     }
   }
   componentDidMount() {
     this.props.dispatch(getAllProducts());
   }
   render() {
-    {
-      this.isLoading();
-    }
     let filteredProducts = this.props.products;
 
     if (this.props.match.params.type) {

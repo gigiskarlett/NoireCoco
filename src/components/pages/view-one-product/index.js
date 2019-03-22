@@ -12,15 +12,23 @@ import "./index.css";
 class ShowOneProduct extends React.Component {
   isLoading() {
     if (this.props.loading) {
-      return <Spinner name="three-bounce"  style={{display: 'flex', color:"#FFA3D4",justifyContent: 'center', margin:"40px"}} />;
+      return (
+        <Spinner
+          name="three-bounce"
+          style={{
+            display: "flex",
+            color: "#FFA3D4",
+            justifyContent: "center",
+            margin: "40px"
+          }}
+        />
+      );
     }
   }
   componentDidMount() {
     this.props.dispatch(getOneProduct(this.props.match.params.product));
   }
   render() {
-    {this.isLoading();
-    }
     return (
       <React.Fragment>
         <NavBar />
