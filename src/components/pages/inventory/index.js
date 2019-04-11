@@ -10,8 +10,9 @@ import requiresLogin from "../../reusable/requires-login";
 
 import "./index.css";
 
-//Renders items in inventory
+//Renders inventory page with items
 class Inventory extends React.Component {
+  //dispatches action to retrieve all items in database
   componentDidMount() {
     this.props.dispatch(getAllProducts());
   }

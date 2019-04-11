@@ -25,7 +25,7 @@
     cursor: pointer;
 }
 
-@media (min-width: 650px) {
+@media (min-width: 769px) {
     .hero-image img {
         height: 400px;
     }

@@ -8,7 +8,7 @@ import { postItem } from "../../../actions/products";
 import requiresLogin from "../../reusable/requires-login";
 import "./index.css";
 
-//Renders new entry form
+//Renders new entry form 
 class NewInventoryEntry extends React.Component {
   //contains initial state
   constructor(props) {
@@ -26,13 +26,13 @@ class NewInventoryEntry extends React.Component {
     };
   }
 
-  //handles submission of form and dispatches action to post api call
+  //handles submission of form and dispatches action to post item
   handleSubmit(e) {
     e.preventDefault();
     this.props.dispatch(postItem(this.state))
     .then(() => this.clearFields());
   }
-
+  //clears field after submission
   clearFields() {
     this.setState({
       name: "",

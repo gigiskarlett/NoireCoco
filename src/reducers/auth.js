@@ -19,6 +19,7 @@ export default function reducer(state = initialState, action) {
             authToken: action.authToken
         });
     } else if (action.type === CLEAR_AUTH) {
+        localStorage.clear()
         return Object.assign({}, state, {
             authToken: null,
             currentUser: null

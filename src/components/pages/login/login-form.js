@@ -7,7 +7,9 @@ import { login } from "../../../actions/auth";
 import { required, nonEmpty } from "../../../validators";
 import "./login-form.css";
 
+//Renders login form
 class LoginForm extends React.Component {
+  //dispatches action for login, sends username and password
   onSubmit(values) {
     return this.props.dispatch(login(values.username, values.password));
   }
@@ -57,7 +59,7 @@ class LoginForm extends React.Component {
           </button>
         </div>
         <div className="register-link-container">
-          <Link className="register-link" to="/admin/register">
+          <Link className="register-link" to="/register">
             Register
           </Link>
         </div>

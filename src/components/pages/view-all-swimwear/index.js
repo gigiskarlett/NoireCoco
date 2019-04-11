@@ -12,20 +12,29 @@ import "./index.css";
 
 //Renders all swimwear
 export class ViewAllSwimwear extends React.Component {
+  //if page is loading shows loading transition 
   isLoading() {
     if (this.props.loading) {
-      console.log("loading");
-      return <Spinner name="three-bounce" color="fuchsia" />;
+      return (
+        <Spinner
+          name="three-bounce"
+          style={{
+            display: "flex",
+            color: "#FFA3D4",
+            justifyContent: "center",
+            margin: "40px"
+          }}
+        />
+      );
     }
   }
+  //dispatches action to fetch all products
   componentDidMount() {
     this.props.dispatch(getAllProducts());
   }
+  //if user selects to filter product by style
+  //it matches the params to display only the style selected
   render() {
-    {
-      this.isLoading();
-    }
-    console.log("Loaded");
     let filteredProducts = this.props.products;
 
     if (this.props.match.params.type) {

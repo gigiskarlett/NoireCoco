@@ -7,6 +7,7 @@ import LoginForm from "./login-form";
 
 //Renders login page
 class LoginPage extends React.Component {
+  //if the user is logged in it redirects to the inventory
   render() {
     if (this.props.loggedIn) {
       return <Redirect to="/admin" />;

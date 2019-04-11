@@ -2,7 +2,6 @@ import React from "react";
 
 import { NavBar } from "../../reusable/navBar";
 import { Link } from "react-router-dom";
-import { InstagramBanner } from "../../reusable/instagram-banner";
 import "./index.css";
 import EmailCapture from "../../reusable/email-capture";
 
@@ -15,9 +14,9 @@ export default class LandingPage extends React.Component {
         <div className="about-us-banner">
           <p className="catchy-phrase title-for-catchy-phrase">SWIM</p>
           <p className="catchy-phrase">
-            There’s nothing better than wearing the perfect swimwear to go to
-            the pool or the beach, that’s why we have selected our favorite
-            selection of quality and beautiful swimwear for you
+            There’s nothing better than wearing the perfect swimwear at
+            the pool or the beach. That’s why we've curated our favorite
+            selection of high-quality and beautiful swimwear for you
           </p>
         </div>
         <div className="landing-banner">
@@ -63,7 +62,6 @@ export default class LandingPage extends React.Component {
             />
           </Link>
         </div>
-        <InstagramBanner />
         <div className="landing-page-email-container">
           <EmailCapture />
         </div>

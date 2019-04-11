@@ -6,6 +6,7 @@ import "./email-capture.css";
 
 //Renders email capture to subscribe for updates
 class EmailCapture extends React.Component {
+  //captures state of email input
   constructor(props) {
     super(props);
     this.state = {
@@ -13,11 +14,12 @@ class EmailCapture extends React.Component {
     };
   }
 
-  //handles submission of form and dispatches action to post api call
+  //handles submission of form and dispatches action to post email to database
   handleSubmit(e) {
     e.preventDefault();
     this.props.dispatch(postEmail(this.state)).then(() => this.clearFields());
   }
+  //clears field after submission
   clearFields() {
     this.setState({
       email: ""

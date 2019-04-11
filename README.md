@@ -1,12 +1,11 @@
 # Noire Coco
 
-Noire Coco is a webpage that features a handpicked selection of beautiful, affordable, highly reviewed swimwear from <a href="https://www.amazon.com"/>Amazon</a>. I wanted to make beautiful quality swimwear with reasonable prices accessible to every woman who struggles either searching through hundreds of pages or even worse, after receiving the swimwear notices the bad reviews it had and now is stuck with a low-quality swimwear item. 
-  
-Noire Coco is a webpage that features a handpick selection of beautiful, affordable, highly reviewed swimwear from 
+Noire Coco is a webpage that features a handpicked selection of beautiful, affordable, highly reviewed swimwear from <a href="https://www.amazon.com"/>Amazon</a>. Noire Coco was created by a beach lover who’s always on the search for swimwear to take on her next vacation. I’ve always struggled to find nice swimwear and often times, I've found too many pieces that I just didn’t really like. I wanted to create a page where finding a beautiful swimsuit for a reasonable price wouldn’t be a search down hundreds of pages. I wanted to make the search for that perfect swimsuit a little less painful to every woman who finds herself always on a quest to find swimwear. 
+
 
 ## Demo
 
-<a href="https://heroku.com"/>Live Demo</a>
+<a href="http://www.noirecoco.com"/>Live Demo</a>
 
 ## Screenshots
 
@@ -20,23 +19,28 @@ Noire Coco is a webpage that features a handpick selection of beautiful, afforda
 
 ### View Selected Swimwear
 
-![image](https://user-images.githubusercontent.com/38567356/54554638-2a857700-4972-11e9-94ea-b96b1a01d41c.png)
+![image](https://i.imgur.com/0a3N5io.png)
 
 ### About Noire Coco
 
-![image](https://user-images.githubusercontent.com/38567356/54554679-40933780-4972-11e9-808d-c220f71975b4.png)
+![image](https://i.imgur.com/D0DbWcZ.png)
 
 ### Noire Coco Administrative Portal
 
+### Registration Portal
+
+![image](https://i.imgur.com/ZnJaBQI.png)
+
+
 ### Login Portal
 
-![image](https://user-images.githubusercontent.com/38567356/54554983-ff4f5780-4972-11e9-92c8-dfd50ad12655.png)
+![image](https://i.imgur.com/x9h4m7U.png)
 
 ### Inventory
-<img src="https://i.ibb.co/rcnSy4M/Screen-Shot-2019-03-16-at-6-37-20-PM.png" alt="Screen-Shot-2019-03-16-at-6-37-20-PM" border="0">
+![image](https://i.imgur.com/s0sPlus.png) 
 
 ### Add New Item
-<img src="https://i.ibb.co/hFvvN3x/Screen-Shot-2019-03-16-at-6-24-00-PM.png" alt="Screen-Shot-2019-03-16-at-6-24-00-PM" border="0">
+![image](https://i.imgur.com/nrFuCH5.png)
 
 ## Built utilizing the MERN stack:
 

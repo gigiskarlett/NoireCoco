@@ -7,6 +7,7 @@ import "./view-one-product-images-and-details.css";
 
 //Renders information about product
 export class ViewOneProductImagesAndDetails extends React.Component {
+  //At every dot it creates a new line
   replaceForNewLine() {
     let details = this.props.product.details;
     if (this.props.product.details) {

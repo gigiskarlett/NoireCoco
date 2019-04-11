@@ -7,6 +7,7 @@ import "./admin-page-nav-bar.css";
 
 //Renders navigation bar for admin pages
 class AdminPagesNavBar extends React.Component {
+  //Logs out user
   logout() {
     this.props.dispatch(clearAuth());
   }
@@ -23,7 +24,7 @@ class AdminPagesNavBar extends React.Component {
         <ul className="admin-nav-links">
           <li className="logout-link">
             <p
-              className="link"
+              className="logout-link"
               aria-label="Logout"
               onClick={e => {
                 e.preventDefault();

@@ -5,6 +5,7 @@ import "./view-one-product-images.css";
 
 //Renders mobile viewport layout for product images
 export class ViewOneProductImages extends React.Component {
+  //stores current state of selected image to show on hero image
   constructor(props) {
     super(props);
       this.state = {

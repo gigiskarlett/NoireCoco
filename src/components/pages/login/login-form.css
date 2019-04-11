@@ -1,5 +1,5 @@
 .login-page {
-    background-color: black;
+    background-color: #191127;
     min-height: 100vh;
 }
 
@@ -7,7 +7,7 @@
     margin: auto;
     background-color: #FFA3D4;
     padding: 0 5% 0 5%;
-    width: 80%;
+    width: 60%;
     font-family: 'Sintony', serif;
 }
 
@@ -47,6 +47,7 @@
 
 .login-form-title {
     font-weight: 800;
+    padding: 10px;
 }
 
 .login-button-container {
