@@ -2,6 +2,10 @@
 
 Noire Coco is a webpage that features a handpicked selection of beautiful, affordable, highly reviewed swimwear from <a href="https://www.amazon.com"/>Amazon</a>. Noire Coco was created by a beach lover who’s always on the search for swimwear to take on her next vacation. I’ve always struggled to find nice swimwear and often times, I've found too many pieces that I just didn’t really like. I wanted to create a page where finding a beautiful swimsuit for a reasonable price wouldn’t be a search down hundreds of pages. I wanted to make the search for that perfect swimsuit a little less painful to every woman who finds herself always on a quest to find swimwear. 
 
+## Repository for server
+
+<a href="https://github.com/gigiskarlett/NoireCoco-server">Noire Coco Server Repository</a>
+
 
 ## Demo
 
