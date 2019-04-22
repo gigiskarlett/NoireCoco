@@ -15,7 +15,7 @@ Noire Coco is a webpage that features a handpicked selection of beautiful, affor
 
 ### Landing Page
 
-![image](https://user-images.githubusercontent.com/38567356/54554328-6e2bb100-4971-11e9-88a4-af70052d8dec.png)
+![image](https://i.imgur.com/LC4s6Cj.jpg)
 
 ### Shop
 
@@ -23,11 +23,11 @@ Noire Coco is a webpage that features a handpicked selection of beautiful, affor
 
 ### View Selected Swimwear
 
-![image](https://i.imgur.com/0a3N5io.png)
+![image](https://i.imgur.com/02wcKMM.png)
 
 ### About Noire Coco
 
-![image](https://i.imgur.com/D0DbWcZ.png)
+![image](https://i.imgur.com/6ZqG0at.png)
 
 ### Noire Coco Administrative Portal
 
@@ -51,5 +51,3 @@ Noire Coco is a webpage that features a handpicked selection of beautiful, affor
 - **Front End:** React/Redux/HTML5/CSS
 - **Back End:** Mongo/MLab/Nodejs/Expressjs
 - **Testing:** Enzyme/Mocha/Chai
-- **Testing:** Enzyme/Mocha/Chai
-
