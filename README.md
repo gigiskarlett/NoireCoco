@@ -19,7 +19,7 @@ Noire Coco is a webpage that features a handpicked selection of beautiful, affor
 
 ### Shop
 
-![image](https://user-images.githubusercontent.com/38567356/54554387-8996bc00-4971-11e9-8e21-83e6ce3d53ff.png)
+![image](https://i.imgur.com/Lf2Qsm8.png)
 
 ### View Selected Swimwear
 
