@@ -49,5 +49,5 @@ Noire Coco is a webpage that features a handpicked selection of beautiful, affor
 ## Built utilizing the MERN stack:
 
 - **Front End:** React/Redux/HTML5/CSS
-- **Back End:** Mongo/MLab/Nodejs/Expressjs
+- **Back End:** Mongo/Nodejs/Express
 - **Testing:** Enzyme/Mocha/Chai
